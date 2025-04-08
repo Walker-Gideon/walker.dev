@@ -4,7 +4,7 @@ import PageLoader from "./components/PageLoader";
 
 function App() {
   return (
-    <div>
+    <div className="m-0">
       {/* <PageLoader /> */}
       <Header />
       <Hero />
