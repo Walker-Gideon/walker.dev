@@ -1,4 +1,5 @@
 import Header from "./components/header/Header";
+import Hero from "./components/hero/Hero";
 import PageLoader from "./components/PageLoader";
 
 function App() {
@@ -6,6 +7,7 @@ function App() {
     <div>
       {/* <PageLoader /> */}
       <Header />
+      <Hero />
     </div>
   );
 }
