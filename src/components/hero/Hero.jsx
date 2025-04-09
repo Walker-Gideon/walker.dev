@@ -21,6 +21,79 @@ function Hero() {
         </p>
 
         <Button>CTA</Button>
+
+        <p>
+          Lorem ipsum dolor, sit amet consectetur adipisicing elit. Totam ipsum
+          quisquam placeat, sunt consectetur qui aliquid quas libero fugiat
+          architecto corporis, accusantium vero laborum incidunt error delectus
+          perspiciatis aspernatur rerum? lor
+        </p>
+        <p>
+          Lorem ipsum dolor, sit amet consectetur adipisicing elit. Totam ipsum
+          quisquam placeat, sunt consectetur qui aliquid quas libero fugiat
+          architecto corporis, accusantium vero laborum incidunt error delectus
+          perspiciatis aspernatur rerum? lor
+        </p>
+        <p>
+          Lorem ipsum dolor, sit amet consectetur adipisicing elit. Totam ipsum
+          quisquam placeat, sunt consectetur qui aliquid quas libero fugiat
+          architecto corporis, accusantium vero laborum incidunt error delectus
+          perspiciatis aspernatur rerum? lor
+        </p>
+        <p>
+          Lorem ipsum dolor, sit amet consectetur adipisicing elit. Totam ipsum
+          quisquam placeat, sunt consectetur qui aliquid quas libero fugiat
+          architecto corporis, accusantium vero laborum incidunt error delectus
+          perspiciatis aspernatur rerum? lor
+        </p>
+        <p>
+          Lorem ipsum dolor, sit amet consectetur adipisicing elit. Totam ipsum
+          quisquam placeat, sunt consectetur qui aliquid quas libero fugiat
+          architecto corporis, accusantium vero laborum incidunt error delectus
+          perspiciatis aspernatur rerum? lor
+        </p>
+        <p>
+          Lorem ipsum dolor, sit amet consectetur adipisicing elit. Totam ipsum
+          quisquam placeat, sunt consectetur qui aliquid quas libero fugiat
+          architecto corporis, accusantium vero laborum incidunt error delectus
+          perspiciatis aspernatur rerum? lor
+        </p>
+        <p>
+          Lorem ipsum dolor, sit amet consectetur adipisicing elit. Totam ipsum
+          quisquam placeat, sunt consectetur qui aliquid quas libero fugiat
+          architecto corporis, accusantium vero laborum incidunt error delectus
+          perspiciatis aspernatur rerum? lor
+        </p>
+        <p>
+          Lorem ipsum dolor, sit amet consectetur adipisicing elit. Totam ipsum
+          quisquam placeat, sunt consectetur qui aliquid quas libero fugiat
+          architecto corporis, accusantium vero laborum incidunt error delectus
+          perspiciatis aspernatur rerum? lor
+        </p>
+        <p>
+          Lorem ipsum dolor, sit amet consectetur adipisicing elit. Totam ipsum
+          quisquam placeat, sunt consectetur qui aliquid quas libero fugiat
+          architecto corporis, accusantium vero laborum incidunt error delectus
+          perspiciatis aspernatur rerum? lor
+        </p>
+        <p>
+          Lorem ipsum dolor, sit amet consectetur adipisicing elit. Totam ipsum
+          quisquam placeat, sunt consectetur qui aliquid quas libero fugiat
+          architecto corporis, accusantium vero laborum incidunt error delectus
+          perspiciatis aspernatur rerum? lor
+        </p>
+        <p>
+          Lorem ipsum dolor, sit amet consectetur adipisicing elit. Totam ipsum
+          quisquam placeat, sunt consectetur qui aliquid quas libero fugiat
+          architecto corporis, accusantium vero laborum incidunt error delectus
+          perspiciatis aspernatur rerum? lor
+        </p>
+        <p>
+          Lorem ipsum dolor, sit amet consectetur adipisicing elit. Totam ipsum
+          quisquam placeat, sunt consectetur qui aliquid quas libero fugiat
+          architecto corporis, accusantium vero laborum incidunt error delectus
+          perspiciatis aspernatur rerum? lor
+        </p>
       </div>
     </div>
   );
