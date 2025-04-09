@@ -9,8 +9,8 @@ function Header() {
   }
 
   return (
-    <div className="relative">
-      <header className="sticky top-0 flex items-center justify-between py-4 px-8">
+    <header className="flex items-center justify-between w-full h-16 sticky top-0 z-50">
+      <div className="relative flex items-center justify-between w-full px-8 py-4">
         <a
           href="#"
           className={`text-xl ${showMenu === true ? `` : `cursor-pointer`}`}
@@ -18,20 +18,22 @@ function Header() {
           Logo
         </a>
 
-        <button
-          className={`border-1 rounded-4xl px-5 py-1.5 text-lg text-center cursor-pointer ${
-            showMenu === true
-              ? `border-black text-black`
-              : `border-white text-white`
-          } z-50`}
-          onClick={handleMenu}
-        >
-          {showMenu === true ? "close" : "menu"}
-        </button>
-      </header>
+        <div className="relative">
+          <button
+            className={`border-1 rounded-4xl px-5 py-1.5 text-lg text-center cursor-pointer ${
+              showMenu === true
+                ? `border-black text-black`
+                : `border-white text-white`
+            } z-50`}
+            onClick={handleMenu}
+          >
+            {showMenu === true ? "close" : "menu"}
+          </button>
+        </div>
 
-      {showMenu && <MenuNav />}
-    </div>
+        {showMenu && <MenuNav />}
+      </div>
+    </header>
   );
 }
 

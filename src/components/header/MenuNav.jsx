@@ -1,7 +1,7 @@
 function MenuNav() {
   return (
-    <aside className="absolute top-2 right-0 w-[35%] h-[90vh] mx-4 bg-white text-black rounded-2xl z-10">
-      <div className="flex flex-col px-6 pt-4">
+    <aside className="absolute top-3 right-0 w-[35%] h-[90vh] mx-4 bg-white text-black rounded-2xl z-10">
+      <div className="flex flex-col px-6 pt-4 w-[100%]">
         <h1 className="mt-2 text-4xl font-bold text-gray-300">Menu</h1>
 
         <div className="flex flex-col justify-between">
