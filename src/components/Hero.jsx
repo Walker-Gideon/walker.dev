@@ -1,5 +1,5 @@
-import Button from "../button/Button";
-import myimage from "../../assets/me.jpg";
+import Button from "./Button";
+import myimage from "../assets/me.jpg";
 
 function Hero() {
   return (

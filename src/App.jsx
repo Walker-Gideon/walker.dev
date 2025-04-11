@@ -1,5 +1,5 @@
-import Header from "./components/header/Header";
-import Hero from "./components/hero/Hero";
+import Header from "./components/Header";
+import Hero from "./components/Hero";
 import PageLoader from "./components/PageLoader";
 
 function App() {
