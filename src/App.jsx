@@ -5,11 +5,14 @@ import PageLoader from "./components/PageLoader";
 
 function App() {
   return (
-    <div className="m-0">
+    <div className="relative">
       {/* <PageLoader /> */}
       <Header />
-      <Hero />
-      <About />
+
+      <div className="px-8">
+        <Hero />
+        <About />
+      </div>
     </div>
   );
 }

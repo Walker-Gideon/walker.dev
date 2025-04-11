@@ -17,7 +17,7 @@ function Hero() {
           Hello 👋!, I'm <span className="font-bold">Gideon Awortwe</span>
         </h1>
         <p className="text-6xl mb-3">Fronted-end Developer</p>
-        <p className="text-xl text-[#ddd] mb-6">
+        <p className="text-xl text-[#cbc9c9] mb-10">
           Lorem ipsum dolor sit amet consectetur adipisicing elit. Reiciendis
         </p>
 

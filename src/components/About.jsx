@@ -1,10 +1,11 @@
 function About() {
   return (
-    <div className="mt-20 grid grid-cols-2 bg-red-500">
-      <div className="">
-        <h1>About me</h1>
+    <div className="mt-40 mb-6 h-[86vh] grid grid-cols-3 gap-20">
+      {/* make this div to scroll */}
+      <div className="col-span-2 pr-8">
+        <h1 className="text-4xl font-medium mb-6">About me</h1>
 
-        <div className="">
+        <div className="text-xl text-[#cbc9c9]">
           <p>
             Lorem ipsum dolor sit, amet consectetur adipisicing elit. Excepturi
             voluptatibus aliquid totam delectus minima, explicabo ad recusandae
@@ -15,12 +16,19 @@ function About() {
             magni qui, laudantium animi nihil, repudiandae illum in. Lorem ipsum
             dolor sit amet consectetur adipisicing elit. Maxime rerum id magni
             laboriosam quo distinctio, dolor qui error fugiat, deserunt ex porro
-            doloribus tempora libero ratione modi sapiente hic voluptates.
+            doloribus tempora libero ratione modi sapiente hic voluptates. Lorem
+            ipsum dolor sit amet consectetur adipisicing elit. Commodi mollitia
+            ratione architecto beatae, accusantium dignissimos. Accusamus eaque
+            deserunt nostrum nesciunt est sapiente, quia dolores, inventore nam
+            nisi repellat sequi itaque!
           </p>
         </div>
+
+        {/* Hobbies about my career */}
+        <div className=""></div>
       </div>
 
-      <div className="w-96 h-[50vh] bg-amber-200"></div>
+      <div className="w-full h-full bg-amber-200 justify-self-end rounded-2xl"></div>
     </div>
   );
 }

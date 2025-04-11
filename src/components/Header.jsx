@@ -10,7 +10,7 @@ function Header() {
 
   return (
     <div className="flex items-center justify-between w-full h-16 sticky top-0 z-50">
-      <header className="relative flex items-center justify-between w-full px-8 py-4">
+      <header className="flex items-center justify-between w-full px-8 py-4">
         <a
           href="#"
           className={`text-xl ${showMenu === true ? `` : `cursor-pointer`}`}
