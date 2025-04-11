@@ -5,7 +5,7 @@ function MenuNav() {
         <h1 className="mt-2 text-4xl font-bold text-gray-300">Menu</h1>
 
         <div className="flex flex-col justify-between">
-          <div className="w-0 mt-6 mb-58 pl-4 flex flex-col gap-6 text-xl font-medium text-[#333] whitespace-nowrap">
+          <div className="w-0 mt-6 mb-50 pl-6 flex flex-col gap-6 text-3xl font-medium text-[#333] whitespace-nowrap">
             <a href="#">Home</a>
             <a href="#">Projects</a>
             <a href="#">Skill set</a>
@@ -13,19 +13,24 @@ function MenuNav() {
             <a href="#">Contact</a>
           </div>
 
-          <div className="w-0 pl-4 grid grid-cols-2 gap-x-50 gap-y-8 font-medium text-[#333] whitespace-nowrap">
-            <a href="#" className="transition-colors hover:text-[#555]">
-              LinkedIn
-            </a>
-            <a href="#" className="transition-colors hover:text-[#555]">
-              Instagram
-            </a>
-            <a href="#" className="transition-colors hover:text-[#555]">
-              Facebook
-            </a>
-            <a href="#" className="transition-colors hover:text-[#555]">
-              Twiter
-            </a>
+          <div className="w-0 pl-4 grid grid-cols-2 gap-40 font-medium text-[#333] whitespace-nowrap">
+            <div className="flex flex-col justify-between gap-8">
+              <a href="#" className="transition-colors hover:text-[#555]">
+                LinkedIn
+              </a>
+              <a href="#" className="transition-colors hover:text-[#555]">
+                Instagram
+              </a>
+            </div>
+
+            <div className="flex flex-col justify-between gap-8">
+              <a href="#" className="transition-colors hover:text-[#555]">
+                Facebook
+              </a>
+              <a href="#" className="transition-colors hover:text-[#555]">
+                Twiter
+              </a>
+            </div>
           </div>
         </div>
       </div>
