@@ -21,7 +21,9 @@ function Hero() {
           Lorem ipsum dolor sit amet consectetur adipisicing elit. Reiciendis
         </p>
 
-        <Button>CTA</Button>
+        <Button>
+          let's talk <span>&rarr;</span>
+        </Button>
       </div>
     </div>
   );

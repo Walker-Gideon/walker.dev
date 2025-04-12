@@ -17,7 +17,7 @@ function Contact() {
           <ContactForm />
 
           <div className="w-full mt-2">
-            <h1 className="text-xl text-[#555] font-medium">Get in touch</h1>
+            <h1 className="text-2xl text-[#555] font-bold">Connect with me:</h1>
             <h1 className="my-3 text-3xl text-White font-medium">
               gideonawortwe3@gmail.com
             </h1>
