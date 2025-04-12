@@ -19,10 +19,10 @@ function Header() {
         </a>
 
         <button
-          className={`border-2 rounded-4xl px-5 py-1.5 text-lg text-center cursor-pointer z-50 ${
+          className={` rounded-4xl px-5 py-1.5 text-lg text-center cursor-pointer z-50 ${
             showMenu === true
-              ? `border-black text-black`
-              : `border-white text-white`
+              ? `bg-white border-2 border-black text-black`
+              : `bg-blue-400 text-white`
           }`}
           onClick={handleMenu}
         >

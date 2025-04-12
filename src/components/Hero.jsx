@@ -14,7 +14,7 @@ function Hero() {
 
       <div className="text-center justify-self-start whitespace-nowrap">
         <h1 className="text-5xl mb-3">
-          Hello 👋!, I'm <span className="font-bold">Gideon Awortwe</span>
+          Hello 👋!, I'm <span className="font-bold">X</span>
         </h1>
         <p className="text-6xl mb-3">Fronted-end Developer</p>
         <p className="text-xl text-[#cbc9c9] mb-10">

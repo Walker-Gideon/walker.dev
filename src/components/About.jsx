@@ -3,7 +3,7 @@ function About() {
     <div className="mt-40 mb-6 h-[86vh] grid grid-cols-3 gap-20">
       {/* make this div to scroll */}
       <div className="col-span-2 pr-8">
-        <h1 className="text-4xl font-medium mb-6">About me</h1>
+        <h1 className="text-3xl font-medium mb-6">About me</h1>
 
         <div className="text-xl text-[#cbc9c9]">
           <p>

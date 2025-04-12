@@ -1,3 +1,5 @@
+import SocialLink from "./SocialLink";
+
 function MenuNav() {
   return (
     <aside className="absolute top-1 right-0 w-[35%] h-[90vh] mx-4 bg-white text-black rounded-2xl z-0">
@@ -13,25 +15,7 @@ function MenuNav() {
             <a href="#">Contact</a>
           </div>
 
-          <div className="w-0 pl-4 grid grid-cols-2 gap-60 font-medium text-[#333] whitespace-nowrap">
-            <div className="flex flex-col justify-between gap-8">
-              <a href="#" className="transition-colors hover:text-[#555]">
-                LinkedIn
-              </a>
-              <a href="#" className="transition-colors hover:text-[#555]">
-                Instagram
-              </a>
-            </div>
-
-            <div className="flex flex-col justify-between gap-8">
-              <a href="#" className="transition-colors hover:text-[#555]">
-                Facebook
-              </a>
-              <a href="#" className="transition-colors hover:text-[#555]">
-                Twiter
-              </a>
-            </div>
-          </div>
+          <SocialLink type={"primary"} flextype={"primflex"} />
         </div>
       </div>
     </aside>

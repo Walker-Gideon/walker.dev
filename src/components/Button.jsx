@@ -1,7 +1,24 @@
-function Button({ children, onClick }) {
+function Button({ children, onClick, type }) {
+  const base =
+    "inline-block text-lg rounded-[5px] font-semibold tracking-wide text-white px-4 py-2 md:px-5 md:py-2.5 transition-colors duration-300 cursor-pointer focus:outline-none focus:ring focus:ring-blue-300 focus:ring-offset-2 disabled:cursor-not-allowed";
+
+  const styling = {
+    primary: base + " bg-blue-400 hover:bg-blue-300 focus:bg-blue-300",
+    secondary:
+      base +
+      " bg-transparent border-2 border-blue-400 hover:bg-[#555] focus:bg-[#555]",
+  };
+
+  if (type)
+    return (
+      <button onClick={onClick} className={styling[type]}>
+        {children}
+      </button>
+    );
+
   return (
     <button
-      className={`border-1 rounded-4xl border-white px-5 py-1.5 text-lg text-center text-white cursor-pointer`}
+      className="border-2 rounded-full border-white uppercase px-5 py-1.5 text-lg text-center text-white cursor-pointer"
       onClick={onClick}
     >
       {children}
@@ -10,3 +27,15 @@ function Button({ children, onClick }) {
 }
 
 export default Button;
+
+/*
+ const base =
+    'inline-block text-sm rounded-full bg-yellow-400 font-semibold uppercase tracking-wide text-stone-800 transition-colors duration-300 hover:bg-yellow-300 focus:bg-yellow-300 focus:outline-none focus:ring focus:ring-yellow-300 focus:ring-offset-2 disabled:cursor-not-allowed';
+
+  const styles = {
+    primary: base + ' px-4 py-3 md:px-6 md:py-4',
+    small: base + ' px-4 py-2 md:px-5 md:py-2.5 text-xs',
+    secondary:
+      'inline-block text-sm rounded-full border-2 border-stone-300 font-semibold uppercase tracking-wide text-stone-400 transition-colors duration-300 hover:bg-stone-300 hover:text-stone-800 focus:bg-stone-300 focus:text-stone-800 focus:outline-none focus:ring focus:ring-stone-200 focus:ring-offset-2 disabled:cursor-not-allowed px-4 py-2.5 md:px-6 md:py-3.5',
+  };
+  */
