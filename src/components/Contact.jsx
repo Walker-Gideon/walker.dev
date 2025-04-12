@@ -12,24 +12,28 @@ function Contact() {
         </h1>
       </div>
 
-      <div className="mt-20 flex justify-between gap-40">
-        <ContactForm />
+      <div className="flex flex-col justify-between gap-20">
+        <div className="mt-20 flex justify-between gap-40">
+          <ContactForm />
 
-        <div className="w-full mt-2">
-          <h1 className="text-xl text-[#555] font-medium">Get in touch</h1>
-          <h1 className="my-3 text-3xl text-White font-medium">
-            gideonawortwe3@gmail.com
-          </h1>
-          <p className="mb-1 text-xl text-[#555] font-medium">
-            +233 248 232 548
-          </p>
-          <p className="mb-27 text-xl text-[#555] font-medium">Accra, Ghana</p>
+          <div className="w-full mt-2">
+            <h1 className="text-xl text-[#555] font-medium">Get in touch</h1>
+            <h1 className="my-3 text-3xl text-White font-medium">
+              gideonawortwe3@gmail.com
+            </h1>
+            <p className="mb-1 text-xl text-[#555] font-medium">
+              +233 248 232 548
+            </p>
+            <p className="mb-27 text-xl text-[#555] font-medium">
+              Accra, Ghana
+            </p>
 
-          <SocialLink type={"secondary"} flextype={"secflex"} />
+            <SocialLink type={"secondary"} flextype={"secflex"} />
+          </div>
         </div>
-      </div>
 
-      <Footer />
+        <Footer />
+      </div>
     </div>
   );
 }
