@@ -33,7 +33,7 @@ function ContactForm() {
         <textarea
           type="text"
           placeholder="Enter your message:"
-          className="w-full border-b focus:outline-none text-sm p-1 placeholder:text-white placeholder:text-lg"
+          className="w-full h-40 border-b focus:outline-none text-sm p-1 placeholder:text-white placeholder:text-lg"
         ></textarea>
       </div>
 

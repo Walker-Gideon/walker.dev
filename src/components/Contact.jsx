@@ -23,7 +23,7 @@ function Contact() {
           <p className="mb-1 text-xl text-[#555] font-medium">
             +233 248 232 548
           </p>
-          <p className="mb-20 text-xl text-[#555] font-medium">Accra, Ghana</p>
+          <p className="mb-27 text-xl text-[#555] font-medium">Accra, Ghana</p>
 
           <SocialLink type={"secondary"} flextype={"secflex"} />
         </div>
