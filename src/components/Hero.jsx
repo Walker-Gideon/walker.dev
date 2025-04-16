@@ -1,3 +1,4 @@
+import { motion } from "motion/react";
 import Button from "./Button";
 import myimage from "../assets/me.jpg";
 
@@ -24,9 +25,40 @@ function Hero() {
         <Button>
           let's talk <span>&rarr;</span>
         </Button>
+
+        <GetInTouchButton />
       </div>
     </div>
   );
 }
 
 export default Hero;
+
+export function GetInTouchButton() {
+  return (
+    <motion.div
+      className="relative inline-block px-8 py-3 text-lg font-medium text-black bg-white rounded-full border border-black overflow-hidden"
+      initial={{}}
+      whileHover={{}}
+    >
+      <motion.div
+        className="absolute inset-0 bg-black"
+        initial={{ y: "-100%" }}
+        whileHover={{
+          y: 0,
+          transition: { duration: 0.3, ease: "easeInOut" },
+        }}
+      />
+      <motion.span
+        className="relative z-10"
+        initial={{ color: "#000000" }}
+        whileHover={{
+          color: "#FFFFFF",
+          transition: { duration: 0.3, ease: "easeInOut" },
+        }}
+      >
+        Get in touch
+      </motion.span>
+    </motion.div>
+  );
+}
