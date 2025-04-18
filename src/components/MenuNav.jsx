@@ -1,4 +1,4 @@
-import { motion } from "motion/react";
+import { AnimatePresence, motion } from "motion/react";
 import SocialLink from "./SocialLink";
 
 function MenuNav({ showMenu }) {
@@ -41,29 +41,31 @@ function MenuNav({ showMenu }) {
       }}
       className="absolute top-3 right-1 mx-4 bg-white text-black rounded-2xl z-0"
     >
-      {showMenu && (
-        <div className="flex flex-col px-6 pt-4">
-          <h1 className="mt-2 text-4xl font-bold text-gray-300">Menu</h1>
+      <AnimatePresence>
+        {showMenu && (
+          <motion.div
+            variants={perspective}
+            initial="initial"
+            animate="enter"
+            exit="exit"
+            className="relative flex flex-col px-6 pt-4"
+          >
+            <p className="mt-2 pl-10 text-sm font-bold text-gray-300">Menu</p>
 
-          <div className="flex flex-col justify-between">
-            <motion.div
-              variants={perspective}
-              initial="initial"
-              animate="enter"
-              exit="exit"
-              className="w-0 mt-6 mb-50 pl-8 flex flex-col gap-6 text-3xl font-medium text-[#333] whitespace-nowrap"
-            >
-              <a href="#">Home</a>
-              <a href="#">Projects</a>
-              <a href="#">Skill set</a>
-              <a href="#">About</a>
-              <a href="#">Contact</a>
-            </motion.div>
+            <div className="flex flex-col justify-between">
+              <div className="w-0 mt-6 mb-50 pl-8 flex flex-col gap-6 text-3xl font-medium text-[#333] whitespace-nowrap">
+                <a href="#">Home</a>
+                <a href="#">Projects</a>
+                <a href="#">Skill set</a>
+                <a href="#">About</a>
+                <a href="#">Contact</a>
+              </div>
 
-            <SocialLink type={"primary"} flextype={"primflex"} />
-          </div>
-        </div>
-      )}
+              <SocialLink type={"primary"} flextype={"primflex"} />
+            </div>
+          </motion.div>
+        )}
+      </AnimatePresence>
     </motion.aside>
   );
 }

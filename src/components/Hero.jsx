@@ -26,7 +26,7 @@ function Hero() {
           let's talk <span>&rarr;</span>
         </Button>
 
-        <GetInTouchButton />
+        {/* <GetInTouchButton /> */}
       </div>
     </div>
   );
