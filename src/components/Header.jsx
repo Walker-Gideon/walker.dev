@@ -6,16 +6,11 @@ export default function Header() {
   const [showMenu, setShowMenu] = useState(false);
 
   return (
-    <div className="flex items-center justify-between w-full h-16 sticky top-2 z-50">
+    <div>
       <header className="flex items-center justify-between w-full px-8 py-4">
         <a href="#" className="text-xl cursor-pointer">
           Logo
         </a>
-        {/* 
-        <div class="relative w-64 h-64 bg-gray-200 flex items-center justify-center overflow-hidden group">
-          <div class="absolute inset-0 bg-indigo-600 rounded-full scale-0 group-hover:scale-150 transition-transform duration-500 ease-out"></div>
-          <span class="relative text-white font-bold">Hover Me</span>
-        </div> */}
 
         <MotionConfig
           transition={{
@@ -24,7 +19,7 @@ export default function Header() {
           }}
         >
           <motion.button
-            className="relative w-14 h-14 rounded-full bg-white/0 transition-colors hover:bg-[#242424]/20 cursor-pointer font-medium overflow-hidden group"
+            className="relative w-14 h-14 rounded-full bg-white/0 transition-colors hover:bg-[#242424]/20 cursor-pointer font-medium overflow-hidden group z-50"
             onClick={() => setShowMenu(!showMenu)}
             animate={showMenu ? "open" : "close"}
           >
@@ -32,7 +27,9 @@ export default function Header() {
             <div className="">
               <motion.span
                 style={{ top: "40%", left: "50%", x: "-50%", y: "-50%" }}
-                className="absolute bg-white h-1 w-9"
+                className={`absolute h-1 w-9 ${
+                  showMenu === true ? `bg-[#333]` : `bg-white`
+                }`}
                 variants={{
                   open: {
                     rotate: ["0deg", "0deg", "45deg"],
@@ -46,7 +43,9 @@ export default function Header() {
               />
               <motion.span
                 style={{ top: "60%", left: "50%", x: "-50%", y: "-50%" }}
-                className="absolute bg-white h-1 w-9"
+                className={`absolute h-1 w-9 ${
+                  showMenu === true ? `bg-[#333]` : `bg-white`
+                }`}
                 variants={{
                   open: {
                     rotate: ["0deg", "0deg", "-45deg"],
@@ -62,7 +61,7 @@ export default function Header() {
           </motion.button>
         </MotionConfig>
 
-        {showMenu && <MenuNav />}
+        <MenuNav showMenu={showMenu} />
       </header>
     </div>
   );
