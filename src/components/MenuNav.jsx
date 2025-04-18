@@ -39,7 +39,7 @@ function MenuNav({ showMenu }) {
         width: { duration: 0.4, ease: "easeOut", delay: 0.2 },
         height: { duration: 0.4, ease: "easeOut", delay: 0.2 },
       }}
-      className="absolute top-3 right-1 mx-4 bg-white text-black rounded-2xl z-0"
+      className="absolute top-3 right-1 mx-4 bg-white text-black rounded-2xl  z-0"
     >
       <AnimatePresence>
         {showMenu && (
@@ -48,7 +48,7 @@ function MenuNav({ showMenu }) {
             initial="initial"
             animate="enter"
             exit="exit"
-            className="relative flex flex-col px-6 pt-4"
+            className="relative h-[95vh] flex flex-col px-6 pt-4 rounded-2xl bg-amber-500"
           >
             <p className="mt-2 pl-10 text-sm font-bold text-gray-300">Menu</p>
 
