@@ -1,5 +1,6 @@
 import { AnimatePresence, motion } from "motion/react";
 import SocialLink from "./SocialLink";
+import ButtonNav from "./ButtonNav";
 
 function MenuNav({ showMenu }) {
   const boxVariants = {
@@ -48,21 +49,20 @@ function MenuNav({ showMenu }) {
             initial="initial"
             animate="enter"
             exit="exit"
-            className="relative h-[95vh] flex flex-col px-6 pt-4 rounded-2xl bg-amber-500"
+            className="relative h-[95vh] flex flex-col justify-between px-6 py-6 rounded-2xl"
           >
             <p className="mt-2 pl-10 text-sm font-bold text-gray-300">Menu</p>
 
-            <div className="flex flex-col justify-between">
-              <div className="w-0 mt-6 mb-50 pl-8 flex flex-col gap-6 text-3xl font-medium text-[#333] whitespace-nowrap">
-                <a href="#">Home</a>
-                <a href="#">Projects</a>
-                <a href="#">Skill set</a>
-                <a href="#">About</a>
-                <a href="#">Contact</a>
-              </div>
-
-              <SocialLink type={"primary"} flextype={"primflex"} />
+            <div className="h-100 pl-8 flex flex-col justify-between gap-6 text-3xl font-medium text-[#333]">
+              <a href="#">Home</a>
+              <a href="#">Projects</a>
+              <a href="#">Skill set</a>
+              <a href="#">About</a>
+              <a href="#">Contact</a>
             </div>
+
+            <ButtonNav />
+            <SocialLink type={"primary"} flextype={"primflex"} />
           </motion.div>
         )}
       </AnimatePresence>
