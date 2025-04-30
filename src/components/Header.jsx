@@ -24,11 +24,11 @@ export default function Header() {
             animate={showMenu ? "open" : "close"}
           >
             <div class="absolute inset-0 bg-black rounded-full scale-0 group-hover:scale-150 transition-transform duration-500 ease-out"></div>
-            <div className="hover:bg-white">
+            <div className="">
               <motion.span
                 style={{ top: "40%", left: "50%", x: "-50%", y: "-50%" }}
                 className={`absolute h-1 w-9 ${
-                  showMenu === true ? `bg-white` : `bg-black`
+                  showMenu === true ? `bg-white` : `bg-white`
                 }`}
                 variants={{
                   open: {
@@ -44,7 +44,7 @@ export default function Header() {
               <motion.span
                 style={{ top: "60%", left: "50%", x: "-50%", y: "-50%" }}
                 className={`absolute h-1 w-9 ${
-                  showMenu === true ? `bg-white` : `bg-black`
+                  showMenu === true ? `bg-white` : `bg-white`
                 }`}
                 variants={{
                   open: {
