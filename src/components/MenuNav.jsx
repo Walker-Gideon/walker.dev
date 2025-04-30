@@ -35,7 +35,6 @@ function MenuNav({ showMenu }) {
 
   return (
     <motion.aside
-      // style={{ x: "105%" }}
       variants={boxVariants}
       initial="initial"
       animate={showMenu ? "expanded" : "initial"}
@@ -45,8 +44,7 @@ function MenuNav({ showMenu }) {
         width: { duration: 0.4, ease: "easeOut", delay: 0.2 },
         height: { duration: 0.4, ease: "easeOut", delay: 0.2 },
       }}
-      // [#242424]
-      className="bg-white text-white border-1 border-black rounded-4xl overflow-hidden"
+      className="bg-white text-black border-1 border-black rounded-4xl overflow-hidden"
     >
       <AnimatePresence>
         <motion.div
@@ -77,7 +75,7 @@ function MenuNav({ showMenu }) {
           </div>
 
           <div className="w-50">
-            <ButtonNav />
+            <ButtonNav showMenu={showMenu} />
           </div>
 
           <SocialLink type={"primary"} flextype={"primflex"} />

@@ -70,23 +70,3 @@ export default function Header() {
     </div>
   );
 }
-
-/*
-<motion.div
-            className="relative w-full h-full"
-            animate={{ y: showMenu ? "-100%" : "0%" }}
-            transition={{ duration: 0.5, ease: [0.76, 0, 0.24, 1] }}
-          >
-            <div className="w-full h-full bg-blue-400 text-white px-5 py-1.5 text-xl text-center">
-              <div className="flex item-center justify-center">
-                <p className="text-center">menu</p>
-              </div>
-            </div>
-
-            <div className="absolute top-[100%] w-full h-full bg-white  text-black px-5 py-1.5 text-xl text-center">
-              <div className="flex item-center justify-center">
-                <p className="text-center">close</p>
-              </div>
-            </div>
-          </motion.div>
-          */
