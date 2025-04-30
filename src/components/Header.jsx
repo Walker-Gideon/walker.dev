@@ -8,11 +8,12 @@ export default function Header() {
   return (
     <div className="w-full h-25 px-8 py-4 sticky top-0 z-50">
       <header className="flex items-center justify-between">
-        <div className="border-b-1 pb-0.5">
-          <a href="#" className="text-2xl font-bold cursor-pointer">
+        <div className="border-b-2 border-black pb-0.5">
+          <a href="#" className="text-black text-2xl font-bold cursor-pointer">
             Wɑɭkɜɾ.dev
           </a>
         </div>
+
         <MotionConfig
           transition={{
             duration: 0.4,
@@ -24,12 +25,12 @@ export default function Header() {
             onClick={() => setShowMenu(!showMenu)}
             animate={showMenu ? "open" : "close"}
           >
-            <div class="absolute inset-0 bg-black rounded-full scale-0 group-hover:scale-150 transition-transform duration-500 ease-out"></div>
+            <div class="absolute inset-0 bg-black rounded-full scale-0 group-hover:scale-150 group-hover: transition-transform duration-500 ease-out"></div>
             <div className="">
               <motion.span
                 style={{ top: "40%", left: "50%", x: "-50%", y: "-50%" }}
                 className={`absolute h-1 w-9 ${
-                  showMenu === true ? `bg-black` : `bg-white`
+                  showMenu === true ? `bg-gray-400` : `bg-gray-400`
                 }`}
                 variants={{
                   open: {
@@ -45,7 +46,7 @@ export default function Header() {
               <motion.span
                 style={{ top: "60%", left: "50%", x: "-50%", y: "-50%" }}
                 className={`absolute h-1 w-9 ${
-                  showMenu === true ? `bg-black` : `bg-white`
+                  showMenu === true ? `bg-gray-400` : `bg-gray-400`
                 }`}
                 variants={{
                   open: {
@@ -63,7 +64,7 @@ export default function Header() {
         </MotionConfig>
       </header>
 
-      <div className="absolute top-2 right-5 rounded-4xl overflow-hidden">
+      <div className="absolute top-4 right-8 overflow-hidden">
         <MenuNav showMenu={showMenu} />
       </div>
     </div>

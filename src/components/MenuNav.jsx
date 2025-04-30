@@ -5,9 +5,9 @@ import ButtonNav from "./ButtonNav";
 function MenuNav({ showMenu }) {
   const boxVariants = {
     initial: {
-      width: 10,
-      height: 10,
-      x: "120%",
+      width: 42,
+      height: 42,
+      x: "1",
     },
     expanded: {
       width: "80vw",
@@ -35,7 +35,7 @@ function MenuNav({ showMenu }) {
 
   return (
     <motion.aside
-      style={{ x: "105%" }}
+      // style={{ x: "105%" }}
       variants={boxVariants}
       initial="initial"
       animate={showMenu ? "expanded" : "initial"}
@@ -46,7 +46,7 @@ function MenuNav({ showMenu }) {
         height: { duration: 0.4, ease: "easeOut", delay: 0.2 },
       }}
       // [#242424]
-      className=" bg-white text-white overflow-hidden"
+      className="bg-white text-white border-1 border-black rounded-4xl overflow-hidden"
     >
       <AnimatePresence>
         <motion.div
