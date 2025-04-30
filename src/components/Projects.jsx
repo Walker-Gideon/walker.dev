@@ -2,13 +2,20 @@ import ProjectCard from "./ProjectCard";
 
 function Projects() {
   return (
-    <div className="mt-40 mb-6 grid grid-cols-3 gap-10">
-      <ProjectCard />
-      <ProjectCard />
-      <ProjectCard />
-      <ProjectCard />
-      <ProjectCard />
-      <ProjectCard />
+    <div className="pt-50 mb-6">
+      <div className="mb-10">
+        <h1 className="text-4xl font-bold text-gray-400">Selected</h1>
+        <h1 className="text-4xl font-bold text-black">works</h1>
+      </div>
+
+      <div className="grid grid-cols-3 gap-10">
+        <ProjectCard />
+        <ProjectCard />
+        <ProjectCard />
+        <ProjectCard />
+        <ProjectCard />
+        <ProjectCard />
+      </div>
     </div>
   );
 }

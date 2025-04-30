@@ -18,7 +18,7 @@ function Button({ children, onClick, type }) {
 
   return (
     <button
-      className="border-2 rounded-full border-white uppercase px-5 py-1.5 text-lg text-center text-white cursor-pointer"
+      className="border-2 rounded-full border-black uppercase px-8 py-3 text-lg text-center text-black font-medium cursor-pointer"
       onClick={onClick}
     >
       {children}

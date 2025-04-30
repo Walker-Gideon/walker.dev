@@ -4,10 +4,10 @@ import SocialLink from "./SocialLink";
 
 function Contact() {
   return (
-    <div className="pt-20 h-screen">
+    <div className="pt-50 h-screen">
       <div className="mb-10">
-        <h1 className="text-4xl font-bold text-[#868484]">Contact me,</h1>
-        <h1 className="text-4xl font-medium text-white">
+        <h1 className="text-4xl font-bold text-gray-400">Contact me,</h1>
+        <h1 className="text-4xl font-bold text-black">
           let's make magic together.
         </h1>
       </div>
