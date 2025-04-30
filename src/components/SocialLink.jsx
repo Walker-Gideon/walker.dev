@@ -41,7 +41,7 @@ function SocialLink({ type, flextype }) {
         </a>
 
         <a href="#" className="transition-colors hover:text-[#555]">
-          <i class="bi bi-facebook text-2xl text-white"></i>
+          <i class="bi bi-facebook text-2xl text-blue-500"></i>
         </a>
 
         <a href="#" className="transition-colors hover:text-[#555]">

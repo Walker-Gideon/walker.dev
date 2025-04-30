@@ -6,12 +6,13 @@ export default function Header() {
   const [showMenu, setShowMenu] = useState(false);
 
   return (
-    <div>
-      <header className="flex items-end justify-between w-full h-25 px-8 py-4">
-        <a href="#" className="text-xl cursor-pointer">
-          Logo
-        </a>
-
+    <div className="w-full h-25 px-8 py-4 sticky top-0 z-50">
+      <header className="flex items-center justify-between">
+        <div className="border-b-1 pb-0.5">
+          <a href="#" className="text-2xl font-bold cursor-pointer">
+            Wɑɭkɜɾ.dev
+          </a>
+        </div>
         <MotionConfig
           transition={{
             duration: 0.4,
@@ -28,7 +29,7 @@ export default function Header() {
               <motion.span
                 style={{ top: "40%", left: "50%", x: "-50%", y: "-50%" }}
                 className={`absolute h-1 w-9 ${
-                  showMenu === true ? `bg-white` : `bg-white`
+                  showMenu === true ? `bg-black` : `bg-white`
                 }`}
                 variants={{
                   open: {
@@ -44,7 +45,7 @@ export default function Header() {
               <motion.span
                 style={{ top: "60%", left: "50%", x: "-50%", y: "-50%" }}
                 className={`absolute h-1 w-9 ${
-                  showMenu === true ? `bg-white` : `bg-white`
+                  showMenu === true ? `bg-black` : `bg-white`
                 }`}
                 variants={{
                   open: {
@@ -60,9 +61,11 @@ export default function Header() {
             </div>
           </motion.button>
         </MotionConfig>
-
-        <MenuNav showMenu={showMenu} />
       </header>
+
+      <div className="absolute top-2 right-5 rounded-4xl overflow-hidden">
+        <MenuNav showMenu={showMenu} />
+      </div>
     </div>
   );
 }

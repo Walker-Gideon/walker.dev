@@ -2,8 +2,8 @@ import { motion } from "motion/react";
 
 export default function ButtonNav() {
   return (
-    <motion.div
-      className="relative inline-block px-8 py-3 text-lg font-medium text-black bg-white rounded-full border border-black overflow-hidden"
+    <motion.button
+      className="relative inline-block px-8 py-3 text-lg font-medium text-black bg-white rounded-full border border-black overflow-hidden cursor-pointer"
       initial={{}}
       whileHover={{}}
     >
@@ -15,16 +15,7 @@ export default function ButtonNav() {
           transition: { duration: 0.3, ease: "easeInOut" },
         }}
       />
-      <motion.span
-        className="relative z-10"
-        initial={{ color: "#000000" }}
-        whileHover={{
-          color: "#FFFFFF",
-          transition: { duration: 0.3, ease: "easeInOut" },
-        }}
-      >
-        Get in touch
-      </motion.span>
-    </motion.div>
+      Get in touch
+    </motion.button>
   );
 }
