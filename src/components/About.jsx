@@ -1,4 +1,13 @@
+import { useState } from "react";
+import Button from "./Button";
+
 function About() {
+  const [checkClick, setCheckClick] = useState(false);
+
+  function handelShowContent() {
+    setCheckClick((show) => !show);
+  }
+
   return (
     <div className="mt-40 mb-6 h-[86vh] grid grid-cols-3 gap-20">
       {/* make this div to scroll */}
@@ -31,7 +40,40 @@ function About() {
         </div>
 
         {/* Hobbies about my career */}
-        <div className=""></div>
+        <div className="mb-5">
+          <div className="border-t-1 border-b-1 border-black">
+            <div className="px-2 pt-4 pb-5 flex items-center justify-between">
+              <div className="flex items-center gap-1">
+                <p className="text-lg font-bold text-gray-400">01</p>
+                <h1 className="text-2xl font-bold text-black">
+                  Title amet consectetur adipisicing elit
+                </h1>
+              </div>
+              <Button type={"transparent"} onClick={handelShowContent}>
+                {checkClick ? "-" : "+"}
+              </Button>
+            </div>
+
+            {checkClick && (
+              <div className="px-2">
+                <p className="text-lg text-gray-600">
+                  Lorem ipsum dolor sit, amet consectetur adipisicing elit.
+                  Excepturi voluptatibus aliquid
+                </p>
+
+                <div className="pt-2">
+                  <ul>
+                    <li className="flex items-center">
+                      <span className="">.</span>
+                      totam delectus minima, explicabo ad recusandae odit?
+                      Voluptatum veniam
+                    </li>
+                  </ul>
+                </div>
+              </div>
+            )}
+          </div>
+        </div>
       </div>
 
       <div className="w-full h-full bg-amber-200 justify-self-end rounded-2xl"></div>

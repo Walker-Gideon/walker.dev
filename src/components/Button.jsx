@@ -7,6 +7,7 @@ function Button({ children, onClick, type }) {
     secondary:
       base +
       " bg-transparent border-2 border-blue-400 hover:bg-[#555] focus:bg-[#555]",
+    transparent: "text-3xl text-black cursor-pointer",
   };
 
   if (type)
