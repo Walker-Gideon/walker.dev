@@ -30,7 +30,7 @@ export default function Header() {
               <motion.span
                 style={{ top: "40%", left: "50%", x: "-50%", y: "-50%" }}
                 className={`absolute h-1 w-9 ${
-                  showMenu === true ? `bg-gray-400` : `bg-gray-400`
+                  showMenu === true ? `bg-blue-300` : `bg-blue-300`
                 }`}
                 variants={{
                   open: {
@@ -46,7 +46,7 @@ export default function Header() {
               <motion.span
                 style={{ top: "60%", left: "50%", x: "-50%", y: "-50%" }}
                 className={`absolute h-1 w-9 ${
-                  showMenu === true ? `bg-gray-400` : `bg-gray-400`
+                  showMenu === true ? `bg-blue-300` : `bg-blue-300`
                 }`}
                 variants={{
                   open: {

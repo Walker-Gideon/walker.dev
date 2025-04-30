@@ -44,7 +44,7 @@ function MenuNav({ showMenu }) {
         width: { duration: 0.4, ease: "easeOut", delay: 0.2 },
         height: { duration: 0.4, ease: "easeOut", delay: 0.2 },
       }}
-      className="bg-white text-black border-1 border-black rounded-4xl overflow-hidden"
+      className="bg-blue-300 text-black rounded-4xl overflow-hidden"
     >
       <AnimatePresence>
         <motion.div
@@ -54,7 +54,7 @@ function MenuNav({ showMenu }) {
           exit="exit"
           className="relative w-[80vw] h-[85vh] flex flex-col justify-between px-8 py-6 rounded-2xl"
         >
-          <p className="mt-14 text-lg font-bold text-gray-300">Menu</p>
+          <p className="mt-14 text-lg font-bold text-gray-400">Menu</p>
 
           <div className="h-98 flex flex-col justify-between gap-6 text-4xl font-medium text-black">
             <a href="#" className={`${linkStyling} after:w-25`}>

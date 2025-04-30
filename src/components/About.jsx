@@ -32,16 +32,13 @@ function About() {
             nisi repellat sequi itaque! adipisicing elit. Maxime rerum id magni
             laboriosam quo distinctio, dolor qui error fugiat, deserunt ex porro
             doloribus tempora libero ratione modi sapiente hic voluptates. Lorem
-            ipsum dolor sit amet consectetur adipisicing elit. Commodi mollitia
-            ratione architecto beatae, accusantium dignissimos. Accusamus eaque
-            deserunt nostrum nesciunt est sapiente, quia dolores, inventore nam
-            nisi repellat sequi itaque!
+            ipsum dolor sit amet consectetur adipisicing elit.
           </p>
         </div>
 
         {/* Hobbies about my career */}
         <div className="mb-5">
-          <div className="border-t-1 border-b-1 border-black">
+          <div className="border-b-1 border-black">
             <div className="px-2 pt-4 pb-5 flex items-center justify-between">
               <div className="flex items-center gap-1">
                 <p className="text-lg font-bold text-gray-400">01</p>
@@ -76,7 +73,7 @@ function About() {
         </div>
       </div>
 
-      <div className="w-full h-full bg-amber-200 justify-self-end rounded-2xl"></div>
+      <div className="w-full h-full bg-blue-300 justify-self-end rounded-2xl"></div>
     </div>
   );
 }

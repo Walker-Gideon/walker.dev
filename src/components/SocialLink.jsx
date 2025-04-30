@@ -32,19 +32,21 @@ function SocialLink({ type, flextype }) {
       className={styling[type]}
     >
       <div className={styling[flextype]}>
-        <a href="#" className="transition-colors hover:text-[#555]">
-          <i class="bi bi-linkedin text-2xl text-blue-500"></i>
-        </a>
+        <div className="bg-white w-6 h-6">
+          <a href="#" className="">
+            <i class="bi bi-linkedin text-2xl text-blue-800"></i>
+          </a>
+        </div>
 
-        <a href="#" className="transition-colors hover:text-[#555]">
+        <a href="#" className="">
           <i class="bi bi-instagram text-2xl text-red-500"></i>
         </a>
 
-        <a href="#" className="transition-colors hover:text-[#555]">
-          <i class="bi bi-facebook text-2xl text-blue-500"></i>
+        <a href="#" className="">
+          <i class="bi bi-facebook text-2xl text-white"></i>
         </a>
 
-        <a href="#" className="transition-colors hover:text-[#555]">
+        <a href="#" className="">
           <i class="bi bi-twitter-x text-2xl text-black"></i>
         </a>
       </div>
