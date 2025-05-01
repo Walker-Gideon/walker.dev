@@ -1,11 +1,22 @@
 import { useState } from "react";
 import Button from "./Button";
+import Hobbies from "./Hobbies";
 
 function About() {
-  const [checkClick, setCheckClick] = useState(false);
+  const [chechOne, setChechOne] = useState(true);
+  const [chechTwo, setChechTwo] = useState(false);
+  const [chechThree, setChechThree] = useState(false);
 
   function handelShowContent() {
-    setCheckClick((show) => !show);
+    setChechOne((show) => !show);
+  }
+
+  function handelShowContentTwo() {
+    setChechTwo((show) => !show);
+  }
+
+  function handelShowContentThree() {
+    setChechThree((show) => !show);
   }
 
   return (
@@ -38,38 +49,48 @@ function About() {
 
         {/* Hobbies about my career */}
         <div className="mb-5">
-          <div className="border-b-1 border-black">
-            <div className="px-2 pt-4 pb-5 flex items-center justify-between">
-              <div className="flex items-center gap-1">
-                <p className="text-lg font-bold text-gray-400">01</p>
-                <h1 className="text-2xl font-bold text-black">
-                  Title amet consectetur adipisicing elit
-                </h1>
-              </div>
-              <Button type={"transparent"} onClick={handelShowContent}>
-                {checkClick ? "-" : "+"}
-              </Button>
-            </div>
-
-            {checkClick && (
-              <div className="px-2">
-                <p className="text-lg text-gray-600">
-                  Lorem ipsum dolor sit, amet consectetur adipisicing elit.
-                  Excepturi voluptatibus aliquid
-                </p>
-
-                <div className="pt-2">
-                  <ul>
-                    <li className="flex items-center">
-                      <span className="">.</span>
-                      totam delectus minima, explicabo ad recusandae odit?
-                      Voluptatum veniam
-                    </li>
-                  </ul>
-                </div>
-              </div>
-            )}
-          </div>
+          <Hobbies
+            num="1"
+            title="Title amet consectetur adipisicing elit"
+            subTitle="Lorem ipsum dolor sit, amet consectetur adipisicing elit. Excepturi
+            voluptatibus aliquid"
+            firstText="totam delectus minima, explicabo ad recusandae odit? Voluptatum
+                veniam"
+            secText="totam delectus minima, explicabo ad recusandae odit? Voluptatum
+                veniam"
+            thirdText="totam delectus minima, explicabo ad recusandae odit? Voluptatum
+                veniam"
+            check={chechOne}
+            onClick={handelShowContent}
+          />
+          <Hobbies
+            num="2"
+            title="Title amet consectetur adipisicing elit"
+            subTitle="Lorem ipsum dolor sit, amet consectetur adipisicing elit. Excepturi
+            voluptatibus aliquid"
+            firstText="totam delectus minima, explicabo ad recusandae odit? Voluptatum
+                veniam"
+            secText="totam delectus minima, explicabo ad recusandae odit? Voluptatum
+                veniam"
+            thirdText="totam delectus minima, explicabo ad recusandae odit? Voluptatum
+                veniam"
+            check={chechTwo}
+            onClick={handelShowContentTwo}
+          />
+          <Hobbies
+            num="3"
+            title="Title amet consectetur adipisicing elit"
+            subTitle="Lorem ipsum dolor sit, amet consectetur adipisicing elit. Excepturi
+            voluptatibus aliquid"
+            firstText="totam delectus minima, explicabo ad recusandae odit? Voluptatum
+                veniam"
+            secText="totam delectus minima, explicabo ad recusandae odit? Voluptatum
+                veniam"
+            thirdText="totam delectus minima, explicabo ad recusandae odit? Voluptatum
+                veniam"
+            check={chechThree}
+            onClick={handelShowContentThree}
+          />
         </div>
       </div>
 
