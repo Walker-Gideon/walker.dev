@@ -1,6 +1,6 @@
 import About from "./components/About";
 import Contact from "./components/Contact";
-import Experienc from "./components/Experienc";
+import Experience from "./components/Experience";
 import Header from "./components/Header";
 import Hero from "./components/Hero";
 import PageLoader from "./components/PageLoader";
@@ -16,7 +16,7 @@ function App() {
       <div className="px-8">
         <Hero />
         <About />
-        <Experienc />
+        <Experience />
         <Skills />
         <Projects />
         <Contact />

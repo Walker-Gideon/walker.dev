@@ -75,7 +75,7 @@ function MenuNav({ showMenu }) {
           </div>
 
           <div className="w-50">
-            <ButtonNav showMenu={showMenu} />
+            <ButtonNav />
           </div>
 
           <SocialLink type={"primary"} flextype={"primflex"} />

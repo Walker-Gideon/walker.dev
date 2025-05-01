@@ -32,11 +32,9 @@ function SocialLink({ type, flextype }) {
       className={styling[type]}
     >
       <div className={styling[flextype]}>
-        <div className="bg-white w-6 h-6">
-          <a href="#" className="">
-            <i class="bi bi-linkedin text-2xl text-blue-800"></i>
-          </a>
-        </div>
+        <a href="#" className="">
+          <i class="bi bi-linkedin text-2xl text-blue-800"></i>
+        </a>
 
         <a href="#" className="">
           <i class="bi bi-instagram text-2xl text-red-500"></i>
