@@ -1,12 +1,6 @@
 function Button({ children, onClick, type }) {
-  const base =
-    "inline-block text-lg rounded-[5px] font-semibold tracking-wide text-white px-4 py-2 md:px-5 md:py-2.5 transition-colors duration-300 cursor-pointer focus:outline-none focus:ring focus:ring-blue-300 focus:ring-offset-2 disabled:cursor-not-allowed";
-
   const styling = {
-    primary: base + " bg-blue-400 hover:bg-blue-300 focus:bg-blue-300",
-    secondary:
-      base +
-      " bg-transparent border-2 border-blue-400 hover:bg-[#555] focus:bg-[#555]",
+    secondary: " bg-transparent font-medium text-gray-300 cursor-pointer",
     transparent: "text-3xl text-black cursor-pointer",
   };
 

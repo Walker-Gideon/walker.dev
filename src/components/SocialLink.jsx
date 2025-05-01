@@ -1,6 +1,6 @@
 import { motion } from "motion/react";
 
-function SocialLink({ type, flextype }) {
+function SocialLink({ type, flextype, facebookColor }) {
   const base = "w-0 font-medium text-[#555] whitespace-nowrap";
   const flexs = " flex justify-between gap-8";
   const styling = {
@@ -41,7 +41,7 @@ function SocialLink({ type, flextype }) {
         </a>
 
         <a href="#" className="">
-          <i class="bi bi-facebook text-2xl text-white"></i>
+          <i class={`bi bi-facebook text-2xl ${facebookColor}`}></i>
         </a>
 
         <a href="#" className="">

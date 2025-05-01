@@ -4,7 +4,7 @@ import SocialLink from "./SocialLink";
 
 function Contact() {
   return (
-    <div className="pt-50 h-screen">
+    <div className="pt-40 h-screen">
       <div className="mb-10">
         <h1 className="text-4xl font-bold text-gray-400">Contact me,</h1>
         <h1 className="text-4xl font-bold text-black">
@@ -13,7 +13,7 @@ function Contact() {
       </div>
 
       <div className="flex flex-col justify-between gap-20">
-        <div className="mt-20 flex justify-between gap-40">
+        <div className="mt-14 flex justify-between gap-40">
           <ContactForm />
 
           <div className="w-full mt-2">
@@ -28,7 +28,11 @@ function Contact() {
               Accra, Ghana
             </p>
 
-            <SocialLink type={"secondary"} flextype={"secflex"} />
+            <SocialLink
+              type={"secondary"}
+              flextype={"secflex"}
+              facebookColor={` text-blue-500`}
+            />
           </div>
         </div>
 

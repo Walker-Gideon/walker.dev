@@ -9,12 +9,12 @@ function Projects() {
       </div>
 
       <div className="grid grid-cols-3 gap-10">
-        <ProjectCard />
-        <ProjectCard />
-        <ProjectCard />
-        <ProjectCard />
-        <ProjectCard />
-        <ProjectCard />
+        <ProjectCard projectNum={"Project 1"} />
+        <ProjectCard projectNum={"Project 2"} />
+        <ProjectCard projectNum={"Project 3"} />
+        <ProjectCard projectNum={"Project 4"} />
+        <ProjectCard projectNum={"Project 5"} />
+        <ProjectCard projectNum={"Project 6"} />
       </div>
     </div>
   );

@@ -78,7 +78,11 @@ function MenuNav({ showMenu }) {
             <ButtonNav />
           </div>
 
-          <SocialLink type={"primary"} flextype={"primflex"} />
+          <SocialLink
+            type={"primary"}
+            flextype={"primflex"}
+            facebookColor={` text-white`}
+          />
         </motion.div>
       </AnimatePresence>
     </motion.aside>

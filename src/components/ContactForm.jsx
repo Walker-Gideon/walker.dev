@@ -1,6 +1,9 @@
 import Button from "./Button";
 
 function ContactForm() {
+  function handleSubmit(e) {
+    e.preventDefault();
+  }
   return (
     <form action="#">
       <div className="flex gap-5 w-3xl">
@@ -8,7 +11,7 @@ function ContactForm() {
           <input
             type="text"
             placeholder="Full name"
-            className="w-full border-b focus:outline-none text-sm p-1 placeholder:text-white placeholder:text-lg"
+            className="w-full border-b focus:outline-none text-sm font-bold p-1 placeholder:text-gray-900 placeholder:text-lg"
           />
         </div>
 
@@ -16,7 +19,7 @@ function ContactForm() {
           <input
             type="email"
             placeholder="Email"
-            className="w-full border-b focus:outline-none text-sm p-1 placeholder:text-white placeholder:text-lg"
+            className="w-full border-b focus:outline-none text-sm font-bold p-1 placeholder:text-gray-900 placeholder:text-lg"
           />
         </div>
       </div>
@@ -25,7 +28,7 @@ function ContactForm() {
         <input
           type="email"
           placeholder="Enter the subject:"
-          className="w-full border-b focus:outline-none text-sm p-1 placeholder:text-white placeholder:text-lg"
+          className="w-full border-b focus:outline-none text-sm font-bold p-1 placeholder:text-gray-900 placeholder:text-lg"
         />
       </div>
 
@@ -33,11 +36,11 @@ function ContactForm() {
         <textarea
           type="text"
           placeholder="Enter your message:"
-          className="w-full h-40 border-b focus:outline-none text-sm p-1 placeholder:text-white placeholder:text-lg"
+          className="w-full h-40 border-b focus:outline-none text-sm font-bold p-1 placeholder:text-gray-900 placeholder:text-lg"
         ></textarea>
       </div>
 
-      <Button>Discuss Project</Button>
+      <Button onClick={handleSubmit}>Discuss Project</Button>
     </form>
   );
 }

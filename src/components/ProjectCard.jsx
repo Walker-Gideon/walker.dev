@@ -1,24 +1,21 @@
 import Button from "./Button";
 
-function ProjectCard() {
+function ProjectCard({ projectNum, source }) {
   // { imgURL, title, text, onClickView, onClickGithub }
   return (
-    <div className="w-full h-full p-4 bg-[#333] rounded-2xl">
-      <div className="w-full h-70 p-4 bg-blue-300 rounded-2xl">
-        <img src="" alt="" />
-      </div>
+    <div className="mb-10">
+      <div className="w-full h-full flex flex-col gap-4">
+        <div className="w-full h-90 px-4 bg-blue-300 rounded-t-3xl">
+          <img src={source} alt="Project image" />
+        </div>
 
-      <div className="my-6">
-        <h1 className="text-3xl font-medium text-blue-400">Title</h1>
-        <p>
-          Lorem ipsum dolor sit, amet consectetur adipisicing elit. Excepturi
-          voluptatibus aliquid totam delectus minima, explicabo ad recusandae.
-        </p>
-      </div>
+        <div className="flex items-center justify-between p-4 bg-[#242424]">
+          <p className="text-gray-300">{projectNum}</p>
 
-      <div className="flex gap-4">
-        <Button type={"primary"}>View Live</Button>
-        <Button type={"secondary"}>Github Repo</Button>
+          <Button type={"secondary"}>
+            Visit <span className="">&darr;</span>
+          </Button>
+        </div>
       </div>
     </div>
   );
