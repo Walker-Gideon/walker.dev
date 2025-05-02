@@ -8,14 +8,20 @@ function About() {
   const [chechThree, setChechThree] = useState(false);
 
   function handelShowContent() {
+    if (chechTwo === true) setChechTwo(false);
+    if (chechThree === true) setChechThree(false);
     setChechOne((show) => !show);
   }
 
   function handelShowContentTwo() {
+    if (chechOne === true) setChechOne(false);
+    if (chechThree === true) setChechThree(false);
     setChechTwo((show) => !show);
   }
 
   function handelShowContentThree() {
+    if (chechOne === true) setChechOne(false);
+    if (chechTwo === true) setChechTwo(false);
     setChechThree((show) => !show);
   }
 
@@ -47,48 +53,56 @@ function About() {
         </div>
 
         <div className="">
-          <Hobbies
-            num="1"
-            title="Title amet consectetur adipisicing elit"
-            subTitle="Lorem ipsum dolor sit, amet consectetur adipisicing elit. Excepturi
+          <div className="">
+            <Hobbies
+              num="1"
+              title="Title amet consectetur adipisicing elit"
+              subTitle="Lorem ipsum dolor sit, amet consectetur adipisicing elit. Excepturi
             voluptatibus aliquid"
-            firstText="totam delectus minima, explicabo ad recusandae odit? Voluptatum
+              firstText="totam delectus minima, explicabo ad recusandae odit? Voluptatum
                 veniam"
-            secText="totam delectus minima, explicabo ad recusandae odit? Voluptatum
+              secText="totam delectus minima, explicabo ad recusandae odit? Voluptatum
                 veniam"
-            thirdText="totam delectus minima, explicabo ad recusandae odit? Voluptatum
+              thirdText="totam delectus minima, explicabo ad recusandae odit? Voluptatum
                 veniam"
-            check={chechOne}
-            onClick={handelShowContent}
-          />
-          <Hobbies
-            num="2"
-            title="Title amet consectetur adipisicing elit"
-            subTitle="Lorem ipsum dolor sit, amet consectetur adipisicing elit. Excepturi
+              check={chechOne}
+              onClick={handelShowContent}
+            />
+          </div>
+
+          <div className="">
+            <Hobbies
+              num="2"
+              title="Title amet consectetur adipisicing elit"
+              subTitle="Lorem ipsum dolor sit, amet consectetur adipisicing elit. Excepturi
             voluptatibus aliquid"
-            firstText="totam delectus minima, explicabo ad recusandae odit? Voluptatum
+              firstText="totam delectus minima, explicabo ad recusandae odit? Voluptatum
                 veniam"
-            secText="totam delectus minima, explicabo ad recusandae odit? Voluptatum
+              secText="totam delectus minima, explicabo ad recusandae odit? Voluptatum
                 veniam"
-            thirdText="totam delectus minima, explicabo ad recusandae odit? Voluptatum
+              thirdText="totam delectus minima, explicabo ad recusandae odit? Voluptatum
                 veniam"
-            check={chechTwo}
-            onClick={handelShowContentTwo}
-          />
-          <Hobbies
-            num="3"
-            title="Title amet consectetur adipisicing elit"
-            subTitle="Lorem ipsum dolor sit, amet consectetur adipisicing elit. Excepturi
+              check={chechTwo}
+              onClick={handelShowContentTwo}
+            />
+          </div>
+
+          <div className="">
+            <Hobbies
+              num="3"
+              title="Title amet consectetur adipisicing elit"
+              subTitle="Lorem ipsum dolor sit, amet consectetur adipisicing elit. Excepturi
             voluptatibus aliquid"
-            firstText="totam delectus minima, explicabo ad recusandae odit? Voluptatum
+              firstText="totam delectus minima, explicabo ad recusandae odit? Voluptatum
                 veniam"
-            secText="totam delectus minima, explicabo ad recusandae odit? Voluptatum
+              secText="totam delectus minima, explicabo ad recusandae odit? Voluptatum
                 veniam"
-            thirdText="totam delectus minima, explicabo ad recusandae odit? Voluptatum
+              thirdText="totam delectus minima, explicabo ad recusandae odit? Voluptatum
                 veniam"
-            check={chechThree}
-            onClick={handelShowContentThree}
-          />
+              check={chechThree}
+              onClick={handelShowContentThree}
+            />
+          </div>
         </div>
       </div>
 
