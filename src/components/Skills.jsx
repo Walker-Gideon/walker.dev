@@ -67,7 +67,7 @@ function ParallaxText({ children, baseVelocity = 100 }) {
 
 function Skills() {
   return (
-    <motion.div className="mt-10">
+    <motion.div className="mt-30">
       <section>
         <ParallaxText baseVelocity={-4}>.HTML .CSS .JavaScript</ParallaxText>
         <ParallaxText baseVelocity={4}>
