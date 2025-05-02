@@ -3,7 +3,7 @@ import { motion } from "motion/react";
 
 function Experienc() {
   return (
-    <div className="mt-40 mb-6">
+    <div className="mt-40 mb-6 px-8">
       <div className="mb-10">
         <h1 className="text-4xl font-bold text-gray-400">Experience</h1>
         <h1 className="text-4xl font-bold text-black">History</h1>

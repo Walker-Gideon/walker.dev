@@ -20,7 +20,7 @@ function About() {
   }
 
   return (
-    <div className="mt-40 mb-6 h-[86vh] grid grid-cols-3 gap-20">
+    <div className="mt-40 mb-6 h-[86vh] grid grid-cols-3 gap-20 px-8">
       {/* make this div to scroll */}
       <div className="col-span-2 pr-8 h-auto overflow-auto">
         <h1 className="text-3xl font-medium mb-10">About me</h1>

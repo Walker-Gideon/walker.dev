@@ -13,7 +13,7 @@ function App() {
       {/* <PageLoader /> */}
       <Header />
 
-      <div className="px-8">
+      <div>
         <Hero />
         <About />
         <Experience />
