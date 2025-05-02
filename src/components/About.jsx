@@ -20,12 +20,11 @@ function About() {
   }
 
   return (
-    <div className="mt-40 mb-6 h-[86vh] grid grid-cols-3 gap-20 px-8">
-      {/* make this div to scroll */}
+    <div className="pt-32 px-8 h-[90vh] grid grid-cols-3 gap-20">
       <div className="col-span-2 pr-8 h-auto overflow-auto">
-        <h1 className="text-3xl font-medium mb-10">About me</h1>
+        <h1 className="text-5xl font-medium uppercase mb-10">About me</h1>
 
-        <div className="text-2xl text-gray-400 mb-14">
+        <div className="text-2xl text-gray-500 mb-14">
           <p>
             Lorem ipsum dolor sit, amet consectetur adipisicing elit. Excepturi
             voluptatibus aliquid totam delectus minima, explicabo ad recusandae
@@ -47,8 +46,7 @@ function About() {
           </p>
         </div>
 
-        {/* Hobbies about my career */}
-        <div className="mb-5">
+        <div className="">
           <Hobbies
             num="1"
             title="Title amet consectetur adipisicing elit"
@@ -94,7 +92,11 @@ function About() {
         </div>
       </div>
 
-      <div className="w-full h-full bg-blue-300 justify-self-end rounded-2xl"></div>
+      <div className="w-full h-full p-0.5 bg-black justify-self-end rounded-xl rotate-1">
+        <div className="w-full h-full p-1.5 bg-blue-300 rounded-xl rotate-2">
+          <div className="w-full h-full bg-[#ddd] rounded-xl rotate-2"></div>
+        </div>
+      </div>
     </div>
   );
 }

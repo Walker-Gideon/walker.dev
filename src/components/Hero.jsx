@@ -4,9 +4,9 @@ import creatorImage from "../assets/me.jpg";
 
 function Hero() {
   return (
-    <div className="mt-15 w-full h-full flex flex-col items-center justify-center gap-12 px-8">
+    <div className="pt-15 px-8 w-full h-full flex flex-col items-center justify-center gap-12">
       <div className="bg-black p-0.5 rounded-xl rotate-1">
-        <div className="bg-blue-300 p-1.5 rounded-xl rotate-3">
+        <div className="bg-blue-300 p-1.5 rounded-xl rotate-2">
           <img
             src={creatorImage}
             alt="Image of the creator of this portfiolo"

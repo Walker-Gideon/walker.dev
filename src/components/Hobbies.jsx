@@ -23,11 +23,11 @@ function Hobbies({
       </div>
 
       {check && (
-        <div className="px-2">
-          <p className="text-lg text-gray-600">{subTitle}</p>
+        <div className="px-9">
+          <p className="text-xl text-[#333] font-medium">{subTitle}</p>
 
           <div className="py-2">
-            <ul>
+            <ul className="text-lg">
               <li className="flex items-center">
                 <span className="">.</span>
                 {firstText}

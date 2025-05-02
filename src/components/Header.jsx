@@ -64,7 +64,7 @@ export default function Header() {
         </MotionConfig>
       </header>
 
-      <div className="absolute top-4 right-8 overflow-hidden">
+      <div className="absolute top-4 right-8 h-[95vh] overflow-hidden">
         <MenuNav showMenu={showMenu} />
       </div>
     </div>
