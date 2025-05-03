@@ -9,13 +9,17 @@
   background-color: #f1efef;
   /* color: rgba(255, 255, 255, 0.87); */
   /* background-color: #242424; */
-  /* 
-  font-synthesis: none;
-  text-rendering: optimizeLegibility;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale; */
 }
 
 .dcoration {
   font-style: italic;
+}
+
+.scroll-container {
+  scrollbar-width: none;
+  -ms-overflow-style: none;
+}
+
+.scroll-container::-webkit-scrollbar {
+  display: none;
 }

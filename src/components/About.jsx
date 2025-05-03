@@ -27,7 +27,7 @@ function About() {
 
   return (
     <div className="pt-32 px-8 h-[90vh] grid grid-cols-3 gap-20">
-      <div className="col-span-2 pr-8 h-auto overflow-auto">
+      <div className="col-span-2 pr-8 h-auto overflow-auto scroll-container">
         <h1 className="text-5xl font-medium uppercase mb-10">About me</h1>
 
         <div className="text-2xl text-gray-500 mb-14">
