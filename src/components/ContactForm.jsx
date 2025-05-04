@@ -11,7 +11,7 @@ function ContactForm() {
           <input
             type="text"
             placeholder="Full name"
-            className="w-full border-b focus:outline-none text-sm font-bold p-1 placeholder:text-gray-900 placeholder:text-lg"
+            className="w-full border-b focus:outline-none text-sm font-bold p-1 placeholder:text-gray-400 placeholder:text-lg"
           />
         </div>
 
@@ -19,7 +19,7 @@ function ContactForm() {
           <input
             type="email"
             placeholder="Email"
-            className="w-full border-b focus:outline-none text-sm font-bold p-1 placeholder:text-gray-900 placeholder:text-lg"
+            className="w-full border-b focus:outline-none text-sm font-bold p-1 placeholder:text-gray-400 placeholder:text-lg"
           />
         </div>
       </div>
@@ -28,7 +28,7 @@ function ContactForm() {
         <input
           type="email"
           placeholder="Enter the subject:"
-          className="w-full border-b focus:outline-none text-sm font-bold p-1 placeholder:text-gray-900 placeholder:text-lg"
+          className="w-full border-b focus:outline-none text-sm font-bold p-1 placeholder:text-gray-400 placeholder:text-lg"
         />
       </div>
 
@@ -36,7 +36,7 @@ function ContactForm() {
         <textarea
           type="text"
           placeholder="Enter your message:"
-          className="w-full h-40 border-b focus:outline-none text-sm font-bold p-1 placeholder:text-gray-900 placeholder:text-lg"
+          className="w-full h-40 border-b focus:outline-none text-sm font-bold p-1 placeholder:text-gray-400 placeholder:text-lg"
         ></textarea>
       </div>
 

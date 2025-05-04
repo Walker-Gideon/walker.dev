@@ -14,7 +14,7 @@ function App() {
       {/* <PageLoader /> */}
       <Header />
 
-      <div>
+      <div className="relative">
         <Hero />
         <About />
         <Projects />
