@@ -8,13 +8,25 @@ function Projects() {
         <h1 className="text-4xl font-bold text-black">works</h1>
       </div>
 
-      <div className="grid grid-cols-3 gap-10">
-        <ProjectCard projectNum={"Project 1"} />
-        <ProjectCard projectNum={"Project 2"} />
-        <ProjectCard projectNum={"Project 3"} />
-        <ProjectCard projectNum={"Project 4"} />
-        <ProjectCard projectNum={"Project 5"} />
-        <ProjectCard projectNum={"Project 6"} />
+      <div className="relative grid grid-cols-2 gap-30">
+        <div className="h-222">
+          <ProjectCard />
+        </div>
+        <div className="pt-75 h-296">
+          <ProjectCard />
+        </div>
+        <div className="relative -top-71 h-222">
+          <ProjectCard />
+        </div>
+        <div className="h-221">
+          <ProjectCard />
+        </div>
+        <div className="relative -top-71 h-222">
+          <ProjectCard />
+        </div>
+        <div className="h-221">
+          <ProjectCard />
+        </div>
       </div>
     </div>
   );
