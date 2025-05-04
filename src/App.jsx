@@ -16,10 +16,17 @@ function App() {
       <div>
         <Hero />
         <About />
-        <Experience />
         <Skills />
+        <Experience />
         <Projects />
         <Contact />
+
+        {/* <Hero />
+        <Projects />
+        <Skills />
+        <About />
+        <Experience />
+        <Contact /> */}
       </div>
     </div>
   );

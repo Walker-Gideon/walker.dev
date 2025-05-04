@@ -36,12 +36,41 @@ function Hobbies({
           <p className="text-lg font-bold text-gray-400">0{num}</p>
           <h1 className="text-2xl font-bold text-black">{title}</h1>
         </div>
-        <button
-          className="text-3xl text-black cursor-pointer px-2 py-1"
+
+        <motion.button
+          className="relative text-3xl text-black cursor-pointer px-2 py-1 group overflow-hidden:"
           onClick={onClick}
+          animate={check ? "open" : "close"}
         >
-          {check ? "-" : "+"}
-        </button>
+          <motion.span
+            style={{ top: "50%", left: "50%", x: "-50%", y: "-50%" }}
+            className={`absolute h-1 w-4 bg-black`}
+            variants={{
+              open: {
+                rotate: ["45deg", "0deg", "0deg"],
+                top: ["40%", "50%", "50%"],
+              },
+              close: {
+                rotate: ["0deg", "0deg", "90deg"],
+                top: ["50%", "50%", "50%"],
+              },
+            }}
+          />
+          <motion.span
+            style={{ top: "50%", left: "50%", x: "-50%", y: "-50%" }}
+            className={`absolute h-1 w-4 bg-black`}
+            variants={{
+              open: {
+                rotate: ["-45deg", "0deg", "0deg"],
+                top: ["60%", "50%", "50%"],
+              },
+              close: {
+                rotate: ["0deg", "0deg", "0deg"],
+                top: ["50%", "50%", "50%"],
+              },
+            }}
+          />
+        </motion.button>
       </div>
 
       <div className="px-10">
