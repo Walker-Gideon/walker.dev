@@ -1,6 +1,7 @@
 import { useState } from "react";
 import Button from "./Button";
 import Hobbies from "./Hobbies";
+import creatorImage from "../assets/me.jpg";
 
 function About() {
   const [chechOne, setChechOne] = useState(true);
@@ -26,7 +27,7 @@ function About() {
   }
 
   return (
-    <div className="pt-32 px-8 h-[90vh] grid grid-cols-3 gap-20">
+    <div className="pt-32 px-20 h-[90vh] grid grid-cols-3 gap-20">
       <div className="col-span-2 pr-8 h-auto overflow-auto scroll-container">
         <h1 className="text-5xl font-medium uppercase mb-10">About me</h1>
 
@@ -108,7 +109,11 @@ function About() {
 
       <div className="w-full h-full p-0.5 bg-black justify-self-end rounded-xl rotate-1">
         <div className="w-full h-full p-1.5 bg-blue-300 rounded-xl rotate-2">
-          <div className="w-full h-full bg-[#ddd] rounded-xl rotate-2"></div>
+          <img
+            src={creatorImage}
+            alt="Image of the creator of this portfiolo"
+            class="object-cover rounded-xl w-100 h-140 rotate-2"
+          />
         </div>
       </div>
     </div>

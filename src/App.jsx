@@ -16,14 +16,15 @@ function App() {
 
       <div>
         <Hero />
+        <Projects />
         <About />
         <Skills />
         <Experience />
-        <Projects />
+        {/* <Projects /> */}
         <Contact />
       </div>
 
-      <Footer />
+      {/* <Footer /> */}
     </div>
   );
 }
