@@ -47,7 +47,7 @@ function ParallaxText({ children, baseVelocity = 100 }) {
   return (
     <div className="overflow-hidden">
       <motion.div
-        className="w-full h-16 text-5xl font-medium whitespace-nowrap dcoration"
+        className="w-full h-16 text-5xl text-white font-medium whitespace-nowrap decoration"
         style={{ x }}
       >
         <span>{children} </span>
@@ -67,7 +67,7 @@ function ParallaxText({ children, baseVelocity = 100 }) {
 
 function Skills() {
   return (
-    <motion.div className="mt-30">
+    <motion.div className="mt-20 bg-black py-20">
       <section>
         <ParallaxText baseVelocity={-4}>.HTML .CSS .JavaScript</ParallaxText>
         <ParallaxText baseVelocity={4}>

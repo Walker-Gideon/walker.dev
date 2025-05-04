@@ -8,7 +8,7 @@ function Experienc() {
   const [checkGit, setCheckGit] = useState(false);
 
   return (
-    <div className="pt-30 mb-10 px-8 h-screen">
+    <div className="mt-20 mb-10 px-8 h-screen">
       <div className="pb-10">
         <h1 className="text-4xl font-bold text-gray-400">Experience</h1>
         <h1 className="text-4xl font-bold text-black">History</h1>
