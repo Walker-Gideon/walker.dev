@@ -32,7 +32,7 @@ function ContactForm() {
         />
       </div>
 
-      <div className="mb-8">
+      <div className="mb-10">
         <textarea
           type="text"
           placeholder="Enter your message:"
@@ -40,7 +40,13 @@ function ContactForm() {
         ></textarea>
       </div>
 
-      <Button onClick={handleSubmit}>Discuss Project</Button>
+      <Button
+        onClick={handleSubmit}
+        borderCol="border-white"
+        textCol="text-white"
+      >
+        Discuss Project
+      </Button>
     </form>
   );
 }
