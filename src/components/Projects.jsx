@@ -2,7 +2,7 @@ import ProjectCard from "./ProjectCard";
 
 function Projects() {
   return (
-    <div className="mt-20 px-8">
+    <div className="pt-50 px-20">
       <div className="mb-10">
         <h1 className="text-4xl font-bold text-gray-400">Selected</h1>
         <h1 className="text-4xl font-bold text-black">works</h1>

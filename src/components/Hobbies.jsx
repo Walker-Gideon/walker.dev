@@ -44,7 +44,7 @@ function Hobbies({
         >
           <motion.span
             style={{ top: "50%", left: "50%", x: "-50%", y: "-50%" }}
-            className={`absolute h-1 w-4 bg-black`}
+            className={`absolute h-0.5 w-4 bg-black`}
             variants={{
               open: {
                 rotate: ["45deg", "0deg", "0deg"],
@@ -58,7 +58,7 @@ function Hobbies({
           />
           <motion.span
             style={{ top: "50%", left: "50%", x: "-50%", y: "-50%" }}
-            className={`absolute h-1 w-4 bg-black`}
+            className={`absolute h-0.5 w-4 bg-black`}
             variants={{
               open: {
                 rotate: ["-45deg", "0deg", "0deg"],
