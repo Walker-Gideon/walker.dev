@@ -22,7 +22,10 @@ export default function Header() {
         >
           <motion.button
             className="relative w-14 h-14 rounded-full transition-colors cursor-pointer overflow-hidden group z-50"
-            onClick={() => setShowMenu(!showMenu)}
+            onClick={() => {
+              // onMenuOpen(!menuOpen);
+              setShowMenu(!showMenu);
+            }}
             animate={showMenu ? "open" : "close"}
           >
             <div class="absolute inset-0 bg-black rounded-full scale-0 group-hover:scale-150 group-hover: transition-transform duration-500 ease-out"></div>
@@ -63,9 +66,11 @@ export default function Header() {
           </motion.button>
         </MotionConfig>
       </header>
-
-      <div className="absolute top-4 right-8 h-[95vh] overflow-hidden">
-        <MenuNav showMenu={showMenu} />
+      {/* bg-[#f1efef] */}
+      <div className="w-full h-full bg-amber-600">
+        <div className="absolute top-4 right-8 h-[95vh] overflow-hidden">
+          <MenuNav showMenu={showMenu} />
+        </div>
       </div>
     </div>
   );

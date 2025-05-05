@@ -44,7 +44,7 @@ function MenuNav({ showMenu }) {
         width: { duration: 0.4, ease: "easeOut", delay: 0.2 },
         height: { duration: 0.4, ease: "easeOut", delay: 0.2 },
       }}
-      className="h-full bg-blue-300 text-black rounded-4xl overflow-hidden"
+      className="h-full bg-amber-400 text-black rounded-4xl overflow-hidden"
     >
       <AnimatePresence>
         <motion.div
@@ -52,7 +52,7 @@ function MenuNav({ showMenu }) {
           initial="initial"
           animate="enter"
           exit="exit"
-          className="relative w-[80vw] h-full flex flex-col justify-between px-8 py-6 rounded-2xl"
+          className="relative w-50 h-full flex flex-col justify-between px-8 py-6 rounded-2xl"
         >
           <p className="mt-14 text-lg font-bold text-gray-400">Menu</p>
 
@@ -74,7 +74,7 @@ function MenuNav({ showMenu }) {
             </a>
           </div>
 
-          <div className="w-50">
+          <div className="w-45">
             <ButtonNav />
           </div>
 
