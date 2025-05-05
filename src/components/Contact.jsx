@@ -1,5 +1,4 @@
 import ContactForm from "./ContactForm";
-import Footer from "./Footer";
 import SocialLink from "./SocialLink";
 
 function Contact() {
@@ -13,7 +12,7 @@ function Contact() {
       </div>
 
       <div className="flex flex-col justify-between gap-20">
-        <div className="mt-14 flex justify-between gap-40">
+        <div className="mt-14 flex justify-between gap-30">
           <ContactForm />
 
           <div className="w-full mt-2">
@@ -30,15 +29,9 @@ function Contact() {
               Accra, Ghana
             </p>
 
-            <SocialLink
-              type={"secondary"}
-              flextype={"secflex"}
-              facebookColor={` text-blue-500`}
-            />
+            <SocialLink type={"secondary"} flextype={"secflex"} />
           </div>
         </div>
-
-        {/* <Footer /> */}
       </div>
     </div>
   );
