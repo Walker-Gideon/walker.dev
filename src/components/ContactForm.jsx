@@ -45,7 +45,7 @@ function ContactForm() {
         borderCol="border-white"
         textCol="text-white"
       >
-        Discuss Project
+        Discuss project
       </Button>
     </form>
   );
