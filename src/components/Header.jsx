@@ -6,9 +6,8 @@ export default function Header() {
   const [showMenu, setShowMenu] = useState(false);
 
   return (
-    // <div className="">
     <>
-      <div className="w-full h-25 px-8 py-4 sticky top-0 z-50">
+      <div className="w-full h-25 sm:px-4 md:px-4 lg:px-4 xl:px-8 py-4 sticky top-0 z-50">
         <header className="flex items-center justify-between">
           <div className="border-b-2 border-black pb-0.5">
             <a
@@ -69,7 +68,7 @@ export default function Header() {
           </MotionConfig>
         </header>
 
-        <div className="absolute top-4 right-8 h-[95vh] overflow-hidden">
+        <div className="absolute top-4 xl:right-8 lg:right-4 sm:right-4 md:right-4 h-[95vh] overflow-hidden">
           <MenuNav showMenu={showMenu} />
         </div>
       </div>

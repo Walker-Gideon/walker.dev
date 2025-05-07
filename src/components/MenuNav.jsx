@@ -1,5 +1,4 @@
 import { AnimatePresence, motion } from "motion/react";
-import SocialLink from "./SocialLink";
 import ButtonNav from "./ButtonNav";
 
 function MenuNav({ showMenu }) {
@@ -77,8 +76,6 @@ function MenuNav({ showMenu }) {
           <div className="w-45">
             <ButtonNav />
           </div>
-
-          {/* <SocialLink type={"primary"} flextype={"primflex"} /> */}
         </motion.div>
       </AnimatePresence>
     </motion.aside>

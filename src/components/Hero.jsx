@@ -15,7 +15,7 @@ function Hero() {
         </p>
 
         <Button borderCol="border-black" textCol="text-black">
-          let's talk <span className="pl-1 font-bold">&darr;</span>
+          Download CV
         </Button>
       </div>
     </div>
