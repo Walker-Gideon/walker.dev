@@ -28,27 +28,23 @@ function About() {
   return (
     <div className="pt-40 px-20 h-[90vh] grid grid-cols-3 gap-20">
       <div className="col-span-2 pr-8 h-auto overflow-auto scroll-container">
-        <h1 className="text-5xl font-medium uppercase mb-10">About me</h1>
+        <h1 className="text-5xl font-medium uppercase mb-10">
+          Behind the Code
+        </h1>
 
         <div className="text-2xl text-gray-500 mb-14">
           <p>
-            Lorem ipsum dolor sit, amet consectetur adipisicing elit. Excepturi
-            voluptatibus aliquid totam delectus minima, explicabo ad recusandae
-            odit? Voluptatum veniam, velit dolores molestias possimus sint
-            expedita reprehenderit tenetur libero voluptas! Lorem ipsum dolor,
-            sit amet consectetur adipisicing elit. Ipsam, quos? Autem doloribus
-            possimus quisquam non, natus nulla quidem unde fugiat alias nisi
-            magni qui, laudantium animi nihil, repudiandae illum in. Lorem ipsum
-            dolor sit amet consectetur adipisicing elit. Maxime rerum id magni
-            laboriosam quo distinctio, dolor qui error fugiat, deserunt ex porro
-            doloribus tempora libero ratione modi sapiente hic voluptates. Lorem
-            ipsum dolor sit amet consectetur adipisicing elit. Commodi mollitia
-            ratione architecto beatae, accusantium dignissimos. Accusamus eaque
-            deserunt nostrum nesciunt est sapiente, quia dolores, inventore nam
-            nisi repellat sequi itaque! adipisicing elit. Maxime rerum id magni
-            laboriosam quo distinctio, dolor qui error fugiat, deserunt ex porro
-            doloribus tempora libero ratione modi sapiente hic voluptates. Lorem
-            ipsum dolor sit amet consectetur adipisicing elit.
+            My journey into front-end development started with a simple
+            curiosity for how websites worked — and quickly turned into a
+            passion for building clean, functional, and engaging user
+            experiences. I love turning ideas into interactive designs using
+            tools like React, Tailwind CSS, and JavaScript.
+            <br />
+            <br />
+            What drives me is the constant learning and problem-solving that
+            comes with being a developer. I'm committed to improving my skills
+            daily, writing code that’s both efficient and readable, and creating
+            interfaces that feel just right for users.
           </p>
         </div>
 

@@ -13,7 +13,7 @@ export default function Header() {
           <div className="border-b-2 border-black pb-0.5">
             <a
               href="#"
-              className="text-black text-2xl font-bold cursor-pointer"
+              className="text-black text-xl uppercase font-bold cursor-pointer"
             >
               Wɑɭkɜɾ.dev
             </a>
