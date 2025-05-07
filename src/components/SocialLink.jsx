@@ -1,6 +1,6 @@
 function SocialLink({ type, flextype }) {
   const base = "w-0 font-medium text-lg text-[#555] whitespace-nowrap";
-  const flexs = " flex justify-between gap-21";
+  const flexs = " flex justify-between gap-10";
   const styling = {
     primary: base + " absolute bottom-10 right-25 pl-4",
     secondary: base + flexs,

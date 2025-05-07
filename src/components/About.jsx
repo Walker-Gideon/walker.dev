@@ -1,6 +1,6 @@
 import { useState } from "react";
 import Hobbies from "./Hobbies";
-import creatorImage from "../assets/me.jpg";
+import creatorImage from "../assets/my-prof.jpeg";
 
 function About() {
   const [chechOne, setChechOne] = useState(true);
@@ -107,11 +107,11 @@ function About() {
       </div>
 
       <div className="w-full h-full p-0.5 bg-black justify-self-end rounded-xl rotate-1">
-        <div className="w-full h-full p-1.5 bg-blue-300 rounded-xl rotate-2">
+        <div className="relative w-full h-140 p-1.5 bg-white rounded-xl rotate-2 overflow-hidden">
           <img
             src={creatorImage}
             alt="Image of the creator of this portfiolo"
-            class="object-cover rounded-xl w-100 h-140 rotate-2"
+            class="object-cover rounded-xl w-full h-full rotate-2"
           />
         </div>
       </div>
