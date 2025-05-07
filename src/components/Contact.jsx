@@ -16,13 +16,16 @@ function Contact() {
           <ContactForm />
 
           <div className="w-full mt-2">
-            <h1 className="text-2xl text-gray-400 font-bold">
+            <h1 className="pb-2 text-2xl text-gray-400 font-bold">
               Connect with me:
             </h1>
-            <h1 className="my-3 text-3xl text-white font-medium">
+            <a
+              href="mailto:gideonawortwe3@gmail.com"
+              className="text-3xl text-white font-medium"
+            >
               gideonawortwe3@gmail.com
-            </h1>
-            <p className="mb-1 text-xl text-gray-400 font-medium">
+            </a>
+            <p className="py-3 text-xl text-gray-400 font-medium">
               +233 248 232 548
             </p>
             <p className="mb-27 text-xl text-gray-400 font-medium">

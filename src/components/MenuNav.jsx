@@ -44,7 +44,7 @@ function MenuNav({ showMenu }) {
         width: { duration: 0.4, ease: "easeOut", delay: 0.2 },
         height: { duration: 0.4, ease: "easeOut", delay: 0.2 },
       }}
-      className="h-full bg-amber-400 text-black rounded-4xl overflow-hidden"
+      className="h-full bg-[#f1efef] border border-black text-black rounded-4xl overflow-hidden"
     >
       <AnimatePresence>
         <motion.div
