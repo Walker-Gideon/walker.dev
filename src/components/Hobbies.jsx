@@ -12,10 +12,10 @@ function Hobbies({
 }) {
   const slideHeightVariants = {
     initial: {
-      height: 50,
+      height: 60,
     },
     expanded: {
-      height: "28vh",
+      height: "40%",
     },
   };
 
@@ -32,22 +32,26 @@ function Hobbies({
       className="border-b-1 border-black overflow-hidden"
     >
       <div className="px-2 pt-4 pb-3 flex items-center justify-between">
-        <div className="flex items-center gap-2">
-          <p className="text-lg font-bold text-gray-400">0{num}</p>
-          <h1 className="text-2xl font-bold text-black">{title}</h1>
+        <div>
+          <p className="text-2xl sm:text-3xl medium:text-4xl font-bold text-black">
+            <span className="text-lg small:text-2xl medium:text-xl md:text-lg font-bold text-gray-400">
+              0{num}
+            </span>{" "}
+            {title}
+          </p>
         </div>
 
         <motion.button
-          className="relative text-3xl text-black cursor-pointer px-2 py-1 group overflow-hidden:"
+          className="relative text-3xl text-black cursor-pointer px-2 py-1 group overflow-hidden: small:hidden medium:block"
           onClick={onClick}
           animate={check ? "open" : "close"}
         >
           <motion.span
             style={{ top: "50%", left: "50%", x: "-50%", y: "-50%" }}
-            className={`absolute h-0.5 w-4 bg-black`}
+            className={`absolute h-0.5 medium:h-[2px] w-4 medium:w-5 bg-black`}
             variants={{
               open: {
-                rotate: ["45deg", "0deg", "0deg"],
+                rotate: ["45mediumeg", "0deg", "0deg"],
                 top: ["40%", "50%", "50%"],
               },
               close: {
@@ -58,7 +62,7 @@ function Hobbies({
           />
           <motion.span
             style={{ top: "50%", left: "50%", x: "-50%", y: "-50%" }}
-            className={`absolute h-0.5 w-4 bg-black`}
+            className={`absolute h-0.5 medium:h-[2px] w-4 medium:w-5 bg-black`}
             variants={{
               open: {
                 rotate: ["-45deg", "0deg", "0deg"],
@@ -73,20 +77,22 @@ function Hobbies({
         </motion.button>
       </div>
 
-      <div className="px-10">
-        <p className="text-xl text-[#333] font-medium">{subTitle}</p>
+      <div className="small:py-2 small:px-6 medium:px-4 md:px-10">
+        <p className="small:text-xl sm:text-2xl medium:text-3xl text-lighter font-medium">
+          {subTitle}
+        </p>
 
-        <div className="py-2">
-          <ul className="text-lg">
-            <li className="flex items-center">
+        <div className="small:py-3">
+          <ul className="w-full text-lg small:text-lg sm:text-xl medium:text-2xl text-light">
+            <li className="flex md:items-center">
               <span className="">.</span>
               {firstText}
             </li>
-            <li className="flex items-center">
+            <li className="flex md:items-center">
               <span className="">.</span>
               {secText}
             </li>
-            <li className="flex items-center">
+            <li className="flex md:items-center">
               <span className="">.</span>
               {thirdText}
             </li>

@@ -6,9 +6,11 @@
   --font-sans: "Roboto", sans-serif;
 
   --color-light: #555;
+  --color-lighter: #333;
 
   --breakpoint-small: 300px;
   --breakpoint-sm: 350px;
+  --breakpoint-medium: 467px;
   --breakpoint-md: 768px;
   --breakpoint-lg: 1024px;
   --breakpoint-xl: 1280px;

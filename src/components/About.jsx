@@ -26,13 +26,13 @@ function About() {
   }
 
   return (
-    <div className="pt-40 px-20 h-[90vh] grid grid-cols-3 gap-20">
-      <div className="col-span-2 pr-8 h-auto overflow-auto scroll-container">
-        <h1 className="text-5xl font-medium uppercase mb-10">
+    <div className="small:h-full md:h-190 pt-40 px-20 small:px-4 sm:px-6 md:px-10 lg:px-20 md:grid md:grid-cols-3 md:gap-15 h-[90vh] grid small:flex small:flex-col-reverse gap-20">
+      <div className="small:row-span-1 col-span-2 pr-8 h-auto small:h-full medium:h-145 md:h-145 overflow-auto scroll-container">
+        <h1 className="text-5xl small:text-4xl small:font-bold medium:text-5xl sm:font-medium font-medium uppercase mb-10 small:mb-6">
           Behind the Code
         </h1>
 
-        <div className="text-2xl text-gray-500 mb-14">
+        <div className="text-2xl medium:text-3xl text-gray-500 mb-14">
           <p>
             My journey into front-end development started with a simple
             curiosity for how websites worked — and quickly turned into a
@@ -48,7 +48,7 @@ function About() {
           </p>
         </div>
 
-        <div className="">
+        <div className="small:hidden medium:block">
           <div className="">
             <Hobbies
               num="1"
@@ -100,15 +100,22 @@ function About() {
             />
           </div>
         </div>
+
+        <div className="small:block medium:hidden">
+          <SubHobbies />
+        </div>
       </div>
 
-      <div className="w-full h-full p-0.5 bg-black justify-self-end rounded-xl rotate-1">
-        <div className="relative w-full h-140 p-1.5 bg-white rounded-xl rotate-2 overflow-hidden">
-          <img
-            src={creatorImage}
-            alt="Image of the creator of this portfiolo"
-            class="object-cover rounded-xl w-full h-full rotate-2"
-          />
+      {/* small:absolute  */}
+      <div className="small:p-4 sm:p-0">
+        <div className="w-full h-full sm:h-full medium:h-160 md:h-full p-0.5 small:p-1 bg-black justify-self-end rounded-xl rotate-1">
+          <div className="relative w-full h-140 sm:h-full medium:h-160 md:h-full p-1.5 bg-white rounded-xl rotate-2 overflow-hidden">
+            <img
+              src={creatorImage}
+              alt="Image of the creator of this portfiolo"
+              class="object-cover rounded-xl w-full h-full medium:object-top rotate-2"
+            />
+          </div>
         </div>
       </div>
     </div>
@@ -116,3 +123,70 @@ function About() {
 }
 
 export default About;
+
+export function SubHobbies() {
+  const [chechOne, setChechOne] = useState(true);
+  const [chechTwo, setChechTwo] = useState(true);
+  const [chechThree, setChechThree] = useState(true);
+
+  function handelShowContent() {
+    if (chechTwo === true) setChechTwo(false);
+    if (chechThree === true) setChechThree(false);
+    setChechOne((show) => !show);
+  }
+
+  function handelShowContentTwo() {
+    if (chechOne === true) setChechOne(false);
+    if (chechThree === true) setChechThree(false);
+    setChechTwo((show) => !show);
+  }
+
+  function handelShowContentThree() {
+    if (chechOne === true) setChechOne(false);
+    if (chechTwo === true) setChechTwo(false);
+    setChechThree((show) => !show);
+  }
+
+  return (
+    <div>
+      <div className="">
+        <Hobbies
+          num="1"
+          title="Title amet consectetur adipisicing elit"
+          subTitle="Lorem ipsum dolor sit, amet consectetur adipisicing elit. Excepturi voluptatibus aliquid"
+          firstText="totam delectus minima, explicabo ad recusandae odit? Voluptatum veniam"
+          secText="totam delectus minima, explicabo ad recusandae odit? Voluptatum veniam"
+          thirdText="totam delectus minima, explicabo ad recusandae odit? Voluptatum veniam"
+          check={chechOne}
+          onClick={handelShowContent}
+        />
+      </div>
+
+      <div className="">
+        <Hobbies
+          num="2"
+          title="Title amet consectetur adipisicing elit"
+          subTitle="Lorem ipsum dolor sit, amet consectetur adipisicing elit. Excepturi voluptatibus aliquid"
+          firstText="totam delectus minima, explicabo ad recusandae odit? Voluptatum veniam"
+          secText="totam delectus minima, explicabo ad recusandae odit? Voluptatum veniam"
+          thirdText="totam delectus minima, explicabo ad recusandae odit? Voluptatum veniam"
+          check={chechTwo}
+          onClick={handelShowContentTwo}
+        />
+      </div>
+
+      <div className="">
+        <Hobbies
+          num="3"
+          title="Title amet consectetur adipisicing elit"
+          subTitle="Lorem ipsum dolor sit, amet consectetur adipisicing elit. Excepturi voluptatibus aliquid"
+          firstText="totam delectus minima, explicabo ad recusandae odit? Voluptatum veniam"
+          secText="totam delectus minima, explicabo ad recusandae odit? Voluptatum veniam"
+          thirdText="totam delectus minima, explicabo ad recusandae odit? Voluptatum veniam"
+          check={chechThree}
+          onClick={handelShowContentThree}
+        />
+      </div>
+    </div>
+  );
+}

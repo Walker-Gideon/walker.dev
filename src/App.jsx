@@ -16,8 +16,8 @@ function App() {
 
       <div className="relative">
         <Hero />
-        {/* <About /> */}
-        {/* <Projects /> */}
+        <About />
+        <Projects />
         {/* <Skills /> */}
         {/* <Experience /> */}
         {/* <Contact /> */}
