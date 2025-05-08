@@ -7,12 +7,12 @@ export default function Header() {
 
   return (
     <>
-      <div className="w-full h-25 sm:px-4 md:px-4 lg:px-4 xl:px-8 py-4 sticky top-0 z-50">
+      <div className="w-full h-25 sm:px-6 md:px-6 lg:px-8 xl:px-8 py-4 sticky top-0 z-50">
         <header className="flex items-center justify-between">
           <div className="border-b-2 border-black pb-0.5">
             <a
               href="#"
-              className="text-black text-xl uppercase font-bold cursor-pointer"
+              className="text-black sm:text-lg md:text-xl lg:text-xl text-lg uppercase font-bold cursor-pointer"
             >
               Wɑɭkɜɾ.dev
             </a>
@@ -33,7 +33,7 @@ export default function Header() {
               <div className="">
                 <motion.span
                   style={{ top: "40%", left: "50%", x: "-50%", y: "-50%" }}
-                  className={`absolute h-1 w-9 ${
+                  className={`absolute h-[1.5px] sm:w-6 md:w-7 lg:w-7 xl:w-7 ${
                     showMenu === true ? `bg-gray-500` : `bg-gray-500`
                   }`}
                   variants={{
@@ -49,7 +49,7 @@ export default function Header() {
                 />
                 <motion.span
                   style={{ top: "60%", left: "50%", x: "-50%", y: "-50%" }}
-                  className={`absolute h-1 w-9 ${
+                  className={`absolute h-[1.5px] sm:w-6 md:w-7 lg:w-7 xl:w-7 ${
                     showMenu === true ? `bg-gray-500` : `bg-gray-500`
                   }`}
                   variants={{
@@ -68,7 +68,7 @@ export default function Header() {
           </MotionConfig>
         </header>
 
-        <div className="absolute top-4 xl:right-8 lg:right-4 sm:right-4 md:right-4 h-[95vh] overflow-hidden">
+        <div className="absolute top-4 right-0 xl:right-8 lg:right-8 sm:right-6 md:right-6 overflow-hidden">
           <MenuNav showMenu={showMenu} />
         </div>
       </div>

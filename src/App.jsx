@@ -16,14 +16,14 @@ function App() {
 
       <div className="relative">
         <Hero />
-        <About />
-        <Projects />
-        <Skills />
-        <Experience />
-        <Contact />
+        {/* <About /> */}
+        {/* <Projects /> */}
+        {/* <Skills /> */}
+        {/* <Experience /> */}
+        {/* <Contact /> */}
       </div>
 
-      <Footer />
+      {/* <Footer /> */}
     </div>
   );
 }
