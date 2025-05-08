@@ -15,15 +15,15 @@ function App() {
       <Header />
 
       <div className="relative">
-        {/* <Hero />
+        <Hero />
         <About />
         <Projects />
         <Skills />
         <Experience />
-        <Contact /> */}
+        <Contact />
       </div>
 
-      {/* <Footer /> */}
+      <Footer />
     </div>
   );
 }
