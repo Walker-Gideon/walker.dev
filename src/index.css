@@ -5,6 +5,8 @@
 @theme {
   --font-sans: "Roboto", sans-serif;
 
+  --color-light: #555;
+
   --breakpoint-small: 300px;
   --breakpoint-sm: 350px;
   --breakpoint-md: 768px;
