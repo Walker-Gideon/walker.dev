@@ -14,21 +14,20 @@ function Contact() {
         </h1>
       </div>
 
-      {/* flex flex-col justify-between gap-20 */}
-      <div className="">
-        {/* mt-14 flex justify-between gap-30 */}
-        <div className="">
+      {/* //large:gap-20 */}
+      <div className="md:flex md:flex-col md:justify-between ">
+        {/* //large:gap-20 */}
+        <div className="md:mt-14 md:flex md:justify-between ">
           <ContactForm />
-
-          <div className="w-full mt-2 small:mt-16">
+          <div className="w-full md:w-100 mt-2 small:mt-16 md:mt-2">
             <h1 className="pb-2 text-2xl text-gray-400 font-bold">
               Connect with me:
             </h1>
 
-            <div className="small:mt-1">
+            <div className="small:mt-1 ">
               <a
                 href="mailto:gideonawortwe3@gmail.com"
-                className="text-3xl small:text-[1.8rem] sm:text-3xl medium:text-4xl text-white font-medium"
+                className="text-3xl small:text-[1.8rem] sm:text-3xl medium:text-4xl md:text-3xl text-white font-medium"
               >
                 gideonawortwe3@gmail.com
               </a>
@@ -40,7 +39,7 @@ function Contact() {
               </p>
             </div>
 
-            <SocialLink type={"secondary"} flextype={"secflex"} />
+            <SocialLink />
           </div>
         </div>
       </div>

@@ -13,8 +13,7 @@ function ContactForm() {
 
   return (
     <form action="#">
-      {/* flex gap-5 w-3xl */}
-      <div className="">
+      <div className="lg:w-3xl lg:flex lg:gap-5">
         <div className="w-full">
           <input
             type="text"
@@ -25,13 +24,13 @@ function ContactForm() {
           />
         </div>
 
-        <div className="w-full small:py-10">
+        <div className="w-full small:py-10 lg:py-0">
           <input
             type="email"
             value={email}
             onChange={(e) => setEmail(e.target.value)}
             placeholder="Email"
-            className="w-full border-b border-b-gray-400 focus:outline-none text-white text-sm small:text-lg sm:text-xl font-bold p-1 placeholder:text-gray-400 placeholder:text-lg"
+            className="w-full  border-b border-b-gray-400 focus:outline-none text-white text-sm small:text-lg sm:text-xl font-bold p-1 placeholder:text-gray-400 placeholder:text-lg"
           />
         </div>
       </div>
@@ -56,7 +55,7 @@ function ContactForm() {
         ></textarea>
       </div>
 
-      <div className="small:flex small:flex-col">
+      <div className="small:flex small:flex-col md:flex-row">
         <div></div>
         <button
           onClick={handleSubmit}
