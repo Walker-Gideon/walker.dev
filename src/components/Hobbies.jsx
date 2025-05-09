@@ -33,8 +33,8 @@ function Hobbies({
     >
       <div className="px-2 pt-4 pb-3 flex items-center justify-between">
         <div>
-          <p className="text-2xl sm:text-3xl medium:text-4xl font-bold text-black">
-            <span className="text-lg small:text-2xl medium:text-xl md:text-lg font-bold text-gray-400">
+          <p className="text-2xl sm:text-3xl medium:text-4xl md:text-3xl font-bold text-black">
+            <span className="text-lg small:text-2xl medium:text-xl font-bold text-gray-400">
               0{num}
             </span>{" "}
             {title}
@@ -48,7 +48,7 @@ function Hobbies({
         >
           <motion.span
             style={{ top: "50%", left: "50%", x: "-50%", y: "-50%" }}
-            className={`absolute h-0.5 medium:h-[2px] w-4 medium:w-5 bg-black`}
+            className={`absolute h-0.5 medium:h-[2px] md:h-0.5 w-4 medium:w-4 bg-black`}
             variants={{
               open: {
                 rotate: ["45mediumeg", "0deg", "0deg"],
@@ -62,7 +62,7 @@ function Hobbies({
           />
           <motion.span
             style={{ top: "50%", left: "50%", x: "-50%", y: "-50%" }}
-            className={`absolute h-0.5 medium:h-[2px] w-4 medium:w-5 bg-black`}
+            className={`absolute h-0.5 medium:h-[2px] md:h-0.5 w-4 medium:w-4 bg-black`}
             variants={{
               open: {
                 rotate: ["-45deg", "0deg", "0deg"],

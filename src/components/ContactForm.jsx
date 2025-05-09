@@ -13,24 +13,25 @@ function ContactForm() {
 
   return (
     <form action="#">
-      <div className="flex gap-5 w-3xl">
+      {/* flex gap-5 w-3xl */}
+      <div className="">
         <div className="w-full">
           <input
             type="text"
             value={name}
             onChange={(e) => setName(e.target.value)}
             placeholder="Full name"
-            className="w-full border-b border-b-gray-400 focus:outline-none text-white text-sm font-bold p-1 placeholder:text-gray-400 placeholder:text-lg"
+            className="w-full border-b border-b-gray-400 focus:outline-none text-white text-sm small:text-lg sm:text-xl font-bold p-1 placeholder:text-gray-400 placeholder:text-lg"
           />
         </div>
 
-        <div className="w-full">
+        <div className="w-full small:py-10">
           <input
             type="email"
             value={email}
             onChange={(e) => setEmail(e.target.value)}
             placeholder="Email"
-            className="w-full border-b border-b-gray-400 focus:outline-none text-white text-sm font-bold p-1 placeholder:text-gray-400 placeholder:text-lg"
+            className="w-full border-b border-b-gray-400 focus:outline-none text-white text-sm small:text-lg sm:text-xl font-bold p-1 placeholder:text-gray-400 placeholder:text-lg"
           />
         </div>
       </div>
@@ -41,7 +42,7 @@ function ContactForm() {
           value={subject}
           onChange={(e) => setSubject(e.target.value)}
           placeholder="Enter the subject:"
-          className="w-full border-b border-b-gray-400 focus:outline-none text-white text-sm font-bold p-1 placeholder:text-gray-400 placeholder:text-lg"
+          className="w-full border-b border-b-gray-400 focus:outline-none text-white text-sm small:text-lg sm:text-xl font-bold p-1 placeholder:text-gray-400 placeholder:text-lg"
         />
       </div>
 
@@ -51,16 +52,19 @@ function ContactForm() {
           value={message}
           onChange={(e) => setMessage(e.target.value)}
           placeholder="Enter your message:"
-          className="w-full h-40 border-b border-b-gray-400 focus:outline-none text-white text-sm font-bold p-1 placeholder:text-gray-400 placeholder:text-lg"
+          className="w-full h-40 border-b border-b-gray-400 focus:outline-none text-white text-sm small:text-lg sm:text-xl font-bold p-1 placeholder:text-gray-400 placeholder:text-lg"
         ></textarea>
       </div>
 
-      <button
-        onClick={handleSubmit}
-        className="border-2 rounded-full border-white px-8 py-4 text-xl text-center text-white font-medium cursor-pointer"
-      >
-        Discuss project
-      </button>
+      <div className="small:flex small:flex-col">
+        <div></div>
+        <button
+          onClick={handleSubmit}
+          className="border-2 rounded-full border-white px-8 py-4 text-xl text-center text-white font-medium cursor-pointer"
+        >
+          Discuss project
+        </button>
+      </div>
     </form>
   );
 }
