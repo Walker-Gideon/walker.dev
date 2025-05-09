@@ -1,5 +1,4 @@
 import { useState } from "react";
-import Button from "./Button";
 
 function ContactForm() {
   const [name, setName] = useState("");
@@ -12,8 +11,8 @@ function ContactForm() {
   }
 
   return (
-    <form action="#">
-      <div className="lg:w-3xl lg:flex lg:gap-5">
+    <form action="#" className="w-full">
+      <div className="midmedium:flex midmedium:gap-5">
         <div className="w-full">
           <input
             type="text"
@@ -24,7 +23,7 @@ function ContactForm() {
           />
         </div>
 
-        <div className="w-full small:py-10 lg:py-0">
+        <div className="w-full small:py-10 midmedium:py-0">
           <input
             type="email"
             value={email}
