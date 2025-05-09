@@ -1,20 +1,25 @@
 import React, { useState } from "react";
 import ExperienceContent from "./ExperienceContent";
 
-function Experienc() {
+function Experience() {
   const [checkClick, setCheckClick] = useState(false);
   const [checkFrameWork, setCheckFrameWork] = useState(false);
   const [checkCss, setCheckCss] = useState(false);
   const [checkGit, setCheckGit] = useState(false);
 
   return (
-    <div className="pt-20 mb-5 px-20 h-screen z-20">
-      <div className="pb-10">
-        <h1 className="text-4xl font-bold text-gray-400">Experience</h1>
-        <h1 className="text-4xl font-bold text-black">History</h1>
+    // small:px-4 sm:px-6 md:px-10 lg:px-20
+    <div className="pt-20 small:mt-10 mb-5 px-20 small:px-4 sm:px-6 md:px-10 lg:px-20 h-screen z-20">
+      <div className="pb-10 small:pb-6 sm:mb-8 medium:mb-10">
+        <h1 className="text-4xl small:text-2xl sm:text-3xl medium:text-4xl font-bold text-gray-400">
+          Experience
+        </h1>
+        <h1 className="text-4xl small:text-2xl sm:text-3xl medium:text-4xl font-bold text-black">
+          History
+        </h1>
       </div>
 
-      <div className="">
+      <div className="small:hidden md:block">
         <ExperienceContent
           check={checkClick}
           onCheck={() => setCheckClick(!checkClick)}
@@ -36,8 +41,31 @@ function Experienc() {
           title="Git & GitHub"
         />
       </div>
+
+      <div className="small:block md:hidden">
+        <SubExperience />
+      </div>
     </div>
   );
 }
 
-export default Experienc;
+export default Experience;
+
+export function SubExperience() {
+  const [checkClick, setCheckClick] = useState(true);
+  const [checkFrameWork, setCheckFrameWork] = useState(true);
+  const [checkCss, setCheckCss] = useState(true);
+  const [checkGit, setCheckGit] = useState(true);
+
+  return (
+    <div className="">
+      <ExperienceContent check={checkClick} title="HTML, CSS & Javascript" />
+      <ExperienceContent
+        check={checkFrameWork}
+        title="React.js as Javascript framework"
+      />
+      <ExperienceContent check={checkCss} title="Tailwind Css" />
+      <ExperienceContent check={checkGit} title="Git & GitHub" />
+    </div>
+  );
+}
