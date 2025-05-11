@@ -29,7 +29,7 @@ function MenuNav({ showMenu }) {
   // };
 
   const linkStyling = `relative after:content-[''] after:absolute after:left-0 after:-bottom-0.5 after:h-[1px] 
-    after:bg-[#0c2622] after:scale-x-0 after:transition-transform after:duration-300 
+    after:bg-primary after:scale-x-0 after:transition-transform after:duration-300 
     hover:after:scale-x-100`;
 
   return (
@@ -43,12 +43,12 @@ function MenuNav({ showMenu }) {
         width: { duration: 0.4, ease: "easeOut", delay: 0.2 },
         height: { duration: 0.4, ease: "easeOut", delay: 0.2 },
       }}
-      className="bg-[#f1efef] border text-black rounded-4xl overflow-hidden"
+      className="bg-blue rounded-4xl overflow-hidden"
     >
       <div className="relative w-full h-full flex flex-col justify-between px-8 py-6 rounded-2xl">
-        <p className="mt-14 text-lg font-bold text-gray-400">Menu</p>
+        <p className="mt-14 text-lg font-bold text-gray-300">Menu</p>
 
-        <div className="w-50 h-85 small:h-60 sm:h-85 flex flex-col justify-between text-4xl small:text-2xl sm:text-4xl font-medium text-black">
+        <div className="w-50 h-85 small:h-60 sm:h-85 flex flex-col justify-between text-4xl small:text-2xl sm:text-4xl font-medium text-white">
           <a href="#" className={`${linkStyling} after:w-25`}>
             Home
           </a>

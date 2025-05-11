@@ -28,11 +28,11 @@ function About() {
   return (
     <div className="small:h-full md:h-190 pt-40 px-20 small:px-4 sm:px-6 md:px-10 lg:px-20 md:grid md:grid-cols-3 md:gap-15 h-[90vh] grid small:flex small:flex-col-reverse gap-20">
       <div className="small:row-span-1 col-span-2 pr-8 h-auto small:h-full medium:h-145 md:h-145 overflow-auto scroll-container">
-        <h1 className="text-5xl small:text-4xl small:font-bold medium:text-5xl sm:font-medium font-medium uppercase mb-10 small:mb-6">
+        <h1 className="text-5xl small:text-4xl small:font-bold medium:text-5xl sm:font-medium font-medium uppercase mb-10 small:mb-6 text-blueprime">
           Behind the Code
         </h1>
 
-        <div className="text-2xl medium:text-3xl text-gray-500 mb-14">
+        <div className="text-2xl medium:text-3xl text-white mb-14">
           <p>
             My journey into front-end development started with a simple
             curiosity for how websites worked — and quickly turned into a
@@ -108,7 +108,7 @@ function About() {
 
       {/* small:absolute  */}
       <div className="small:p-4 sm:p-0">
-        <div className="w-full h-full sm:h-full medium:h-160 md:h-full p-0.5 small:p-1 bg-black justify-self-end rounded-xl rotate-1">
+        <div className="w-full h-full sm:h-full medium:h-160 md:h-full p-0.5 small:p-1 bg-blue justify-self-end rounded-xl rotate-1">
           <div className="relative w-full h-140 sm:h-full medium:h-160 md:h-full p-1.5 bg-white rounded-xl rotate-2 overflow-hidden">
             <img
               src={creatorImage}
