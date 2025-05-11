@@ -58,7 +58,7 @@ function ContactForm() {
         <div></div>
         <button
           onClick={handleSubmit}
-          className="border-2 rounded-full border-white px-8 py-4 text-xl text-center text-white font-medium cursor-pointer"
+          className="border-2 rounded-full border-primary px-8 py-4 text-xl text-center text-white transition-colors duration-300 hover:bg-primary font-medium cursor-pointer"
         >
           Discuss project
         </button>
