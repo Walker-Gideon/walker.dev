@@ -12,7 +12,7 @@ function ProjectCard({ onClick }) {
         </div>
 
         <div className="text-left pt-4 small:pt-1 text-3xl small:text-3xl medium:pt-3 md:pt-4">
-          <p className="text-lg small:text-xl sm:text-2xl md:text-xl text-gray-500">
+          <p className="text-lg small:text-xl sm:text-2xl md:text-xl text-gray-300">
             Lorem ipsum dolor sit amet consectetur, adipisicing elit.
           </p>
           <p className="py-5 small:py-3 medium:py-4 md:py-5">
