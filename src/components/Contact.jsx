@@ -17,7 +17,7 @@ function Contact() {
         <div className="md:mt-14 md:flex md:justify-between md:gap-16 large:gap-20 xl:gap-30">
           <ContactForm />
 
-          <div className="w-full md:w-100 mt-2 small:mt-16 md:mt-4">
+          <div className="w-full md:w-100 lg:w-200 mt-2 small:mt-16 md:mt-4">
             <h1 className="pb-2 text-2xl text-primary font-bold">
               Connect with me:
             </h1>
