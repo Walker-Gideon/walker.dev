@@ -16,7 +16,7 @@ function Hero() {
           and JavaScript — turning ideas into clean, functional code.
         </p>
 
-        <Button borderCol="border-black" textCol="text-black">
+        <Button borderCol="border-primary" textCol="text-white">
           Download CV
         </Button>
       </div>

@@ -12,7 +12,7 @@ function Hobbies({
 }) {
   const slideHeightVariants = {
     initial: {
-      height: 60,
+      height: 55,
     },
     expanded: {
       height: "40%",
@@ -29,12 +29,12 @@ function Hobbies({
         ease: "easeOut",
         height: { duration: 0.4, ease: "easeOut", delay: 0.2 },
       }}
-      className="border-b-1 border-black overflow-hidden"
+      className="border-b-1 border-blue overflow-hidden"
     >
       <div className="px-2 pt-4 pb-3 flex items-center justify-between">
         <div>
-          <p className="text-2xl sm:text-3xl medium:text-4xl md:text-3xl font-bold text-black">
-            <span className="text-lg small:text-2xl medium:text-xl font-bold text-gray-400">
+          <p className="text-2xl sm:text-3xl medium:text-4xl md:text-3xl font-bold text-blueprime">
+            <span className="text-lg small:text-2xl medium:text-xl font-bold text-gray-300">
               0{num}
             </span>{" "}
             {title}
@@ -42,13 +42,13 @@ function Hobbies({
         </div>
 
         <motion.button
-          className="relative text-3xl text-black cursor-pointer px-2 py-1 group overflow-hidden: small:hidden medium:block"
+          className="relative text-3xl text-white cursor-pointer px-2 py-1 group overflow-hidden: small:hidden medium:block"
           onClick={onClick}
           animate={check ? "open" : "close"}
         >
           <motion.span
             style={{ top: "50%", left: "50%", x: "-50%", y: "-50%" }}
-            className={`absolute h-0.5 medium:h-[2px] md:h-0.5 w-4 medium:w-4 bg-black`}
+            className={`absolute h-0.5 medium:h-[2px] md:h-0.5 w-4 medium:w-4 bg-white`}
             variants={{
               open: {
                 rotate: ["45mediumeg", "0deg", "0deg"],
@@ -62,7 +62,7 @@ function Hobbies({
           />
           <motion.span
             style={{ top: "50%", left: "50%", x: "-50%", y: "-50%" }}
-            className={`absolute h-0.5 medium:h-[2px] md:h-0.5 w-4 medium:w-4 bg-black`}
+            className={`absolute h-0.5 medium:h-[2px] md:h-0.5 w-4 medium:w-4 bg-white`}
             variants={{
               open: {
                 rotate: ["-45deg", "0deg", "0deg"],
@@ -78,12 +78,12 @@ function Hobbies({
       </div>
 
       <div className="small:py-2 small:px-6 medium:px-4 md:px-10">
-        <p className="small:text-xl sm:text-2xl medium:text-3xl text-lighter font-medium">
+        <p className="small:text-xl sm:text-2xl medium:text-3xl text-gray-200 font-medium">
           {subTitle}
         </p>
 
         <div className="small:py-3">
-          <ul className="w-full text-lg small:text-lg sm:text-xl medium:text-2xl text-light">
+          <ul className="w-full text-lg small:text-lg sm:text-xl medium:text-2xl text-gray-300">
             <li className="flex md:items-center">
               <span className="">.</span>
               {firstText}

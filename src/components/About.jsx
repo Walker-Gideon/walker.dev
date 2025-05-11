@@ -106,7 +106,6 @@ function About() {
         </div>
       </div>
 
-      {/* small:absolute  */}
       <div className="small:p-4 sm:p-0">
         <div className="w-full h-full sm:h-full medium:h-160 md:h-full p-0.5 small:p-1 bg-blue justify-self-end rounded-xl rotate-1">
           <div className="relative w-full h-140 sm:h-full medium:h-160 md:h-full p-1.5 bg-white rounded-xl rotate-2 overflow-hidden">

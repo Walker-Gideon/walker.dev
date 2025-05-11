@@ -13,7 +13,7 @@ function Button({ children, onClick, type, borderCol, textCol }) {
 
   return (
     <button
-      className={`border-2 rounded-full ${borderCol} px-8 py-4 text-xl text-center ${textCol} font-medium cursor-pointer`}
+      className={`border-2 rounded-full ${borderCol} px-8 py-4 text-xl text-center ${textCol} transition-colors duration-300 hover:bg-primary font-medium cursor-pointer`}
       onClick={onClick}
     >
       {children}
