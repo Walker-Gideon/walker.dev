@@ -7,7 +7,7 @@ export default function Header() {
 
   return (
     <>
-      <div className="w-full h-25 sm:px-6 md:px-6 lg:px-8 xl:px-8 py-4 sticky top-0 z-50">
+      <div className="w-full h-0 sm:px-6 md:px-6 lg:px-8 xl:px-8 py-4 sticky top-0 z-30">
         <header className="flex items-center justify-between">
           <div className="border-b-2 border-blueprime pb-0.5">
             <a
