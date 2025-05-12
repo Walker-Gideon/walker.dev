@@ -11,7 +11,9 @@
   --color-blue: #6dc5d1;
   --color-primary: #feb941;
 
-  --shadow-primary: 0px 0px 20px 0px rgba();
+  --shadow-primary: 0px 0px 20px 0px rgba(254, 185, 65, 0.5);
+  --shadow-secondary: 10px 10px 200px 150px rgba(254, 185, 65, 0.5);
+  --shadow-medium: 10px 10px 200px 150px rgba(78, 215, 241, 0.5);
 
   --breakpoint-small: 300px;
   --breakpoint-sm: 350px;

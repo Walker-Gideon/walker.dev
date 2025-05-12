@@ -43,9 +43,9 @@ function MenuNav({ showMenu }) {
         width: { duration: 0.4, ease: "easeOut", delay: 0.2 },
         height: { duration: 0.4, ease: "easeOut", delay: 0.2 },
       }}
-      className="bg-blue rounded-4xl overflow-hidden"
+      className="bg-blue/30 backdrop-blur-md rounded-4xl overflow-hidden"
     >
-      <div className="relative w-full h-full flex flex-col justify-between px-8 py-6 rounded-2xl">
+      <div className="relative w-full h-full flex flex-col justify-between gap-6 px-8 py-6 rounded-2xl">
         <p className="mt-14 text-lg font-bold text-gray-300">Menu</p>
 
         <div className="w-50 h-85 small:h-60 sm:h-85 flex flex-col justify-between text-4xl small:text-2xl sm:text-4xl font-medium text-white">

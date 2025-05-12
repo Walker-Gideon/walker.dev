@@ -2,6 +2,7 @@ import About from "./components/About";
 import Contact from "./components/Contact";
 import Experience from "./components/Experience";
 import Footer from "./components/Footer";
+import Gradients from "./components/Gradients";
 import Header from "./components/Header";
 import Hero from "./components/Hero";
 import PageLoader from "./components/PageLoader";
@@ -13,6 +14,7 @@ function App() {
     <div className="relative">
       {/* <PageLoader /> */}
       <Header />
+      <Gradients />
 
       <div className="relative">
         <Hero />
