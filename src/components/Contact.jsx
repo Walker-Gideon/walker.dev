@@ -4,7 +4,7 @@ import SocialLink from "./SocialLink";
 
 function Contact() {
   return (
-    <div className="relative">
+    <div id="contact" className="relative">
       <div className="pt-12 pb-15 w-full h-full px-20 small:mt-10 small:px-4 sm:px-6 md:px-10 lg:px-20 z-10 bg-black">
         <div className="mb-10 small:pb-2 sm:mb-8 medium:mb-10">
           <h1 className="text-4xl font-bold small:text-2xl sm:text-3xl medium:text-4xl text-primary">

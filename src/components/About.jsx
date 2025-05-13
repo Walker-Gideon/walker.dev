@@ -26,7 +26,10 @@ function About() {
   }
 
   return (
-    <div className="small:h-full md:h-190 pt-40 px-20 small:px-4 sm:px-6 md:px-10 lg:px-20 md:grid md:grid-cols-3 md:gap-15 h-[90vh] grid small:flex small:flex-col-reverse gap-20">
+    <div
+      id="about"
+      className="small:h-full md:h-190 pt-40 px-20 small:px-4 sm:px-6 md:px-10 lg:px-20 md:grid md:grid-cols-3 md:gap-15 h-[90vh] grid small:flex small:flex-col-reverse gap-20"
+    >
       <div className="small:row-span-1 col-span-2 pr-8 h-auto small:h-full medium:h-145 md:h-145 overflow-auto scroll-container">
         <h1 className="text-5xl small:text-4xl small:font-bold medium:text-5xl sm:font-medium font-medium uppercase mb-10 small:mb-6 text-blueprime">
           Behind the Code

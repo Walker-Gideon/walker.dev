@@ -3,7 +3,10 @@ import Button from "./Button";
 
 function Hero() {
   return (
-    <div className="pt-30 small:pt-10 sm:pt-25 md:pt-23 px-20 small:px-4 sm:px-6 md:px-10 lg:px-20 xl:px-16 w-full h-full flex flex-col justify-center gap-12">
+    <div
+      id="/"
+      className="pt-30 small:pt-10 sm:pt-25 md:pt-23 px-20 small:px-4 sm:px-6 md:px-10 lg:px-20 xl:px-16 w-full h-full flex flex-col justify-center gap-12"
+    >
       <div className="w-full small:text-center sm:text-center md:text-left">
         <p className="text-4xl small:text-2xl sm:text-3xl md:text-4xl text-blueprime font-medium uppercase">
           Fronted-end Web Developer

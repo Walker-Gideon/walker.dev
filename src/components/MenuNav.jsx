@@ -49,19 +49,19 @@ function MenuNav({ showMenu }) {
         <p className="mt-14 text-lg font-bold text-gray-300">Menu</p>
 
         <div className="w-50 h-85 small:h-60 sm:h-85 flex flex-col justify-between text-4xl small:text-2xl sm:text-4xl font-medium text-white">
-          <a href="#" className={`${linkStyling} after:w-25`}>
+          <a href="#/" className={`${linkStyling} after:w-25`}>
             Home
           </a>
-          <a href="#" className={`${linkStyling} after:w-34`}>
+          <a href="#projects" className={`${linkStyling} after:w-34`}>
             Projects
           </a>
-          <a href="#" className={`${linkStyling} after:w-33`}>
+          <a href="#skills" className={`${linkStyling} after:w-33`}>
             Skill set
           </a>
-          <a href="#" className={`${linkStyling} after:w-26`}>
+          <a href="#about" className={`${linkStyling} after:w-26`}>
             About
           </a>
-          <a href="#" className={`${linkStyling} after:w-33`}>
+          <a href="#contact" className={`${linkStyling} after:w-33`}>
             Contact
           </a>
         </div>
