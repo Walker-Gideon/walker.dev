@@ -1,11 +1,11 @@
 function AboutPara() {
   return (
     <div>
-      <h1 className="text-5xl small:text-4xl small:font-bold medium:text-5xl sm:font-medium font-medium uppercase mb-10 small:mb-6 text-blueprime">
+      <h1 className="text-5xl text-center small:text-4xl small:font-bold medium:text-5xl sm:font-medium font-medium uppercase mb-10 small:mb-6 text-blueprime">
         Behind the Code
       </h1>
 
-      <div className="text-2xl medium:text-3xl text-white mb-14">
+      <div className="text-2xl text-white mb-14">
         <p>
           My journey into front-end development started with a simple curiosity
           for how websites worked — and quickly turned into a passion for
