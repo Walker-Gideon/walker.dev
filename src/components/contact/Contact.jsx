@@ -1,6 +1,6 @@
 import ContactForm from "./ContactForm";
-import Gradients from "./Gradients";
-import SocialLink from "./SocialLink";
+import Gradients from "../ui/Gradients";
+import SocialLink from "../ui/SocialLink";
 
 function Contact() {
   return (

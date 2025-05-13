@@ -1,6 +1,6 @@
 import Image from "./Image";
 import HeroText from "./HeroText";
-import Button from "../Button";
+import Button from "../ui/Button";
 
 function Hero() {
   return (
