@@ -1,5 +1,5 @@
 import { AnimatePresence, motion } from "motion/react";
-import ButtonNav from "./ButtonNav";
+import ButtonNav from "../ButtonNav";
 
 function MenuNav({ showMenu }) {
   const boxVariants = {

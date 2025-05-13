@@ -3,7 +3,7 @@ import Contact from "./components/Contact";
 import Experience from "./components/Experience";
 import Footer from "./components/Footer";
 import Gradients from "./components/Gradients";
-import Header from "./components/Header";
+import Header from "./components/header/Header";
 import Hero from "./components/Hero";
 import PageLoader from "./components/PageLoader";
 import Projects from "./components/Projects";
@@ -16,7 +16,7 @@ function App() {
       <Header />
       <Gradients />
 
-      <div className="relative">
+      {/* <div className="relative">
         <Hero />
         <About />
         <Projects />
@@ -29,7 +29,7 @@ function App() {
         </div>
       </div>
 
-      <Footer />
+      <Footer /> */}
     </div>
   );
 }
