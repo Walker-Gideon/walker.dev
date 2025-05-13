@@ -2,12 +2,12 @@ import About from "./components/about/About";
 import Contact from "./components/Contact";
 import Experience from "./components/Experience";
 import Footer from "./components/Footer";
-import Gradients from "./components/Gradients";
+import Gradients from "./components/ui/Gradients";
 import Header from "./components/header/Header";
 import Hero from "./components/hero/Hero";
 import PageLoader from "./components/PageLoader";
-import Projects from "./components/Projects";
-import Skills from "./components/Skills";
+import Projects from "./components/project/Projects";
+import Skills from "./components/skill/Skills";
 
 function App() {
   return (
@@ -20,8 +20,8 @@ function App() {
         <Hero />
         <About />
         <Projects />
-        {/* <Skills /> */}
-        {/* <Experience /> */}
+        <Skills />
+        <Experience />
 
         {/* <div className="relative">
           <Contact />
