@@ -1,5 +1,5 @@
 import { useState } from "react";
-import Hobbies from "./Hobbies";
+import Hobbies from "./hobbies/Hobbies";
 import AboutPara from "./AboutPara";
 
 function About() {
