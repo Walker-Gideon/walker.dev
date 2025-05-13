@@ -1,4 +1,3 @@
-import { motion } from "motion/react";
 import Image from "./Image";
 import HeroText from "./HeroText";
 import Button from "../Button";
