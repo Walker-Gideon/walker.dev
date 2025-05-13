@@ -52,3 +52,74 @@
 .scroll-container::-webkit-scrollbar {
   display: none;
 }
+
+/* Skill animation */
+.skill_main {
+  mask-image: linear-gradient(
+    to right,
+    rgba(0, 0, 0, 0),
+    rgba(0, 0, 0, 1) 20%,
+    rgba(0, 0, 0, 1) 80%,
+    rgba(0, 0, 0, 0)
+  );
+}
+
+.animate_skill_one {
+  left: max(calc(80px * 4), 100%);
+  animation-name: leftscroll;
+  animation-duration: 30s;
+  animation-timing-function: linear;
+  animation-iteration-count: infinite;
+}
+
+.animate_skill_two {
+  right: max(calc(80px * 4), 100%);
+  animation-name: rightscroll;
+  animation-duration: 30s;
+  animation-timing-function: linear;
+  animation-iteration-count: infinite;
+}
+
+@keyframes leftscroll {
+  to {
+    left: -80px;
+  }
+}
+
+@keyframes rightscroll {
+  to {
+    right: 80px;
+  }
+}
+
+.skill_delay1 {
+  animation-delay: calc(30s / 4 * (4 - 1) * -1);
+}
+
+.skill_delay2 {
+  animation-delay: calc(30s / 4 * (3 - 1) * -1);
+}
+
+.skill_delay3 {
+  animation-delay: calc(30s / 4 * (2 - 1) * -1);
+}
+
+.skill_delay4 {
+  animation-delay: calc(30s / 4 * (1 - 1) * -1);
+}
+
+.skill_delay_two1 {
+  animation-delay: calc(30s / 4 * (4 - 1) * -1);
+}
+
+.skill_delay_two2 {
+  animation-delay: calc(30s / 4 * (3 - 1) * -1);
+}
+
+.skill_delay_two3 {
+  animation-delay: calc(30s / 4 * (2 - 1) * -1);
+}
+
+.skill_delay_two4 {
+  animation-delay: calc(30s / 4 * (1 - 1) * -1);
+}
