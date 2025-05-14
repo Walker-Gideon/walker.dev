@@ -1,7 +1,7 @@
 function AboutPara() {
   return (
     <div>
-      <h1 className="text-5xl text-center small:text-4xl small:font-bold medium:text-5xl sm:font-medium font-medium uppercase mb-10 small:mb-6 text-blueprime">
+      <h1 className="text-5xl small:text-left medium:text-center font-medium uppercase mb-10 small:mb-6 text-blueprime">
         Behind the Code
       </h1>
 
