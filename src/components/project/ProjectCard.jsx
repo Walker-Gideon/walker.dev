@@ -1,29 +1,24 @@
-function ProjectCard({ title, date, imageUrl, summaryOne, summaryTwo }) {
+function ProjectCard({ title, date, imageUrl, link, summaryOne, summaryTwo }) {
   return (
-    <div className="mb-10 small:mb-25 sm:mb-30 medium:mb-40 md:mb-10 cursor-pointer">
+    <div className="mb-10 small:mb-25 medium:mb-30 md:mb-10">
       <div className="w-full h-full flex flex-col gap-4">
-        <div className="w-full h-90 flex items-center justify-center bg-black text-white rounded-3xl overflow-hidden transform transition-transform duration-300 hover:scale-105">
-          <div className="w-full h-full bg-blue/30 backdrop-blur-md">
-            <img src={imageUrl} alt="Project image" />
-          </div>
+        <div className="w-full h-90 small:h-70 medium:h-90 flex items-center justify-center rounded-3xl overflow-hidden transform transition-transform duration-500 hover:scale-105 border border-white">
+          <div className="w-full h-full bg-blue opacity-50 absolute top-0 left-0 hover:opacity-0 transition-all duration-500 md:block small:hidden"></div>
+          <img src={imageUrl} alt="Project image" className="w-full h-full" />
         </div>
 
-        <div className="text-left pt-4 px-4 small:pt-1 text-xl medium:pt-3 md:pt-4">
+        <div className="text-left pt-4 px-4 small:pt-4 text-xl medium:pt-3 md:pt-4">
           <div className="flex items-center justify-between">
-            <p className="text-blueprime text-lg small:text-xl sm:text-2xl md:text-xl">
-              {title}
-            </p>
+            <p className="text-blueprime text-xl">{title}</p>
 
-            <button className="text-primary text-lg small:text-xl sm:text-2xl md:text-xl cursor-pointer transition-colors duration-300  group-hover:text-blue">
-              View{" "}
-              <span>
-                <i class="bi bi-arrow-up-right-circle-fill text-primary transition-colors duration-300 hover:text-blue"></i>
-              </span>
-            </button>
+            <a
+              href={link}
+              className="text-primary text-xl cursor-pointer transition-colors duration-300 hover:text-blue"
+            >
+              View <i class="bi bi-arrow-up-right-circle-fill"></i>
+            </a>
           </div>
-          <p className="text-primary text-lg small:text-xl sm:text-2xl md:text-lg">
-            {date}
-          </p>
+          <p className="text-primary text-lg">{date}</p>
 
           <p className="py-3 small:py-2 md:py-3">{summaryOne}</p>
           <p>{summaryTwo}</p>

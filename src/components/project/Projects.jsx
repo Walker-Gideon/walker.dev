@@ -15,6 +15,7 @@ const projects = [
     title: "Projet2",
     date: "Month20XX",
     imageUrl: "#",
+    link: "/",
     summaryOne: "Itaque ipsam dolorem mollitia cumque perferendis optio alias",
     summaryTwo:
       "modi eos nostrum architecto corporis fugit? Officiis, eum. velit iste quod porro inventore",
@@ -24,6 +25,7 @@ const projects = [
     title: "Projet3",
     date: "Month20XX",
     imageUrl: "#",
+    link: "/",
     summaryOne: "Itaque ipsam dolorem mollitia cumque perferendis optio alias",
     summaryTwo:
       "modi eos nostrum architecto corporis fugit? Officiis, eum. velit iste quod porro inventore",
@@ -33,6 +35,7 @@ const projects = [
     title: "Projet4",
     date: "Month20XX",
     imageUrl: "#",
+    link: "/",
     summaryOne: "Itaque ipsam dolorem mollitia cumque perferendis optio alias",
     summaryTwo:
       "modi eos nostrum architecto corporis fugit? Officiis, eum. velit iste quod porro inventore",
@@ -41,6 +44,7 @@ const projects = [
     title: "Projet5",
     date: "Month20XX",
     imageUrl: "#",
+    link: "/",
     summaryOne: "Itaque ipsam dolorem mollitia cumque perferendis optio alias",
     summaryTwo:
       "modi eos nostrum architecto corporis fugit? Officiis, eum. velit iste quod porro inventore",
@@ -50,6 +54,7 @@ const projects = [
     title: "Projet6",
     date: "Month20XX",
     imageUrl: "#",
+    link: "/",
     summaryOne: "Itaque ipsam dolorem mollitia cumque perferendis optio alias",
     summaryTwo:
       "modi eos nostrum architecto corporis fugit? Officiis, eum. velit iste quod porro inventore",
@@ -58,17 +63,21 @@ const projects = [
 
 function Projects() {
   return (
-    <div id="projects" className="relative mt-[100px]">
-      <div className="pt-40 small:pt-30 sm:pt-35 medium:pt-45 md:pt-50 px-20 small:px-4 sm:px-6 md:px-10 lg:px-20">
+    <div
+      id="projects"
+      className="relative mt-[100px] small:mt-30 medium:mt-40 md:mt-[200px]"
+    >
+      <div className="px-20 small:px-4 sm:px-6 md:px-10 lg:px-20">
         <ProjectText />
 
-        <div className="relative md:grid md:grid-cols-2 md:gap-30 px-20">
+        <div className="relative md:grid md:grid-cols-2 md:gap-30 px-20 small:px-4 medium:px-20">
           {projects.map((project, index) => (
             <div key={index} className={`${project.padding} ${project.top}`}>
               <ProjectCard
                 title={project.title}
                 date={project.date}
                 imageUrl={project.imageUrl}
+                link={project.link}
                 summaryOne={project.summaryOne}
                 summaryTwo={project.summaryTwo}
               />
