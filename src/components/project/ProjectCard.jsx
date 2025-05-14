@@ -1,30 +1,35 @@
-function ProjectCard({ onClick }) {
-  // { imgURL, title, text, onClickView, onClickGithub }
+function ProjectCard({ title, date, imageUrl, summaryOne, summaryTwo }) {
   return (
-    <button
-      className="mb-10 small:mb-25 sm:mb-30 medium:mb-40 md:mb-10 cursor-pointer"
-      onClick={onClick}
-    >
+    <div className="mb-10 small:mb-25 sm:mb-30 medium:mb-40 md:mb-10 cursor-pointer">
       <div className="w-full h-full flex flex-col gap-4">
-        <div className="w-full h-160 small:h-100 sm:h-130 medium:h-160 flex items-center justify-center px-4 bg-black text-white rounded-3xl">
-          {/* <img src={source} alt="Project image" /> */}
-          <p>Projet</p>
+        <div className="w-full h-90 flex items-center justify-center bg-black text-white rounded-3xl overflow-hidden transform transition-transform duration-300 hover:scale-105">
+          <div className="w-full h-full bg-blue/30 backdrop-blur-md">
+            <img src={imageUrl} alt="Project image" />
+          </div>
         </div>
 
-        <div className="text-left pt-4 small:pt-1 text-3xl small:text-3xl medium:pt-3 md:pt-4">
-          <p className="text-lg small:text-xl sm:text-2xl md:text-xl text-gray-300">
-            Lorem ipsum dolor sit amet consectetur, adipisicing elit.
+        <div className="text-left pt-4 px-4 small:pt-1 text-xl medium:pt-3 md:pt-4">
+          <div className="flex items-center justify-between">
+            <p className="text-blueprime text-lg small:text-xl sm:text-2xl md:text-xl">
+              {title}
+            </p>
+
+            <button className="text-primary text-lg small:text-xl sm:text-2xl md:text-xl cursor-pointer transition-colors duration-300  group-hover:text-blue">
+              View{" "}
+              <span>
+                <i class="bi bi-arrow-up-right-circle-fill text-primary transition-colors duration-300 hover:text-blue"></i>
+              </span>
+            </button>
+          </div>
+          <p className="text-primary text-lg small:text-xl sm:text-2xl md:text-lg">
+            {date}
           </p>
-          <p className="py-5 small:py-3 medium:py-4 md:py-5">
-            Itaque ipsam dolorem mollitia cumque perferendis optio alias
-          </p>
-          <p>
-            modi eos nostrum architecto corporis fugit? Officiis, eum. velit
-            iste quod porro inventore
-          </p>
+
+          <p className="py-3 small:py-2 md:py-3">{summaryOne}</p>
+          <p>{summaryTwo}</p>
         </div>
       </div>
-    </button>
+    </div>
   );
 }
 
