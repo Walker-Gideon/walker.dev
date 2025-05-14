@@ -65,7 +65,7 @@
 }
 
 .animate_skill_one {
-  left: max(calc(80px * 4), 100%);
+  left: max(calc(120px * 4), 100%);
   animation-name: leftscroll;
   animation-duration: 30s;
   animation-timing-function: linear;
@@ -73,7 +73,7 @@
 }
 
 .animate_skill_two {
-  right: max(calc(80px * 4), 100%);
+  right: max(calc(120px * 4), calc(100% + 120px));
   animation-name: rightscroll;
   animation-duration: 30s;
   animation-timing-function: linear;
@@ -82,13 +82,13 @@
 
 @keyframes leftscroll {
   to {
-    left: -80px;
+    left: -120px;
   }
 }
 
 @keyframes rightscroll {
   to {
-    right: 80px;
+    right: -120px;
   }
 }
 

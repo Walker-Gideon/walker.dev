@@ -1,23 +1,48 @@
-const skillsOne = ["HTML", "CSS", "JS", "React.js"];
+import { FaHtml5 } from "react-icons/fa";
+import { FaCss3Alt } from "react-icons/fa";
+import { RiJavascriptFill } from "react-icons/ri";
+
+import { FaGitAlt } from "react-icons/fa";
+
+const skillsOne = [
+  {
+    icon: <FaHtml5 />,
+    text: "HTML",
+  },
+  {
+    icon: <FaCss3Alt />,
+    text: "CSS",
+  },
+  {
+    icon: <RiJavascriptFill />,
+    text: "JS",
+  },
+  {
+    icon: <FaGitAlt />,
+    text: "Git",
+  },
+];
 
 function SkillsOne() {
   return (
     <div
       id="skills"
-      className="my-10 flex w-full h-16 small:h-10 sm:h-12 medium:-h-14 md:h-10 text-5xl small:text-2xl sm:text-3xl medium:text-4xl md:text-5xl text-white font-medium whitespace-nowrap "
+      className="flex w-full h-16 font-medium whitespace-nowrap "
     >
-      {/* First row container */}
-      <div className="relative w-full overflow-hidden skill_main decoration">
+      <div className="relative w-full h-40 overflow-hidden skill_main decoration">
         {skillsOne.map((skills, index) => (
           <div
             key={index}
-            className={`absolute w-20 animate_skill_one skill_delay${
+            className={`absolute w-30 text-primary text-center animate_skill_one skill_delay${
               index + 1
             }`}
           >
-            <ul>
-              <li className="list-disc">{skills}</li>
-            </ul>
+            <div className="flex flex-col items-center">
+              <p className="text-8xl">{skills.icon}</p>
+              <ul>
+                <li className="text-3xl">{skills.text}</li>
+              </ul>
+            </div>
           </div>
         ))}
       </div>

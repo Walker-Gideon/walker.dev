@@ -1,27 +1,47 @@
+import { RiTailwindCssFill } from "react-icons/ri";
+import { FaReact } from "react-icons/fa";
+import { FaGithub } from "react-icons/fa6";
+import { TbBrandFramerMotion } from "react-icons/tb";
+
 const skillsTwo = [
-  "Tailwind CSS",
-  "Git & GitHub",
-  "Motion Design",
-  "Motion Design",
+  {
+    icon: <FaReact />,
+    text: "React.js",
+  },
+  {
+    icon: <RiTailwindCssFill />,
+    text: "Tailwind",
+  },
+  {
+    icon: <FaGithub />,
+    text: "GitHub",
+  },
+  {
+    icon: <TbBrandFramerMotion />,
+    text: "Framer",
+  },
 ];
+
 function SkillsTwo() {
   return (
     <div
       id="skills"
-      className="my-10 flex w-full h-16 small:h-10 sm:h-12 medium:-h-14 md:h-10 text-5xl small:text-2xl sm:text-3xl medium:text-4xl md:text-5xl text-white font-medium whitespace-nowrap "
+      className="flex w-full h-16 font-medium whitespace-nowrap "
     >
-      {/* Second row container */}
-      <div className="relative w-full overflow-hidden skill_main decoration">
+      <div className="relative w-full h-40 overflow-hidden skill_main decoration">
         {skillsTwo.map((skills, index) => (
           <div
             key={index}
-            className={`absolute w-20 animate_skill_two skill_delay_two${
+            className={`absolute w-30 text-primary text-center animate_skill_two skill_delay_two${
               index + 1
             }`}
           >
-            <ul>
-              <li className="list-disc">{skills}</li>
-            </ul>
+            <div className="flex flex-col items-center">
+              <p className="text-8xl">{skills.icon}</p>
+              <ul>
+                <li className="text-3xl">{skills.text}</li>
+              </ul>
+            </div>
           </div>
         ))}
       </div>
