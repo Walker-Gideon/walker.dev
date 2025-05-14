@@ -1,44 +1,22 @@
-import { motion } from "motion/react";
-
-function ExperienceContent({ check, onCheck, title }) {
-  const boxVariants = {
-    initial: {
-      height: "12vh",
-    },
-    expanded: {
-      height: "20vh",
-    },
-  };
-
+function ExperienceContent({ title, subtitle, date, text }) {
   return (
-    <motion.div
-      variants={boxVariants}
-      initial="initial"
-      animate={check ? "expanded" : "initial"}
-      transition={{
-        duration: 0.8,
-        ease: "easeOut",
-        height: { duration: 0.4, ease: "easeOut", delay: 0.2 },
-      }}
-      className="border-b border-blue py-8 small:py-2 small:mb-5 medium:mb-8 md:mb-0 md:py-8 overflow-hidden"
-      onMouseEnter={onCheck}
-      onMouseLeave={onCheck}
-    >
-      <div className="flex items-center small:text-center small:justify-center md:justify-between px-4">
-        <h1 className="text-blueprime text-2xl small:text-2xl medium:text-3xl">
-          {title}
-        </h1>
-      </div>
+    <div className="">
+      <div className="border-2 border-dashed rounded-xl p-4 border-primary">
+        <div className="font-medium text-lg">
+          <h1 className="text-xl text-blueprime">{title}</h1>
+          <h2 className="text-primary">{subtitle}</h2>
+          <p className="text-gray-400">{date}</p>
+        </div>
 
-      <div className="mt-8 small:mt-1 medium:mt-2 md:mt-4 px-13 small:px-0.5 medium:px-4 md:px-10 text-gary-200 text-lg medium:text-xl md:text-lg transition-all duration-500 overflow-hidden">
-        <p className="py-4 small:py-1 medium:py-2 md:py-1 transform transition-all duration-500">
-          Lorem ipsum dolor sit amet consectetur adipisicing elit. Odio deleniti
-          dolor non nisi, quas id incidunt eligendi pariatur quos unde sapiente
-          temporibus, consequatur in blanditiis. Aperiam dignissimos magni id
-          tenetur.
-        </p>
+        <div className="mt-5">
+          {text.map((text, index) => (
+            <ul key={index} className="list-disc pl-5">
+              <li>{text}</li>
+            </ul>
+          ))}
+        </div>
       </div>
-    </motion.div>
+    </div>
   );
 }
 
