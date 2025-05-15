@@ -1,5 +1,6 @@
 import { motion } from "motion/react";
 import ButtonNav from "./ButtonNav";
+import Links from "./Links";
 
 function MenuNav({ showMenu }) {
   const boxVariants = {
@@ -15,47 +16,25 @@ function MenuNav({ showMenu }) {
     },
   };
 
-  const linkStyling = `relative after:content-[''] after:absolute after:left-0 after:-bottom-0.5 after:h-[1px] 
-    after:bg-primary after:scale-x-0 after:transition-transform after:duration-300 
-    hover:after:scale-x-100`;
-
   return (
     <motion.aside
-      variants={boxVariants}
-      initial="initial"
-      animate={showMenu ? "expanded" : "initial"}
-      transition={{
-        duration: 0.8,
-        ease: "easeOut",
-        width: { duration: 0.4, ease: "easeOut", delay: 0.2 },
-        height: { duration: 0.4, ease: "easeOut", delay: 0.2 },
-      }}
-      className="bg-blue/30 backdrop-blur-md rounded-4xl overflow-hidden"
+      // variants={boxVariants}
+      // initial="initial"
+      // animate={showMenu ? "expanded" : "initial"}
+      // transition={{
+      //   duration: 0.8,
+      //   ease: "easeOut",
+      //   width: { duration: 0.4, ease: "easeOut", delay: 0.2 },
+      //   height: { duration: 0.4, ease: "easeOut", delay: 0.2 },
+      // }}
+      className={`bg-blue/30 backdrop-blur-md rounded-4xl overflow-hidden transition-all duration-500 ease-in-out delay-75 ${
+        showMenu ? `w-250 h-160` : `w-14 h-14`
+      }`}
     >
       <div className="relative w-full h-full flex flex-col justify-between gap-6 px-8 py-6 rounded-2xl">
         <p className="mt-14 text-lg font-bold text-gray-300">Menu</p>
-
-        <div className="w-50 h-85 small:h-60 sm:h-85 flex flex-col justify-between text-4xl small:text-2xl sm:text-4xl font-medium text-white">
-          <a href="#about" className={`${linkStyling} after:w-26`}>
-            About
-          </a>
-          <a href="#projects" className={`${linkStyling} after:w-34`}>
-            Projects
-          </a>
-          <a href="#skills" className={`${linkStyling} after:w-33`}>
-            Skill set
-          </a>
-          <a href="#experience" className={`${linkStyling} after:w-45`}>
-            Experience
-          </a>
-          <a href="#contact" className={`${linkStyling} after:w-33`}>
-            Contact
-          </a>
-        </div>
-
-        <div>
-          <ButtonNav />
-        </div>
+        <Links />
+        <ButtonNav />
       </div>
     </motion.aside>
   );

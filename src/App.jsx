@@ -1,3 +1,4 @@
+import { useEffect, useState } from "react";
 import About from "./components/about/About";
 import Contact from "./components/contact/Contact";
 import Experience from "./components/experience/Experience";
@@ -10,22 +11,36 @@ import Projects from "./components/project/Projects";
 import Skills from "./components/skill/Skills";
 
 function App() {
+  const [display, setDisplay] = useState(true);
+
+  useEffect(function () {
+    const timer = setTimeout(() => {
+      setDisplay(false);
+    }, 2000);
+    return () => clearTimeout(timer);
+  }, []);
+
   return (
     <div className="relative">
-      {/* <PageLoader /> */}
-      <Header />
-      <Gradients />
+      {display ? (
+        <PageLoader />
+      ) : (
+        <>
+          <Header />
+          <Gradients />
 
-      <main className="relative">
-        <Hero />
-        <About />
-        <Projects />
-        <Skills />
-        <Experience />
-        <Contact />
-      </main>
+          <main className="relative">
+            <Hero />
+            <About />
+            <Projects />
+            <Skills />
+            <Experience />
+            <Contact />
+          </main>
 
-      <Footer />
+          <Footer />
+        </>
+      )}
     </div>
   );
 }
