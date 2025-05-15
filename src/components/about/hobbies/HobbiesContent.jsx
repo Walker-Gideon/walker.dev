@@ -1,10 +1,15 @@
 import { useState } from "react";
 import Hobbies from "./Hobbies";
+import data from "./data.json";
 
 function HobbiesContent() {
   const [chechOne, setChechOne] = useState(true);
   const [chechTwo, setChechTwo] = useState(false);
   const [chechThree, setChechThree] = useState(false);
+
+  const hobby1_array = [data.at(0)];
+  const hobby2_array = [data.at(1)];
+  const hobby3_array = [data.at(2)];
 
   function handelShowContent() {
     if (chechTwo === true) setChechTwo(false);
@@ -27,54 +32,51 @@ function HobbiesContent() {
   return (
     <div className="small:hidden medium:block">
       <div>
-        <Hobbies
-          num="1"
-          title="Title amet consectetur adipisicing elit"
-          subTitle="Lorem ipsum dolor sit, amet consectetur adipisicing elit. Excepturi
-            voluptatibus aliquid"
-          firstText="totam delectus minima, explicabo ad recusandae odit? Voluptatum
-                veniam"
-          secText="totam delectus minima, explicabo ad recusandae odit? Voluptatum
-                veniam"
-          thirdText="totam delectus minima, explicabo ad recusandae odit? Voluptatum
-                veniam"
-          check={chechOne}
-          onClick={handelShowContent}
-        />
+        {hobby1_array.map((hobby, index) => (
+          <Hobbies
+            key={index}
+            num={hobby.num}
+            title={hobby.title}
+            subTitle={hobby.subTitle}
+            firstText={hobby.firstText}
+            secText={hobby.secText}
+            thirdText={hobby.thirdText}
+            check={chechOne}
+            onClick={handelShowContent}
+          />
+        ))}
       </div>
 
       <div>
-        <Hobbies
-          num="2"
-          title="Title amet consectetur adipisicing elit"
-          subTitle="Lorem ipsum dolor sit, amet consectetur adipisicing elit. Excepturi
-            voluptatibus aliquid"
-          firstText="totam delectus minima, explicabo ad recusandae odit? Voluptatum
-                veniam"
-          secText="totam delectus minima, explicabo ad recusandae odit? Voluptatum
-                veniam"
-          thirdText="totam delectus minima, explicabo ad recusandae odit? Voluptatum
-                veniam"
-          check={chechTwo}
-          onClick={handelShowContentTwo}
-        />
+        {hobby2_array.map((hobby, index) => (
+          <Hobbies
+            key={index}
+            num={hobby.num}
+            title={hobby.title}
+            subTitle={hobby.subTitle}
+            firstText={hobby.firstText}
+            secText={hobby.secText}
+            thirdText={hobby.thirdText}
+            check={chechTwo}
+            onClick={handelShowContentTwo}
+          />
+        ))}
       </div>
 
       <div>
-        <Hobbies
-          num="3"
-          title="Title amet consectetur adipisicing elit"
-          subTitle="Lorem ipsum dolor sit, amet consectetur adipisicing elit. Excepturi
-            voluptatibus aliquid"
-          firstText="totam delectus minima, explicabo ad recusandae odit? Voluptatum
-                veniam"
-          secText="totam delectus minima, explicabo ad recusandae odit? Voluptatum
-                veniam"
-          thirdText="totam delectus minima, explicabo ad recusandae odit? Voluptatum
-                veniam"
-          check={chechThree}
-          onClick={handelShowContentThree}
-        />
+        {hobby3_array.map((hobby, index) => (
+          <Hobbies
+            key={index}
+            num={hobby.num}
+            title={hobby.title}
+            subTitle={hobby.subTitle}
+            firstText={hobby.firstText}
+            secText={hobby.secText}
+            thirdText={hobby.thirdText}
+            check={chechThree}
+            onClick={handelShowContentThree}
+          />
+        ))}
       </div>
     </div>
   );

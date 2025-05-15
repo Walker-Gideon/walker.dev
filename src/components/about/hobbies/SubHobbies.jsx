@@ -1,68 +1,61 @@
 import { useState } from "react";
 import Hobbies from "./Hobbies";
+import data from "./data.json";
 
 function SubHobbies() {
   const [chechOne, setChechOne] = useState(true);
   const [chechTwo, setChechTwo] = useState(true);
   const [chechThree, setChechThree] = useState(true);
 
-  function handelShowContent() {
-    if (chechTwo === true) setChechTwo(false);
-    if (chechThree === true) setChechThree(false);
-    setChechOne((show) => !show);
-  }
-
-  function handelShowContentTwo() {
-    if (chechOne === true) setChechOne(false);
-    if (chechThree === true) setChechThree(false);
-    setChechTwo((show) => !show);
-  }
-
-  function handelShowContentThree() {
-    if (chechOne === true) setChechOne(false);
-    if (chechTwo === true) setChechTwo(false);
-    setChechThree((show) => !show);
-  }
+  const hobby1_array = [data.at(0)];
+  const hobby2_array = [data.at(1)];
+  const hobby3_array = [data.at(2)];
 
   return (
-    <div>
-      <div className="">
-        <Hobbies
-          num="1"
-          title="Title amet consectetur adipisicing elit"
-          subTitle="Lorem ipsum dolor sit, amet consectetur adipisicing elit. Excepturi voluptatibus aliquid"
-          firstText="totam delectus minima, explicabo ad recusandae odit? Voluptatum veniam"
-          secText="totam delectus minima, explicabo ad recusandae odit? Voluptatum veniam"
-          thirdText="totam delectus minima, explicabo ad recusandae odit? Voluptatum veniam"
-          check={chechOne}
-          onClick={handelShowContent}
-        />
+    <div className="small:block medium:hidden">
+      <div>
+        {hobby1_array.map((hobby, index) => (
+          <Hobbies
+            key={index}
+            num={hobby.num}
+            title={hobby.title}
+            subTitle={hobby.subTitle}
+            firstText={hobby.firstText}
+            secText={hobby.secText}
+            thirdText={hobby.thirdText}
+            check={chechOne}
+          />
+        ))}
       </div>
 
-      <div className="">
-        <Hobbies
-          num="2"
-          title="Title amet consectetur adipisicing elit"
-          subTitle="Lorem ipsum dolor sit, amet consectetur adipisicing elit. Excepturi voluptatibus aliquid"
-          firstText="totam delectus minima, explicabo ad recusandae odit? Voluptatum veniam"
-          secText="totam delectus minima, explicabo ad recusandae odit? Voluptatum veniam"
-          thirdText="totam delectus minima, explicabo ad recusandae odit? Voluptatum veniam"
-          check={chechTwo}
-          onClick={handelShowContentTwo}
-        />
+      <div>
+        {hobby2_array.map((hobby, index) => (
+          <Hobbies
+            key={index}
+            num={hobby.num}
+            title={hobby.title}
+            subTitle={hobby.subTitle}
+            firstText={hobby.firstText}
+            secText={hobby.secText}
+            thirdText={hobby.thirdText}
+            check={chechTwo}
+          />
+        ))}
       </div>
 
-      <div className="">
-        <Hobbies
-          num="3"
-          title="Title amet consectetur adipisicing elit"
-          subTitle="Lorem ipsum dolor sit, amet consectetur adipisicing elit. Excepturi voluptatibus aliquid"
-          firstText="totam delectus minima, explicabo ad recusandae odit? Voluptatum veniam"
-          secText="totam delectus minima, explicabo ad recusandae odit? Voluptatum veniam"
-          thirdText="totam delectus minima, explicabo ad recusandae odit? Voluptatum veniam"
-          check={chechThree}
-          onClick={handelShowContentThree}
-        />
+      <div>
+        {hobby3_array.map((hobby, index) => (
+          <Hobbies
+            key={index}
+            num={hobby.num}
+            title={hobby.title}
+            subTitle={hobby.subTitle}
+            firstText={hobby.firstText}
+            secText={hobby.secText}
+            thirdText={hobby.thirdText}
+            check={chechThree}
+          />
+        ))}
       </div>
     </div>
   );

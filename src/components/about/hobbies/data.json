@@ -1,0 +1,26 @@
+[
+  {
+    "num": 1,
+    "title": "Title amet consectetur adipisicing",
+    "subTitle": "Lorem ipsum dolor sit, amet consectetur adipisicing elit. Excepturi voluptatibus aliquid",
+    "firstText": "totam delectus minima, explicabo ad recusandae odit? Voluptatum veniam",
+    "secText": "totam delectus minima, explicabo ad recusandae odit? Voluptatum veniam",
+    "thirdText": "totam delectus minima, explicabo ad recusandae odit? Voluptatum veniam"
+  },
+  {
+    "num": 2,
+    "title": "Title amet consectetur adipisicing",
+    "subTitle": "Lorem ipsum dolor sit, amet consectetur adipisicing elit. Excepturi voluptatibus aliquid",
+    "firstText": "totam delectus minima, explicabo ad recusandae odit? Voluptatum veniam",
+    "secText": "totam delectus minima, explicabo ad recusandae odit? Voluptatum veniam",
+    "thirdText": "totam delectus minima, explicabo ad recusandae odit? Voluptatum veniam"
+  },
+  {
+    "num": 3,
+    "title": "Title amet consectetur adipisicing",
+    "subTitle": "Lorem ipsum dolor sit, amet consectetur adipisicing elit. Excepturi voluptatibus aliquid",
+    "firstText": "totam delectus minima, explicabo ad recusandae odit? Voluptatum veniam",
+    "secText": "totam delectus minima, explicabo ad recusandae odit? Voluptatum veniam",
+    "thirdText": "totam delectus minima, explicabo ad recusandae odit? Voluptatum veniam"
+  }
+]

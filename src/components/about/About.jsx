@@ -11,9 +11,7 @@ function About() {
       <div>
         <AboutPara />
         <HobbiesContent />
-        <div className="small:block medium:hidden">
-          <SubHobbies />
-        </div>
+        <SubHobbies />
       </div>
     </div>
   );
