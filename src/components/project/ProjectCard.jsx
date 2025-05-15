@@ -9,7 +9,7 @@ function ProjectCard({ title, date, imageUrl, link, summaryOne, summaryTwo }) {
 
         <div className="text-left pt-4 px-4 small:pt-4 text-xl medium:pt-3 md:pt-4">
           <div className="flex items-center justify-between">
-            <p className="text-blueprime text-xl">{title}</p>
+            <p className="text-blueprime font-bold text-xl">{title}</p>
 
             <a
               href={link}

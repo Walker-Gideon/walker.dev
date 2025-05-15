@@ -16,7 +16,7 @@ function App() {
       <Header />
       <Gradients />
 
-      <div className="relative">
+      <main className="relative">
         <Hero />
         <About />
         <Projects />
@@ -27,7 +27,7 @@ function App() {
           <Contact />
           <Gradients />
         </div>
-      </div>
+      </main>
 
       <Footer />
     </div>
