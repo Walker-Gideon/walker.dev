@@ -1,3 +1,4 @@
+import { FaArrowRightLong } from "react-icons/fa6";
 import ExperienceContent from "./ExperienceContent";
 import ExperienceHeader from "./ExperienceHeader";
 
@@ -39,16 +40,22 @@ function Experience() {
     <div className="pt-20 pb-15 small:pt-0 md:pt-10 midmedium:pt-15 px-20 small:px-4 sm:px-6 md:px-10 lg:px-20 h-full">
       <ExperienceHeader />
 
-      <div className="flex small:flex-col midmedium:flex-row items-center justify-between small:gap-20 md:gap-30 small:px-4 midmedium:px-20 lg:px-0">
+      <div className="flex small:flex-col midmedium:flex-row items-center justify-between small:gap-20 midmedium:gap-10 small:px-4 md:px-20 midmedium:px-6 lg:px-0">
         {experience.map((exp, index) => (
-          <div key={index} className="">
+          <>
             <ExperienceContent
+              key={index}
               title={exp.title}
               subtitle={exp.subtitle}
               date={exp.date}
               text={exp.text}
             />
-          </div>
+            {index < 2 ? (
+              <FaArrowRightLong className="text-6xl text-primary small:hidden midmedium:block" />
+            ) : (
+              ""
+            )}
+          </>
         ))}
       </div>
     </div>
