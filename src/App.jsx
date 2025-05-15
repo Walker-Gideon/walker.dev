@@ -22,11 +22,7 @@ function App() {
         <Projects />
         <Skills />
         <Experience />
-
-        <div className="relative">
-          <Contact />
-          <Gradients />
-        </div>
+        <Contact />
       </main>
 
       <Footer />
