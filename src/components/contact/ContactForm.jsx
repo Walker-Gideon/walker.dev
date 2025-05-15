@@ -1,4 +1,5 @@
 import { useState } from "react";
+import Button from "../ui/Button";
 
 function ContactForm() {
   const [name, setName] = useState("");
@@ -34,7 +35,7 @@ function ContactForm() {
         </div>
       </div>
 
-      <div className="my-8 w-full">
+      <div className="my-6 w-full">
         <input
           type="text"
           value={subject}
@@ -50,18 +51,19 @@ function ContactForm() {
           value={message}
           onChange={(e) => setMessage(e.target.value)}
           placeholder="Enter your message:"
-          className="w-full h-40 border-b border-b-gray-400 focus:outline-none text-white text-sm small:text-lg sm:text-xl font-bold p-1 placeholder:text-gray-400 placeholder:text-lg"
+          className="w-full h-30 border-b border-b-gray-400 focus:outline-none text-white text-sm small:text-lg sm:text-xl font-bold p-1 placeholder:text-gray-400 placeholder:text-lg"
         ></textarea>
       </div>
 
       <div className="small:flex small:flex-col md:flex-row">
         <div></div>
-        <button
+        <Button
           onClick={handleSubmit}
-          className="border-2 rounded-full border-primary px-8 py-4 text-xl text-center text-white transition-colors duration-300 hover:bg-primary font-medium cursor-pointer"
+          borderCol="border-primary"
+          textCol="text-white"
         >
           Discuss project
-        </button>
+        </Button>
       </div>
     </form>
   );

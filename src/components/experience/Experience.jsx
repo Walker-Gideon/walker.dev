@@ -37,7 +37,7 @@ const experience = [
 
 function Experience() {
   return (
-    <div className="pt-20 pb-15 small:pt-0 md:pt-10 midmedium:pt-15 px-20 small:px-4 sm:px-6 md:px-10 lg:px-20 h-full">
+    <div className="w-full h-full pb-10 pt-30 small:pt-25 medium:pt-30 px-20 small:px-4 sm:px-8 lg:px-20">
       <ExperienceHeader />
 
       <div className="flex small:flex-col midmedium:flex-row items-center justify-between small:gap-20 midmedium:gap-10 small:px-4 md:px-20 midmedium:px-6 lg:px-0">
