@@ -6,7 +6,7 @@ function About() {
   return (
     <div
       id="about"
-      className="small:h-full md:h-190 pt-40 small:pt-18 sm:pt-25 medium:pt-40 px-20 small:px-4 sm:px-6 md:px-10 lg:px-20 h-[90vh]"
+      className="w-full h-full pb-10 pt-30 small:pt-25 medium:pt-30 px-20 small:px-4 sm:px-8 lg:px-20"
     >
       <div>
         <AboutPara />
