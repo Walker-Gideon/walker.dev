@@ -38,7 +38,7 @@ const experience = [
 function Experience() {
   return (
     <div
-      id="#experience"
+      id="experience"
       className="w-full h-full pb-10 pt-30 small:pt-25 medium:pt-30 px-20 small:px-4 sm:px-8 lg:px-20"
     >
       <ExperienceHeader />
