@@ -18,16 +18,13 @@ const skillsTwo = [
   },
   {
     icon: <TbBrandFramerMotion />,
-    text: "Framer",
+    text: "Framer Motion",
   },
 ];
 
 function SkillsTwo() {
   return (
-    <div
-      id="skills"
-      className="flex w-full h-16 font-medium whitespace-nowrap "
-    >
+    <div id="skills" className="flex w-full h- font-medium whitespace-nowrap ">
       <div className="relative w-full h-40 overflow-hidden skill_main decoration">
         {skillsTwo.map((skills, index) => (
           <div

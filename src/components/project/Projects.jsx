@@ -65,31 +65,26 @@ function Projects() {
   return (
     <div
       id="projects"
-      className="relative mt-[100px] small:mt-30 medium:mt-40 md:mt-[200px]"
+      className="relative w-full h-full pb-10 pt-30 small:pt-25 medium:pt-30 px-20 small:px-4 sm:px-8 lg:px-20"
     >
-      <div className="px-20 small:px-4 sm:px-6 md:px-10 lg:px-20">
-        <ProjectText />
+      <ProjectText />
 
-        <div className="relative md:grid md:grid-cols-2 md:gap-30 small:px-4 lg:px-20">
-          {projects.map((project, index) => (
-            <div key={index} className={`${project.padding} ${project.top}`}>
-              <ProjectCard
-                title={project.title}
-                date={project.date}
-                imageUrl={project.imageUrl}
-                link={project.link}
-                summaryOne={project.summaryOne}
-                summaryTwo={project.summaryTwo}
-              />
-            </div>
-          ))}
-        </div>
+      <div className="relative md:grid md:grid-cols-2 md:gap-30 small:px-4 lg:px-20">
+        {projects.map((project, index) => (
+          <div key={index} className={`${project.padding} ${project.top}`}>
+            <ProjectCard
+              title={project.title}
+              date={project.date}
+              imageUrl={project.imageUrl}
+              link={project.link}
+              summaryOne={project.summaryOne}
+              summaryTwo={project.summaryTwo}
+            />
+          </div>
+        ))}
       </div>
 
       <Gradients />
-      <div
-        className={`bg-blue/30 backdrop-blur-md absolute top-0 left-0`}
-      ></div>
     </div>
   );
 }

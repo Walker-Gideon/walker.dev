@@ -25,10 +25,7 @@ const skillsOne = [
 
 function SkillsOne() {
   return (
-    <div
-      id="skills"
-      className="flex w-full h-16 font-medium whitespace-nowrap "
-    >
+    <div id="skills" className="flex w-full h- font-medium whitespace-nowrap ">
       <div className="relative w-full h-40 overflow-hidden skill_main decoration">
         {skillsOne.map((skills, index) => (
           <div

@@ -3,9 +3,11 @@ import SkillsTwo from "./SkillsTwo";
 
 function Skills() {
   return (
-    <div className="my-20 pt-11 bg-blue/30 h-100 flex flex-col gap-30">
-      <SkillsOne />
-      <SkillsTwo />
+    <div className="pt-30 pb-10">
+      <div className="bg-blue/30 h-100 flex flex-col gap-0">
+        <SkillsOne />
+        <SkillsTwo />
+      </div>
     </div>
   );
 }
