@@ -35,8 +35,8 @@ const experience = [
 
 function Experience() {
   return (
-    <div className="pt-20 small:mt-10 mb-5 medium:pb-20 px-20 small:px-4 sm:px-6 md:px-10 lg:px-20 h-screen small:h-210 sm:h-300 medium:h-auto z-20">
-      <div className="pb-10 small:pb-6 sm:mb-8 medium:mb-10">
+    <div className="pt-20 pb-15 small:pt-0 px-20 small:px-4 sm:px-6 md:px-10 lg:px-20 h-full">
+      <div className="pb-10">
         <h1 className="text-4xl small:text-2xl sm:text-3xl medium:text-4xl font-bold text-primary">
           Experience
         </h1>
@@ -45,7 +45,7 @@ function Experience() {
         </h1>
       </div>
 
-      <div className="flex flex-row items-center justify-between gap-35">
+      <div className="flex small:flex-col midmedium:flex-row items-center justify-between small:gap-20 md:gap-35 small:px-4 midmedium:px-20 lg:px-0">
         {experience.map((exp, index) => (
           <div key={index} className="">
             <ExperienceContent
