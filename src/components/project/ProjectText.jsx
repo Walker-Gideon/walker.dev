@@ -1,6 +1,6 @@
 function ProjectText() {
   return (
-    <div className="mb-10 small:mb-6 sm:mb-8 medium:mb-10">
+    <div className="pb-10">
       <h1 className="text-4xl font-bold text-primary">Selected</h1>
       <h1 className="text-4xl font-bold text-blueprime">works</h1>
     </div>
