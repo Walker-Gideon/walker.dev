@@ -1,11 +1,26 @@
+import { motion } from "motion/react";
+import { fadeIn } from "../motion/variants";
+
 function AboutPara() {
   return (
     <div>
-      <h1 className="text-5xl small:text-left medium:text-center font-medium uppercase mb-10 small:mb-6 text-blueprime">
+      <motion.h1
+        variants={fadeIn("down", 0.2)}
+        initial="hidden"
+        whileInView="show"
+        viewport={{ once: false, amount: 0 }}
+        className="text-5xl small:text-left medium:text-center font-medium uppercase mb-10 small:mb-6 text-blueprime"
+      >
         Behind the Code
-      </h1>
+      </motion.h1>
 
-      <div className="text-2xl text-white mb-14">
+      <motion.div
+        variants={fadeIn("up", 0.2)}
+        initial="hidden"
+        whileInView="show"
+        viewport={{ once: false, amount: 0 }}
+        className="text-2xl text-white mb-14"
+      >
         <p>
           My journey into front-end development started with a simple curiosity
           for how websites worked — and quickly turned into a passion for
@@ -19,7 +34,7 @@ function AboutPara() {
           writing code that’s both efficient and readable, and creating
           interfaces that feel just right for users.
         </p>
-      </div>
+      </motion.div>
     </div>
   );
 }
