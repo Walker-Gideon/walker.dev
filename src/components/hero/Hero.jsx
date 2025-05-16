@@ -1,6 +1,6 @@
 import Image from "./Image";
 import HeroText from "./HeroText";
-import Button from "../ui/Button";
+import ButtonHero from "./ButtonHero";
 
 function Hero() {
   return (
@@ -10,10 +10,7 @@ function Hero() {
     >
       <div className="w-200 small:w-auto md:w-210 small:text-center sm:text-center md:text-left">
         <HeroText />
-
-        <Button borderCol="border-primary" textCol="text-white">
-          Download CV
-        </Button>
+        <ButtonHero />
       </div>
 
       <Image />

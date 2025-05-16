@@ -1,8 +1,16 @@
+import { motion } from "motion/react";
+import { fadeIn } from "../motion/variants";
 import creatorImage from "../../assets/my-prof.jpeg";
 
 function Image() {
   return (
-    <div className="small:p-4 sm:px-6 sm:p-0">
+    <motion.div
+      variants={fadeIn("left", 0.2)}
+      initial="hidden"
+      whileInView="show"
+      viewport={{ once: false, amount: 0 }}
+      className="small:p-4 sm:px-6 sm:p-0"
+    >
       <div className="w-110 small:w-95 sm:w-105 medium:w-110 h-full p-0.5 small:p-1 bg-primary/30 backdrop-blur-md justify-self-end rounded-xl rotate-10 small:rotate-2 sm:rotate-6 medium:rotate-8">
         <div className="relative w-full h-140 small:h-full sm:h-full medium:h-160 md:h-full p-2 small:p-1 bg-blue/30 backdrop-blur-md rounded-xl -rotate-5">
           <img
@@ -12,7 +20,7 @@ function Image() {
           />
         </div>
       </div>
-    </div>
+    </motion.div>
   );
 }
 

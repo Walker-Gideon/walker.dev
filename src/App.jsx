@@ -22,25 +22,25 @@ function App() {
 
   return (
     <div className="relative">
-      {display ? (
-        <PageLoader />
-      ) : (
-        <>
-          <Header />
-          <Gradients />
+      {/* <PageLoader /> */}
+      {/* {display ? (
+      ) : ( */}
+      <>
+        <Header />
+        <Gradients />
 
-          <main className="relative">
-            <Hero />
-            <About />
-            <Projects />
-            <Skills />
-            <Experience />
-            <Contact />
-          </main>
+        <main className="relative">
+          <Hero />
+          <About />
+          <Projects />
+          <Skills />
+          <Experience />
+          <Contact />
+        </main>
 
-          <Footer />
-        </>
-      )}
+        <Footer />
+      </>
+      {/* )} */}
     </div>
   );
 }
