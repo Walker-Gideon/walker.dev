@@ -8,14 +8,19 @@ function Footer() {
         <div className="text-black text-[1rem] medium:text-[1rem] small:text-lg medium:text-xl font-medium speial-font">
           <p>
             &copy; <span>{curYear}</span>{" "}
-            <span className="uppercase">Wɑɭkɜɾ.dev</span>. All rights reserved.
+            <span className="uppercase">Wɑɭkɜɾ.dev</span> | All rights reserved.
           </p>
         </div>
 
         <div>
-          <button className="flex itmes-center gap-1 text-[1rem] medium:text-[1rem] small:text-xl font-bold text-black cursor-pointer transition-all duration-300 hover:gap-1.5">
+          <a
+            href="https://github.com/Walker-Gideon"
+            target="_blank"
+            rel="noopener noreferrer"
+            className="flex itmes-center gap-1 text-[1rem] medium:text-[1rem] small:text-xl font-bold text-black cursor-pointer transition-all duration-300 hover:gap-1.5"
+          >
             Github Repo <span>&rarr;</span>
-          </button>
+          </a>
         </div>
       </footer>
     </div>

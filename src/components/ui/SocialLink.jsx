@@ -5,16 +5,36 @@ function SocialLink() {
 
   return (
     <div className="w-full font-medium text-lg small:text-xl whitespace-nowrap flex items-center justify-between medium:justify-around md:justify-between text-primary transition-colors duration-300">
-      <a href="#" className={`${linkStyling} after:w-20`}>
+      <a
+        href="https://www.linkedin.com/in/gideon-awortwe-walker/"
+        target="_blank"
+        rel="noopener noreferrer"
+        className={`${linkStyling} after:w-20`}
+      >
         LinkedIn
       </a>
-      <a href="#" className={`${linkStyling} after:w-24`}>
+      <a
+        href="https://www.instagram.com/walkerhimself/?hl=en"
+        target="_blank"
+        rel="noopener noreferrer"
+        className={`${linkStyling} after:w-24`}
+      >
         Instagram
       </a>
-      <a href="#" className={`${linkStyling} after:w-22`}>
+      <a
+        href="https://web.facebook.com/profile.php?id=100016754147621"
+        target="_blank"
+        rel="noopener noreferrer"
+        className={`${linkStyling} after:w-22`}
+      >
         Facebook
       </a>
-      <a href="#" className={`${linkStyling} after:w-24`}>
+      <a
+        href="https://x.com/awortwe_gideon"
+        target="_blank"
+        rel="noopener noreferrer"
+        className={`${linkStyling} after:w-24`}
+      >
         X (Twitter)
       </a>
     </div>
