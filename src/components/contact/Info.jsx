@@ -7,12 +7,9 @@ function Info() {
     <div className="small:mt-1 ">
       <div className="flex items-center gap-2 text-gray-400">
         <MdOutlineMailOutline className="font-bold" />
-        <a
-          href="mailto:gideonawortwe3@gmail.com"
-          className="text-3xl text-white font-medium"
-        >
+        <p className="text-4xl text-white font-medium">
           gideonawortwe3@gmail.com
-        </a>
+        </p>
       </div>
 
       <div className="flex items-center gap-2 text-gray-400">

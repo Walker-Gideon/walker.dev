@@ -18,18 +18,16 @@ function MenuNav({ showMenu }) {
 
   return (
     <motion.aside
-      // variants={boxVariants}
-      // initial="initial"
-      // animate={showMenu ? "expanded" : "initial"}
-      // transition={{
-      //   duration: 0.8,
-      //   ease: "easeOut",
-      //   width: { duration: 0.4, ease: "easeOut", delay: 0.2 },
-      //   height: { duration: 0.4, ease: "easeOut", delay: 0.2 },
-      // }}
-      className={`bg-blue/30 backdrop-blur-md rounded-4xl overflow-hidden transition-all duration-500 ease-in-out delay-75 ${
-        showMenu ? `w-250 h-160` : `w-14 h-14`
-      }`}
+      variants={boxVariants}
+      initial="initial"
+      animate={showMenu ? "expanded" : "initial"}
+      transition={{
+        duration: 0.8,
+        ease: "easeOut",
+        width: { duration: 0.4, ease: "easeOut", delay: 0.2 },
+        height: { duration: 0.4, ease: "easeOut", delay: 0.2 },
+      }}
+      className="bg-blue/30 backdrop-blur-md rounded-4xl overflow-hidden"
     >
       <div className="relative w-full h-full flex flex-col justify-between gap-6 px-8 py-6 rounded-2xl">
         <p className="mt-14 text-lg font-bold text-gray-300">Menu</p>

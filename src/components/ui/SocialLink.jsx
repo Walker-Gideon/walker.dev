@@ -4,17 +4,17 @@ function SocialLink() {
     hover:after:scale-x-100`;
 
   return (
-    <div className="w-full font-medium text-lg small:text-xl whitespace-nowrap flex items-center justify-between medium:justify-around md:justify-between text-gray-300 transition-colors duration-300">
-      <a href="#" className={`${linkStyling} after:w-20 hover:text-gray-200`}>
+    <div className="w-full font-medium text-lg small:text-xl whitespace-nowrap flex items-center justify-between medium:justify-around md:justify-between text-primary transition-colors duration-300">
+      <a href="#" className={`${linkStyling} after:w-20`}>
         LinkedIn
       </a>
-      <a href="#" className={`${linkStyling} after:w-24 hover:text-gray-200`}>
+      <a href="#" className={`${linkStyling} after:w-24`}>
         Instagram
       </a>
-      <a href="#" className={`${linkStyling} after:w-22 hover:text-gray-200`}>
+      <a href="#" className={`${linkStyling} after:w-22`}>
         Facebook
       </a>
-      <a href="#" className={`${linkStyling} after:w-24 hover:text-gray-200`}>
+      <a href="#" className={`${linkStyling} after:w-24`}>
         X (Twitter)
       </a>
     </div>
