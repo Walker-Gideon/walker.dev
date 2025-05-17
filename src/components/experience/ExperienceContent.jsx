@@ -4,7 +4,7 @@ import { fadeIn } from "../motion/variants";
 function ExperienceContent({ title, subtitle, date, text }) {
   return (
     <motion.div
-      variants={fadeIn("up", 0.6)}
+      variants={fadeIn("up", 0.4)}
       initial="hidden"
       whileInView="show"
       viewport={{ once: false, amount: 0 }}

@@ -57,7 +57,7 @@ function Experience() {
             />
             {index < 2 ? (
               <motion.div
-                variants={fadeIn("up", 0.6)}
+                variants={fadeIn("up", 0.2)}
                 initial="hidden"
                 whileInView="show"
                 viewport={{ once: false, amount: 0 }}
