@@ -1,6 +1,8 @@
 import { FaArrowRightLong } from "react-icons/fa6";
 import ExperienceContent from "./ExperienceContent";
 import ExperienceHeader from "./ExperienceHeader";
+import { motion } from "motion/react";
+import { fadeIn } from "../motion/variants";
 
 const experience = [
   {
@@ -54,7 +56,14 @@ function Experience() {
               text={exp.text}
             />
             {index < 2 ? (
-              <FaArrowRightLong className="text-6xl text-primary small:hidden midmedium:block" />
+              <motion.div
+                variants={fadeIn("up", 0.6)}
+                initial="hidden"
+                whileInView="show"
+                viewport={{ once: false, amount: 0 }}
+              >
+                <FaArrowRightLong className="text-6xl text-primary small:hidden midmedium:block" />
+              </motion.div>
             ) : (
               ""
             )}

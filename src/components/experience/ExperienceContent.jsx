@@ -1,6 +1,15 @@
+import { motion } from "motion/react";
+import { fadeIn } from "../motion/variants";
+
 function ExperienceContent({ title, subtitle, date, text }) {
   return (
-    <div className="midmedium:w-[20rem] midmedium:h-[28.5rem] small:w-full small:h-auto border-2 border-dashed rounded-xl small:p-8 md:p-4 border-primary">
+    <motion.div
+      variants={fadeIn("up", 0.6)}
+      initial="hidden"
+      whileInView="show"
+      viewport={{ once: false, amount: 0 }}
+      className="midmedium:w-[20rem] midmedium:h-[28.5rem] small:w-full small:h-auto border-2 border-dashed rounded-xl small:p-8 md:p-4 border-primary"
+    >
       <div className="font-medium text-lg">
         <h1 className="font-bold text-blueprime">{title}</h1>
         <h2 className="font-medium text-primary py-0.5">{subtitle}</h2>
@@ -14,7 +23,7 @@ function ExperienceContent({ title, subtitle, date, text }) {
           </ul>
         ))}
       </div>
-    </div>
+    </motion.div>
   );
 }
 
