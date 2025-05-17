@@ -22,8 +22,8 @@ function App() {
 
   return (
     <div className="relative">
-      {/* <PageLoader /> */}
       {/* {display ? (
+      <PageLoader />
       ) : ( */}
       <>
         <Header />
@@ -40,7 +40,7 @@ function App() {
 
         <Footer />
       </>
-      {/* )} */}
+      {/* )}  */}
     </div>
   );
 }

@@ -14,6 +14,11 @@ function ContactForm() {
   const sendEmail = (e) => {
     e.preventDefault();
 
+    if (!name || !email || !subject || !message) {
+      alert("Please fill the form correctly");
+      return;
+    }
+
     emailjs
       .sendForm("service_2qmjz56", "template_dijwu0q", form.current, {
         publicKey: "JLvMDGyBw66-MY65g",
