@@ -5,8 +5,8 @@ import Links from "./Links";
 function MenuNav({ showMenu }) {
   const boxVariants = {
     initial: {
-      width: 42,
-      height: 42,
+      width: 52,
+      height: 52,
       x: "1",
     },
     expanded: {

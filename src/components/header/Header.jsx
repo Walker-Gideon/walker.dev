@@ -13,8 +13,9 @@ export default function Header() {
         <MenuButton showMenu={showMenu} setShowMenu={setShowMenu} />
       </header>
 
-      <div className="absolute top-4 right-0 xl:right-8 lg:right-8 sm:right-6 md:right-6 overflow-hidden">
-        {/* <MenuNav showMenu={showMenu} /> */}
+      {/* xl:right-8 lg:right-8 sm:right-6 md:right-6 */}
+      <div className="absolute top-4.5 right-10.5  overflow-hidden">
+        <MenuNav showMenu={showMenu} />
       </div>
     </div>
   );
