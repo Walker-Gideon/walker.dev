@@ -3,27 +3,27 @@ const links = [
   {
     text: "Home",
     link: "home",
-    width: "after:w-24",
+    width: "after:w-16",
   },
   {
     text: "About",
     link: "about",
-    width: "after:w-26",
+    width: "after:w-16",
   },
   {
     text: "Projects",
     link: "projects",
-    width: "after:w-34",
+    width: "after:w-22",
   },
   {
     text: "Skill set",
     link: "skills",
-    width: "after:w-33",
+    width: "after:w-21",
   },
   {
     text: "Experience",
     link: "experience",
-    width: "after:w-45",
+    width: "after:w-30",
   },
 ];
 
@@ -33,7 +33,8 @@ function Links() {
   hover:after:scale-x-100`;
 
   return (
-    <div className="w-50 h-85 small:h-60 sm:h-100 md:h-85 flex flex-col justify-between text-4xl small:text-2xl sm:text-4xl font-medium text-white">
+    //small:h-60 sm:h-100 md:h-85
+    <div className="w-50 h-80 flex flex-col justify-between text-2xl font-medium text-white">
       {links.map((link, index) => (
         <Link
           key={index}

@@ -29,8 +29,8 @@ function MenuNav({ showMenu }) {
       }}
       className="bg-blue/30 backdrop-blur-md rounded-4xl overflow-hidden"
     >
-      <div className="relative w-full h-full flex flex-col justify-between gap-6 px-8 py-6 rounded-2xl">
-        <p className="mt-14 text-lg font-bold text-gray-300">Menu</p>
+      <div className="relative w-full h-full flex flex-col justify-between gap-6 px-4 py-6 rounded-2xl overflow-hidden">
+        <p className="pt-8 text-sm font-bold text-gray-300">Menu</p>
         <Links />
         <ButtonNav />
       </div>

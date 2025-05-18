@@ -7,8 +7,8 @@ export default function ButtonNav() {
       smooth={true}
       spy={true}
       duration={500}
-      offset={-130}
-      className="relative w-full small:w-full sm:w-full md:w-60 flex flex-col items-center justify-center px-8 py-4 text-lg font-medium rounded-full border-2 border-primary transition-colors duration-300 hover:bg-primary overflow-hidden cursor-pointer text-white whitespace-nowrap"
+      offset={-130} //small:w-full sm:w-full
+      className="relative w-full md:w-55 flex flex-col items-center justify-center px-8 py-4 text-sm font-medium rounded-full border-2 border-primary transition-all duration-300 hover:bg-primary hover:scale-105 overflow-hidden cursor-pointer text-white whitespace-nowrap"
     >
       Get in touch
     </Link>

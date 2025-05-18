@@ -30,15 +30,15 @@ function App() {
         <Gradients />
 
         <main className="relative">
-          <Hero />
-          <About />
-          <Projects />
-          <Skills />
-          <Experience />
-          <Contact />
+          {/* <Hero /> */}
+          {/* <About /> */}
+          {/* <Projects /> */}
+          {/* <Skills /> */}
+          {/* <Experience /> */}
+          {/* <Contact /> */}
         </main>
 
-        <Footer />
+        {/* <Footer /> */}
       </div>
       {/* )}  */}
     </div>

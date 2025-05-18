@@ -15,7 +15,7 @@
   --shadow-secondary: 10px 10px 200px 150px rgba(254, 185, 65, 0.5);
   --shadow-medium: 10px 10px 200px 150px rgba(78, 215, 241, 0.5);
 
-  --breakpoint-small: 300px;
+  /* --breakpoint-small: 300px;
   --breakpoint-sm: 350px;
   --breakpoint-medium: 467px;
   --breakpoint-md: 768px;
@@ -23,7 +23,7 @@
   --breakpoint-lg: 1024px;
   --breakpoint-large: 1090px;
   --breakpoint-xl: 1280px;
-  --breakpoint-2xl: 1536px;
+  --breakpoint-2xl: 1536px; */
 }
 
 :root {
