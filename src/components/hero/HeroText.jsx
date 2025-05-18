@@ -3,14 +3,13 @@ import { fadeIn } from "../motion/variants";
 
 function HeroText() {
   return (
-    //md:mb-15
-    <div className="">
+    <div>
       <motion.h2
         variants={fadeIn("down", 0.2)}
         initial="hidden"
         whileInView="show"
         viewport={{ once: false, amount: 0 }}
-        className="text-xl text-blueprime font-medium uppercase"
+        className="text-2xl text-blueprime font-medium uppercase"
       >
         Fronted-end Web Developer
       </motion.h2>
@@ -19,8 +18,8 @@ function HeroText() {
         variants={fadeIn("right", 0.4)}
         initial="hidden"
         whileInView="show"
-        viewport={{ once: false, amount: 0 }} //small:py-2 md:py-6
-        className="font-bold text-xl font-sans py-4 text-primary"
+        viewport={{ once: false, amount: 0 }}
+        className="font-bold text-6xl font-sans py-2 text-primary"
       >
         Gideon Awortwe
       </motion.h1>
@@ -30,7 +29,7 @@ function HeroText() {
         initial="hidden"
         whileInView="show"
         viewport={{ once: false, amount: 0 }}
-        className="text-lg text-white mb-10"
+        className="text-xl text-white mb-10"
       >
         I build responsive, user-friendly websites with React, Tailwind CSS, and
         JavaScript — turning ideas into clean, functional code.

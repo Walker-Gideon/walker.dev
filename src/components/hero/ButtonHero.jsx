@@ -8,7 +8,7 @@ function ButtonHero() {
       initial="hidden"
       whileInView="show"
       viewport={{ once: false, amount: 0 }}
-      className="border-2 rounded-full border-primary px-8 py-4 text-xl text-center text-white transition-colors duration-300 hover:bg-primary font-medium cursor-pointer"
+      className="border-2 rounded-full border-primary px-8 py-4 text-sm text-center text-white transition-all duration-300 hover:bg-primary hover:scale-105 font-medium cursor-pointer"
     >
       Download CV
     </motion.button>

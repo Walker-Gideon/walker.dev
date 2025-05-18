@@ -5,11 +5,10 @@ import ButtonHero from "./ButtonHero";
 function Hero() {
   return (
     <div
-      id="home" //medium:mb-20 pb-10 pt-30 small:pt-25 medium:pt-20 px-20 small:px-4 sm:px-8 lg:px-20 small:flex-col md:flex-row small:gap-20 medium:gap-40 md:gap-0
-      className="w-full h-full mx- pt-10 px-4 flex flex-col md:flex-row items-center justify-between overflow-hidden"
+      id="home"
+      className="w-full h-full pt-34 lg:pt-20 pb-10 px-4 md:px-20 flex flex-col lg:flex-row items-center justify-between gap-25 lg:gap-0 overflow-hidden"
     >
-      {/* small:w-auto md:w-210 small:text-center sm:text-center md:text-left */}
-      <div className="w-200 ">
+      <div className="text-center lg:text-left lg:w-180">
         <HeroText />
         <ButtonHero />
       </div>
