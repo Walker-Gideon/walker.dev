@@ -25,7 +25,7 @@ function App() {
       {/* {display ? (
       <PageLoader />
       ) : ( */}
-      <>
+      <div className="relative">
         <Header />
         <Gradients />
 
@@ -39,7 +39,7 @@ function App() {
         </main>
 
         <Footer />
-      </>
+      </div>
       {/* )}  */}
     </div>
   );

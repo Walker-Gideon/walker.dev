@@ -1,26 +1,26 @@
 [
   {
     "num": 1,
-    "title": "Title amet consectetur adipisicing",
-    "subTitle": "Lorem ipsum dolor sit, amet consectetur adipisicing elit. Excepturi voluptatibus aliquid",
-    "firstText": "totam delectus minima, explicabo ad recusandae odit? Voluptatum veniam",
-    "secText": "totam delectus minima, explicabo ad recusandae odit? Voluptatum veniam",
-    "thirdText": "totam delectus minima, explicabo ad recusandae odit? Voluptatum veniam"
+    "title": "Crafting Responsive Interfaces",
+    "subTitle": "Focus on designing and building user interfaces that adapt well across devices.",
+    "firstText": "I build layouts that look and feel great on mobile, tablet, and desktop.",
+    "secText": "I use Tailwind CSS and responsive design principles to ensure accessibility and fluidity.",
+    "thirdText": "I pay attention to spacing, alignment, and visual hierarchy for a clean UI."
   },
   {
     "num": 2,
-    "title": "Title amet consectetur adipisicing",
-    "subTitle": "Lorem ipsum dolor sit, amet consectetur adipisicing elit. Excepturi voluptatibus aliquid",
-    "firstText": "totam delectus minima, explicabo ad recusandae odit? Voluptatum veniam",
-    "secText": "totam delectus minima, explicabo ad recusandae odit? Voluptatum veniam",
-    "thirdText": "totam delectus minima, explicabo ad recusandae odit? Voluptatum veniam"
+    "title": "Turning Designs Into Code",
+    "subTitle": "I take mockups or ideas and transform them into functional web experiences.",
+    "firstText": "I bring Figma or design mockups to life with pixel-perfect accuracy.",
+    "secText": "I work mainly with React to turn static designs into dynamic, interactive components.",
+    "thirdText": "I ensure that the code I write is clean, reusable, and easy to maintain."
   },
   {
     "num": 3,
-    "title": "Title amet consectetur adipisicing",
-    "subTitle": "Lorem ipsum dolor sit, amet consectetur adipisicing elit. Excepturi voluptatibus aliquid",
-    "firstText": "totam delectus minima, explicabo ad recusandae odit? Voluptatum veniam",
-    "secText": "totam delectus minima, explicabo ad recusandae odit? Voluptatum veniam",
-    "thirdText": "totam delectus minima, explicabo ad recusandae odit? Voluptatum veniam"
+    "title": "Collaborating & Growing",
+    "subTitle": "I'm not just coding in isolation — but learning, communicating, and working with others",
+    "firstText": "I constantly explore new tools, libraries, and best practices to improve my craft.",
+    "secText": "I'm comfortable working in teams, receiving feedback, and adapting quickly.",
+    "thirdText": "I’m passionate about building meaningful projects and sharing what I learn along the way."
   }
 ]

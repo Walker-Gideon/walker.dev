@@ -1,10 +1,10 @@
 import { motion } from "motion/react";
 import { fadeIn } from "../motion/variants";
 
-function ExperienceContent({ title, subtitle, date, text }) {
+function ExperienceContent({ title, subtitle, date, text, index }) {
   return (
     <motion.div
-      variants={fadeIn("up", 0.4)}
+      variants={fadeIn("right", `0.${index}`)}
       initial="hidden"
       whileInView="show"
       viewport={{ once: false, amount: 0 }}

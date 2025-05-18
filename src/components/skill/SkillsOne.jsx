@@ -1,7 +1,8 @@
 import { FaHtml5 } from "react-icons/fa";
 import { FaCss3Alt } from "react-icons/fa";
 import { RiJavascriptFill } from "react-icons/ri";
-
+import { motion } from "motion/react";
+import { fadeIn } from "../motion/variants";
 import { FaGitAlt } from "react-icons/fa";
 
 const skillsOne = [
@@ -28,7 +29,11 @@ function SkillsOne() {
     <div className="flex w-full h- font-medium whitespace-nowrap ">
       <div className="relative w-full h-40 overflow-hidden skill_main decoration">
         {skillsOne.map((skills, index) => (
-          <div
+          <motion.div
+            variants={fadeIn("up", `0.${index}`)}
+            initial="hidden"
+            whileInView="show"
+            viewport={{ once: false, amount: 0.7 }}
             key={index}
             className={`absolute w-30 text-primary text-center animate_skill_one skill_delay${
               index + 1
@@ -40,7 +45,7 @@ function SkillsOne() {
                 <li className="text-3xl">{skills.text}</li>
               </ul>
             </div>
-          </div>
+          </motion.div>
         ))}
       </div>
     </div>

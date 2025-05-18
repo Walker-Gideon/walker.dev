@@ -36,7 +36,7 @@ function HobbiesContent() {
       variants={fadeIn("up", 0.2)}
       initial="hidden"
       whileInView="show"
-      viewport={{ once: false, amount: 0 }}
+      viewport={{ once: false, amount: 0.7 }}
       className="small:hidden medium:block"
     >
       <div>

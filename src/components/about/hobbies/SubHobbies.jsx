@@ -1,6 +1,8 @@
 import { useState } from "react";
 import Hobbies from "./Hobbies";
 import data from "./data.json";
+import { motion } from "motion/react";
+import { fadeIn } from "../../motion/variants";
 
 function SubHobbies() {
   const [chechOne, setChechOne] = useState(true);
@@ -12,7 +14,13 @@ function SubHobbies() {
   const hobby3_array = [data.at(2)];
 
   return (
-    <div className="small:block medium:hidden">
+    <motion.div
+      variants={fadeIn("up", 0.2)}
+      initial="hidden"
+      whileInView="show"
+      viewport={{ once: false, amount: 0.7 }}
+      className="small:block medium:hidden"
+    >
       <div>
         {hobby1_array.map((hobby, index) => (
           <Hobbies
@@ -57,7 +65,7 @@ function SubHobbies() {
           />
         ))}
       </div>
-    </div>
+    </motion.div>
   );
 }
 
