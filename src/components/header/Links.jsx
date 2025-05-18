@@ -33,7 +33,6 @@ function Links() {
   hover:after:scale-x-100`;
 
   return (
-    //small:h-60 sm:h-100 md:h-85
     <div className="w-50 h-80 flex flex-col justify-between text-2xl font-medium text-white">
       {links.map((link, index) => (
         <Link

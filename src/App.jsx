@@ -30,7 +30,7 @@ function App() {
         <Gradients />
 
         <main className="relative">
-          {/* <Hero /> */}
+          <Hero />
           {/* <About /> */}
           {/* <Projects /> */}
           {/* <Skills /> */}

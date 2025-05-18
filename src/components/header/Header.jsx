@@ -7,15 +7,13 @@ export default function Header() {
   const [showMenu, setShowMenu] = useState(false);
 
   return (
-    // sm:px-6 md:px-6 lg:px-8 xl:px-10
-    <div className="w-full px-4 py-2 sticky top-0 z-30">
+    <div className="w-full px-4 md:px-8 py-2 sticky top-0 z-30">
       <header className="flex items-center justify-between">
         <Logo />
         <MenuButton showMenu={showMenu} setShowMenu={setShowMenu} />
       </header>
 
-      {/* xl:right-8 lg:right-8  sm:right-6.5 medium:right- md:right-0 xl:right-10.5 */}
-      <div className="absolute top-2.5 right-4.5 overflow-hidden">
+      <div className="absolute top-2.5 right-4.5 md:right-8.5 overflow-hidden">
         <MenuNav showMenu={showMenu} />
       </div>
     </div>
