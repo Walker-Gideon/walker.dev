@@ -4,7 +4,7 @@ import { fadeIn } from "../motion/variants";
 function ProjectCard({ title, date, imageUrl, link, summaryOne, summaryTwo }) {
   return (
     <motion.div
-      variants={fadeIn("down", 0.2)}
+      variants={fadeIn("up", 0.2)}
       initial="hidden"
       whileInView="show"
       viewport={{ once: false, amount: 0 }}

@@ -54,10 +54,11 @@ function Experience() {
               subtitle={exp.subtitle}
               date={exp.date}
               text={exp.text}
+              index={index}
             />
             {index < 2 ? (
               <motion.div
-                variants={fadeIn("up", 0.2)}
+                variants={fadeIn("right", `0.${index}`)}
                 initial="hidden"
                 whileInView="show"
                 viewport={{ once: false, amount: 0 }}
