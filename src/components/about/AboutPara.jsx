@@ -8,7 +8,7 @@ function AboutPara() {
         variants={fadeIn("down", 0.2)}
         initial="hidden"
         whileInView="show"
-        viewport={{ once: false, amount: 0 }}
+        viewport={{ once: false, amount: 0.7 }}
         className="text-5xl small:text-left medium:text-center font-medium uppercase mb-10 small:mb-6 text-blueprime"
       >
         Behind the Code
@@ -18,7 +18,7 @@ function AboutPara() {
         variants={fadeIn("up", 0.2)}
         initial="hidden"
         whileInView="show"
-        viewport={{ once: false, amount: 0 }}
+        viewport={{ once: false, amount: 0.7 }}
         className="text-2xl text-white mb-14"
       >
         <p>
