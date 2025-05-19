@@ -5,7 +5,6 @@ import Info from "./Info";
 
 function ContactInfo() {
   return (
-    //md:w-100 lg:w-200
     <div className="w-full md:w-100 mt-2">
       <motion.h1
         variants={fadeIn("left", 0.4)}

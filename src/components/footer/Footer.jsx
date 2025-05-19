@@ -3,27 +3,25 @@ function Footer() {
   const curYear = curDate.getFullYear();
 
   return (
-    <div className="w-full h-15 small:h-25 medium:h-15 px-8 py-6 sticky bottom-0 z-40 bg-white">
-      <footer className="mb-5 flex small:flex-col medium:flex-row items-center justify-between small:gap-1.5">
-        <div className="text-black text-[1rem] medium:text-[1rem] small:text-lg medium:text-xl font-medium speial-font">
-          <p>
-            &copy; <span>{curYear}</span>{" "}
-            <span className="uppercase">Wɑɭkɜɾ.dev</span> | All rights reserved.
-          </p>
-        </div>
+    <footer className="w-full border-t border-gray-400 py-4 mb-2 flex flex-col md:flex-row items-center justify-between">
+      <div className="text-gray-400 text-sm font-medium speial-font">
+        <p>
+          &copy; <span>{curYear}</span>{" "}
+          <span className="uppercase">Wɑɭkɜɾ.dev</span> | All rights reserved.
+        </p>
+      </div>
 
-        <div>
-          <a
-            href="https://github.com/Walker-Gideon"
-            target="_blank"
-            rel="noopener noreferrer"
-            className="flex itmes-center gap-1 text-[1rem] medium:text-[1rem] small:text-xl font-bold text-black cursor-pointer transition-all duration-300 hover:gap-1.5"
-          >
-            Github Repo <span>&rarr;</span>
-          </a>
-        </div>
-      </footer>
-    </div>
+      <div>
+        <a
+          href="https://github.com/Walker-Gideon"
+          target="_blank"
+          rel="noopener noreferrer"
+          className="flex itmes-center gap-1 text-sm font-bold text-primary cursor-pointer transition-all duration-300 hover:gap-1.5 hover:text-blueprime"
+        >
+          Github Repo <span>&rarr;</span>
+        </a>
+      </div>
+    </footer>
   );
 }
 

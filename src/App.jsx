@@ -2,7 +2,6 @@ import { useEffect, useState } from "react";
 import About from "./components/about/About";
 import Contact from "./components/contact/Contact";
 import Experience from "./components/experience/Experience";
-import Footer from "./components/footer/Footer";
 import Gradients from "./components/ui/Gradients";
 import Header from "./components/header/Header";
 import Hero from "./components/hero/Hero";
@@ -35,10 +34,12 @@ function App() {
           <Projects />
           <Skills />
           <Experience />
-          <Contact />
-        </main>
 
-        {/* <Footer /> */}
+          <div className="relative">
+            <Contact />
+            <Gradients />
+          </div>
+        </main>
       </div>
       {/* )}  */}
     </div>
