@@ -34,7 +34,7 @@ function Hobbies({
       }}
       className="border-b-1 border-blue overflow-hidden"
     >
-      <div className="px-2 pt-4 pb-3 flex items-center justify-between">
+      <div className="px-2 py-4 flex items-center justify-between">
         <HobbiesTitle num={num} title={title} onClick={onClick} />
         <HobbiesBtn onClick={onClick} check={check} />
       </div>

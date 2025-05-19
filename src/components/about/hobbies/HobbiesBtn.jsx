@@ -9,7 +9,7 @@ function HobbiesBtn({ onClick, check }) {
     >
       <motion.span
         style={{ top: "50%", left: "50%", x: "-50%", y: "-50%" }}
-        className={`absolute h-0.5 medium:h-[2px] md:h-0.5 w-4 medium:w-4 bg-white`}
+        className={`absolute h-0.5 font-bold w-3 bg-white`}
         variants={{
           open: {
             rotate: ["45mediumeg", "0deg", "0deg"],
@@ -23,7 +23,7 @@ function HobbiesBtn({ onClick, check }) {
       />
       <motion.span
         style={{ top: "50%", left: "50%", x: "-50%", y: "-50%" }}
-        className={`absolute h-0.5 medium:h-[2px] md:h-0.5 w-4 medium:w-4 bg-white`}
+        className={`absolute h-0.5 font-bold w-3 bg-white`}
         variants={{
           open: {
             rotate: ["-45deg", "0deg", "0deg"],

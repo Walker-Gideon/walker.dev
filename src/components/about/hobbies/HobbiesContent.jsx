@@ -37,7 +37,6 @@ function HobbiesContent() {
       initial="hidden"
       whileInView="show"
       viewport={{ once: false, amount: 0.7 }}
-      className="" //hidden md:block
     >
       <div>
         {hobby1_array.map((hobby, index) => (

@@ -1,7 +1,7 @@
 [
   {
     "num": 1,
-    "title": "Crafting Responsive Interfaces",
+    "title": "Building Responsive UIs",
     "subTitle": "Focus on designing and building user interfaces that adapt well across devices.",
     "firstText": "I build layouts that look and feel great on mobile, tablet, and desktop.",
     "secText": "I use Tailwind CSS and responsive design principles to ensure accessibility and fluidity.",
@@ -9,7 +9,7 @@
   },
   {
     "num": 2,
-    "title": "Turning Designs Into Code",
+    "title": "Turn Designs Into Code",
     "subTitle": "I take mockups or ideas and transform them into functional web experiences.",
     "firstText": "I bring Figma or design mockups to life with pixel-perfect accuracy.",
     "secText": "I work mainly with React to turn static designs into dynamic, interactive components.",
@@ -17,7 +17,7 @@
   },
   {
     "num": 3,
-    "title": "Collaborating & Growing",
+    "title": "Teamwork & Growth",
     "subTitle": "I'm not just coding in isolation — but learning, communicating, and working with others",
     "firstText": "I constantly explore new tools, libraries, and best practices to improve my craft.",
     "secText": "I'm comfortable working in teams, receiving feedback, and adapting quickly.",

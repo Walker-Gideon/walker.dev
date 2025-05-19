@@ -9,12 +9,12 @@ function AboutPara() {
         initial="hidden"
         whileInView="show"
         viewport={{ once: false, amount: 0.7 }}
-        className="text-4xl text-left md:text-center font-medium uppercase md:mb-10 mb-6 text-blueprime"
+        className="text-3xl text-left md:text-center font-medium uppercase mb-6 text-blueprime"
       >
         Behind the Code
       </motion.h1>
 
-      <div className="text-xl text-white mb-14">
+      <div className="text-xl text-white mb-10">
         <motion.p
           variants={fadeIn("up", 0.2)}
           initial="hidden"
