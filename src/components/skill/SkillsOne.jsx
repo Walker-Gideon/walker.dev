@@ -42,7 +42,7 @@ function SkillsOne() {
             <div className="flex flex-col items-center">
               <p className="text-8xl">{skills.icon}</p>
               <ul>
-                <li className="text-3xl">{skills.text}</li>
+                <li className="text-2xl">{skills.text}</li>
               </ul>
             </div>
           </motion.div>
