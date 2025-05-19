@@ -19,7 +19,7 @@ function SubHobbies() {
       initial="hidden"
       whileInView="show"
       viewport={{ once: false, amount: 0.7 }}
-      className="small:block medium:hidden"
+      className="" //block md:hidden
     >
       <div>
         {hobby1_array.map((hobby, index) => (

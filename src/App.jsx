@@ -31,7 +31,7 @@ function App() {
 
         <main className="relative">
           <Hero />
-          {/* <About /> */}
+          <About />
           {/* <Projects /> */}
           {/* <Skills /> */}
           {/* <Experience /> */}
