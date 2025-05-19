@@ -7,11 +7,11 @@ function Contact() {
   return (
     <div
       id="contact"
-      className="relative w-full h-full pb-10 pt-30 small:pt-25 medium:pt-[100px] px-20 small:px-4 sm:px-8 lg:px-20"
+      className="relative w-full h-full pt-18 pb-10 px-4 md:px-20"
     >
       <ContactHeader />
 
-      <div className="md:mt-14 md:flex md:justify-between md:gap-16 large:gap-20 xl:gap-30">
+      <div className="flex flex-col md:flex-row justify-between gap-10">
         <ContactForm />
         <ContactInfo />
       </div>

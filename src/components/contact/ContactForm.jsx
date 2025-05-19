@@ -44,11 +44,16 @@ function ContactForm() {
         initial="hidden"
         whileInView="show"
         viewport={{ once: false, amount: 0 }}
-        className="text-blueprime text-xl"
+        className="text-blueprime text-lg"
       >
         {success}
       </motion.p>
-      <form ref={form} onSubmit={sendEmail} className="w-full">
+
+      <form
+        ref={form}
+        onSubmit={sendEmail}
+        className="w-full midmedium:w-[50vw]"
+      >
         <motion.div
           variants={fadeIn("right", 0.4)}
           initial="hidden"
@@ -56,41 +61,41 @@ function ContactForm() {
           viewport={{ once: false, amount: 0 }}
         >
           <div className="midmedium:flex midmedium:gap-5">
-            <div className="w-full">
+            <div className="w-full pb-10 md:pb-6 midmedium:pb-0">
               <input
                 type="text"
                 name="from_name"
                 value={name}
                 onChange={(e) => setName(e.target.value)}
                 placeholder="Full name"
-                className="w-full border-b border-b-gray-400 focus:outline-none text-white text-sm small:text-lg sm:text-xl font-bold p-1 placeholder:text-gray-400 placeholder:text-lg"
+                className="w-full border-b border-b-gray-400 focus:outline-none text-white text-sm font-bold p-1 placeholder:text-gray-400 placeholder:text-sm"
               />
             </div>
 
-            <div className="w-full small:py-10 midmedium:py-0">
+            <div className="w-full">
               <input
                 type="email"
                 name="from_email"
                 value={email}
                 onChange={(e) => setEmail(e.target.value)}
                 placeholder="Email"
-                className="w-full  border-b border-b-gray-400 focus:outline-none text-white text-sm small:text-lg sm:text-xl font-bold p-1 placeholder:text-gray-400 placeholder:text-lg"
+                className="w-full border-b border-b-gray-400 focus:outline-none text-white text-sm font-bold p-1 placeholder:text-gray-400 placeholder:text-sm"
               />
             </div>
           </div>
 
-          <div className="my-6 w-full">
+          <div className="py-10 md:py-6 w-full">
             <input
               type="text"
               name="subject"
               value={subject}
               onChange={(e) => setSubject(e.target.value)}
               placeholder="Enter the subject:"
-              className="w-full border-b border-b-gray-400 focus:outline-none text-white text-sm small:text-lg sm:text-xl font-bold p-1 placeholder:text-gray-400 placeholder:text-lg"
+              className="w-full border-b border-b-gray-400 focus:outline-none text-white text-sm font-bold p-1 placeholder:text-gray-400 placeholder:text-sm"
             />
           </div>
 
-          <div className="mb-10">
+          <div className="pb-10 md:pb-6">
             <textarea
               type="text"
               name="message"
@@ -99,7 +104,7 @@ function ContactForm() {
               placeholder="Enter your message:"
               rows="4"
               cols="50"
-              className="w-full border-b border-b-gray-400 focus:outline-none text-white text-sm small:text-lg sm:text-xl font-bold p-1 placeholder:text-gray-400 placeholder:text-lg"
+              className="w-full border-b border-b-gray-400 focus:outline-none text-white text-sm font-bold p-1 placeholder:text-gray-400 placeholder:text-sm"
             ></textarea>
           </div>
         </motion.div>
@@ -110,7 +115,7 @@ function ContactForm() {
           whileInView="show"
           viewport={{ once: false, amount: 0 }}
           type="submit"
-          className="w-full border-2 rounded-full border-primary px-8 py-4 text-xl text-center text-white transition-colors duration-300 hover:bg-primary font-medium cursor-pointer`"
+          className="w-full border-2 rounded-full border-primary px-8 py-4 text-sm text-center text-white transition-all duration-300 hover:bg-primary hover:scale-105 font-medium cursor-pointer`"
         >
           Send
         </motion.button>

@@ -15,19 +15,19 @@ function Info() {
     >
       <div className="flex items-center gap-2 text-gray-400">
         <MdOutlineMailOutline className="font-bold" />
-        <p className="text-4xl text-white font-medium">
+        <p className="text-xl text-white font-medium">
           gideonawortwe3@gmail.com
         </p>
       </div>
 
       <div className="flex items-center gap-2 text-gray-400">
         <MdOutlineLocalPhone className="font-bold" />
-        <p className="py-3 small:py-4 text-xl font-medium">+233 248 232 548</p>
+        <p className="py-2 text-lg font-medium">+233 248 232 548</p>
       </div>
 
       <div className="flex items-center gap-2 text-gray-400">
         <MdOutlineLocationOn className="font-bold" />
-        <p className="text-xl font-medium">Accra, Ghana</p>
+        <p className="text-lg font-medium">Accra, Ghana</p>
       </div>
     </motion.div>
   );

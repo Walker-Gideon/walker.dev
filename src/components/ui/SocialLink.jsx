@@ -4,22 +4,22 @@ import { fadeIn } from "../motion/variants";
 const socials = [
   {
     text: "LinkedIn",
-    width: `after:w-20`,
+    width: `after:w-14.5`,
     link: "https://www.linkedin.com/in/gideon-awortwe-walker/",
   },
   {
     text: "Instagram",
-    width: `after:w-24`,
+    width: `after:w-16.5`,
     link: "https://www.instagram.com/walkerhimself/?hl=en",
   },
   {
     text: "Facebook",
-    width: `after:w-22`,
+    width: `after:w-16.5`,
     link: "https://web.facebook.com/profile.php?id=100016754147621",
   },
   {
     text: "X (Twitter)",
-    width: `after:w-24`,
+    width: `after:w-16.5`,
     link: "https://x.com/awortwe_gideon",
   },
 ];
@@ -35,7 +35,7 @@ function SocialLink() {
       initial="hidden"
       whileInView="show"
       viewport={{ once: false, amount: 0 }}
-      className="w-full font-medium text-lg small:text-xl whitespace-nowrap flex items-center justify-between medium:justify-around md:justify-between text-primary transition-colors duration-300"
+      className="w-full font-bold text-sm whitespace-nowrap flex items-center justify-between medium:justify-around md:justify-between text-primary transition-colors duration-300 midmedium:mb-6 lg:mb-0"
     >
       {socials.map((social, index) => (
         <a
