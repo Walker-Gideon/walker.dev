@@ -10,6 +10,7 @@ const projects = [
     summaryOne: "Itaque ipsam dolorem mollitia cumque perferendis optio alias",
     summaryTwo:
       "modi eos nostrum architecto corporis fugit? Officiis, eum. velit iste quod porro inventore",
+    padding: "mb-14",
   },
   {
     title: "Projet2",
@@ -19,7 +20,7 @@ const projects = [
     summaryOne: "Itaque ipsam dolorem mollitia cumque perferendis optio alias",
     summaryTwo:
       "modi eos nostrum architecto corporis fugit? Officiis, eum. velit iste quod porro inventore",
-    padding: "md:pt-50",
+    padding: "md:pt-40 mb-14",
   },
   {
     title: "Projet3",
@@ -29,7 +30,7 @@ const projects = [
     summaryOne: "Itaque ipsam dolorem mollitia cumque perferendis optio alias",
     summaryTwo:
       "modi eos nostrum architecto corporis fugit? Officiis, eum. velit iste quod porro inventore",
-    top: "md:relative md:-top-60",
+    top: "md:relative md:-top-56 mb-14",
   },
   {
     title: "Projet4",
@@ -39,6 +40,7 @@ const projects = [
     summaryOne: "Itaque ipsam dolorem mollitia cumque perferendis optio alias",
     summaryTwo:
       "modi eos nostrum architecto corporis fugit? Officiis, eum. velit iste quod porro inventore",
+    top: "md:relative md:-top-14 mb-14",
   },
   {
     title: "Projet5",
@@ -48,7 +50,7 @@ const projects = [
     summaryOne: "Itaque ipsam dolorem mollitia cumque perferendis optio alias",
     summaryTwo:
       "modi eos nostrum architecto corporis fugit? Officiis, eum. velit iste quod porro inventore",
-    top: "md:relative md:-top-60",
+    top: "md:relative md:-top-70 mb-14",
   },
   {
     title: "Projet6",
@@ -58,6 +60,7 @@ const projects = [
     summaryOne: "Itaque ipsam dolorem mollitia cumque perferendis optio alias",
     summaryTwo:
       "modi eos nostrum architecto corporis fugit? Officiis, eum. velit iste quod porro inventore",
+    top: "md:relative md:-top-26",
   },
 ];
 
@@ -65,7 +68,7 @@ function Projects() {
   return (
     <div
       id="projects"
-      className="relative w-full h-full pt-18 pb-10 px-4 md:px-20 overflow-hidden"
+      className="relative w-full h-full pt-18 px-4 md:px-20 overflow-hidden"
     >
       <ProjectText />
 

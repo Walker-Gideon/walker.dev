@@ -8,7 +8,6 @@ function ProjectCard({ title, date, imageUrl, link, summaryOne, summaryTwo }) {
       initial="hidden"
       whileInView="show"
       viewport={{ once: false, amount: 0 }}
-      className="mb-14 "
     >
       <div className="w-full h-full flex flex-col gap-4">
         <div className="w-full h-60 md:h-70 flex items-center justify-center rounded-3xl overflow-hidden transform transition-transform duration-500 hover:scale-105 border border-white">
