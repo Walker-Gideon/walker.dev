@@ -19,11 +19,11 @@
   --breakpoint-sm: 350px;
   --breakpoint-medium: 467px;
   --breakpoint-md: 768px;
-  --breakpoint-midmedium: 968px;
   --breakpoint-lg: 1024px;
   --breakpoint-large: 1090px;
   --breakpoint-xl: 1280px;
   --breakpoint-2xl: 1536px; */
+  --breakpoint-midmedium: 968px;
 }
 
 :root {
@@ -42,15 +42,6 @@
 
 .decoration {
   font-style: italic;
-}
-
-.scroll-container {
-  scrollbar-width: none;
-  -ms-overflow-style: none;
-}
-
-.scroll-container::-webkit-scrollbar {
-  display: none;
 }
 
 .skill_main {
