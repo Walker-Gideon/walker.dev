@@ -8,15 +8,15 @@ function ProjectCard({ title, date, imageUrl, link, summaryOne, summaryTwo }) {
       initial="hidden"
       whileInView="show"
       viewport={{ once: false, amount: 0 }}
-      className="mb-10 small:mb-25 medium:mb-30 md:mb-10"
+      className="mb-14 "
     >
       <div className="w-full h-full flex flex-col gap-4">
-        <div className="w-full h-60 small:h-70 medium:h-70 flex items-center justify-center rounded-3xl overflow-hidden transform transition-transform duration-500 hover:scale-105 border border-white">
+        <div className="w-full h-60 md:h-70 flex items-center justify-center rounded-3xl overflow-hidden transform transition-transform duration-500 hover:scale-105 border border-white">
           <div className="w-full h-full bg-blue opacity-50 absolute top-0 left-0 hover:opacity-0 transition-all duration-500 md:block small:hidden"></div>
           <img src={imageUrl} alt="Project image" className="w-full h-full" />
         </div>
 
-        <div className="text-left pt-4 px-4 small:pt-4 text-xl medium:pt-3 md:pt-4">
+        <div className="text-left pt-4 px-4 text-xl">
           <div className="flex items-center justify-between">
             <motion.p
               variants={fadeIn("right", 0.4)}
@@ -34,6 +34,8 @@ function ProjectCard({ title, date, imageUrl, link, summaryOne, summaryTwo }) {
               whileInView="show"
               viewport={{ once: false, amount: 0 }}
               href={link}
+              target="_blank"
+              rel="noopener noreferrer"
               className="text-primary text-xl cursor-pointer transition-colors duration-300 hover:text-blue"
             >
               View <i class="bi bi-arrow-up-right-circle-fill"></i>
@@ -54,8 +56,9 @@ function ProjectCard({ title, date, imageUrl, link, summaryOne, summaryTwo }) {
             initial="hidden"
             whileInView="show"
             viewport={{ once: false, amount: 0 }}
+            className="text-sm"
           >
-            <p className="py-3 small:py-2 md:py-3">{summaryOne}</p>
+            <p className="py-2">{summaryOne}</p>
             <p>{summaryTwo}</p>
           </motion.div>
         </div>

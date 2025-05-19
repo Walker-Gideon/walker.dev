@@ -9,7 +9,7 @@ function AboutPara() {
         initial="hidden"
         whileInView="show"
         viewport={{ once: false, amount: 0.7 }}
-        className="text-3xl text-left md:text-center font-medium uppercase mb-6 text-blueprime"
+        className="text-3xl text-left md:text-center font-medium uppercase mb-8 text-blueprime"
       >
         Behind the Code
       </motion.h1>

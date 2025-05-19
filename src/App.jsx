@@ -32,13 +32,13 @@ function App() {
         <main className="relative">
           <Hero />
           <About />
-          {/* <Projects /> */}
+          <Projects />
           {/* <Skills /> */}
           {/* <Experience /> */}
           {/* <Contact /> */}
         </main>
 
-        <Footer />
+        {/* <Footer /> */}
       </div>
       {/* )}  */}
     </div>

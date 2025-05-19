@@ -65,11 +65,11 @@ function Projects() {
   return (
     <div
       id="projects"
-      className="relative w-full h-full pb-10 pt-30 small:pt-25 medium:pt-30 px-20 small:px-4 sm:px-8 lg:px-20"
+      className="relative w-full h-full pt-18 pb-10 px-4 md:px-20 overflow-hidden"
     >
       <ProjectText />
 
-      <div className="relative md:grid md:grid-cols-2 md:gap-30 small:px-4 lg:px-20">
+      <div className="relative md:grid md:grid-cols-2 md:gap-10 lg:gap-25 px-10 md:px-0 lg:px-20">
         {projects.map((project, index) => (
           <div key={index} className={`${project.padding} ${project.top}`}>
             <ProjectCard
