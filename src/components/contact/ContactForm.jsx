@@ -14,11 +14,6 @@ function ContactForm() {
   const sendEmail = (e) => {
     e.preventDefault();
 
-    if (!name || !email || !subject || !message) {
-      alert("Please fill the form correctly");
-      return;
-    }
-
     emailjs
       .sendForm("service_2qmjz56", "template_dijwu0q", form.current, {
         publicKey: "JLvMDGyBw66-MY65g",
@@ -65,6 +60,7 @@ function ContactForm() {
               <input
                 type="text"
                 name="from_name"
+                required
                 value={name}
                 onChange={(e) => setName(e.target.value)}
                 placeholder="Full name"
@@ -76,6 +72,7 @@ function ContactForm() {
               <input
                 type="email"
                 name="from_email"
+                required
                 value={email}
                 onChange={(e) => setEmail(e.target.value)}
                 placeholder="Email"
@@ -88,6 +85,7 @@ function ContactForm() {
             <input
               type="text"
               name="subject"
+              required
               value={subject}
               onChange={(e) => setSubject(e.target.value)}
               placeholder="Enter the subject:"
@@ -99,6 +97,7 @@ function ContactForm() {
             <textarea
               type="text"
               name="message"
+              required
               value={message}
               onChange={(e) => setMessage(e.target.value)}
               placeholder="Enter your message:"

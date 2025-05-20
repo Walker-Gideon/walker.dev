@@ -4,10 +4,11 @@ import ExperienceHeader from "./ExperienceHeader";
 import { motion } from "motion/react";
 import { fadeIn } from "../motion/variants";
 
+/*
 const experience = [
   {
-    title: "Frontend Web Development",
-    subtitle: "Self-Taught & Project-Based",
+    title: "Web Development",
+    subtitle: "Independent Projects",
     date: "2023 - Present",
     text: [
       "Built responsive websites using HTML, CSS, JavaScript, and Tailwind CSS.",
@@ -16,23 +17,57 @@ const experience = [
     ],
   },
   {
-    title: "React & Tailwind CSS Projects",
-    subtitle: "Personal Projects & Practice Work",
+    title: "React UI Development",
+    subtitle: "Hands-On Practice",
     date: "2024 - Present",
     text: [
       "Built interactive user interfaces using React with reusable components.",
-      "Applied clean and efficient JavaScript code structures to handle logic and UI states.",
       "Styled and customized responsive designs with Tailwind CSS and utility-first principles.",
+      "Applied clean and efficient JavaScript code structures to handle logic and UI states.",
     ],
   },
   {
-    title: "Continuous Learning & Practice",
-    subtitle: "Building Real-World Skills Daily",
+    title: "Daily Skill Growth",
+    subtitle: "Learning by Doing",
     date: "Ongoing",
     text: [
+      "Participating in developer communities, tutorials, and GitHub collaboration.",
       "Exploring advanced JavaScript, state management, and UI optimization techniques.",
       "Following UI/UX design patterns to improve user experience and accessibility.",
-      "Participating in developer communities, tutorials, and GitHub collaboration.",
+    ],
+  },
+];
+*/
+
+const experience = [
+  {
+    title: "Frontend Web Development",
+    subtitle: "Independent Projects",
+    date: "2023 - Present",
+    text: [
+      "Built responsive websites using HTML, CSS, JavaScript, and Tailwind.",
+      "Created interactive UIs with React and reusable components.",
+      "Used Git & GitHub to manage and track project changes.",
+    ],
+  },
+  {
+    title: "React & Tailwind Projects",
+    subtitle: "Hands-On Practice",
+    date: "2024 - Present",
+    text: [
+      "Built dynamic UIs with React and clean component logic.",
+      "Used Tailwind CSS to design modern, responsive layouts.",
+      "Wrote scalable code with reusable structure and patterns.",
+    ],
+  },
+  {
+    title: "Continuous Growth",
+    subtitle: "Learning Daily",
+    date: "Ongoing",
+    text: [
+      "Studying advanced JavaScript and UI performance tips.",
+      "Following design principles to improve user experience.",
+      "Engaging in tutorials, dev groups, and open learning.",
     ],
   },
 ];

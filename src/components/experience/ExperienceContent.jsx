@@ -8,7 +8,7 @@ function ExperienceContent({ title, subtitle, date, text, index }) {
       initial="hidden"
       whileInView="show"
       viewport={{ once: false, amount: 0 }}
-      className="w-full h-full border-2 border-dashed rounded-xl p-6 border-primary"
+      className="midmedium:w-260 h-full border-2 border-dashed rounded-xl py-6 px-4 border-primary"
     >
       <div className="font-medium">
         <h1 className="text-lg font-bold text-blueprime">{title}</h1>
@@ -21,7 +21,7 @@ function ExperienceContent({ title, subtitle, date, text, index }) {
       <div className="mt-5 midmedium:w-">
         {text.map((text, index) => (
           <ul key={index} className="list-disc pl-5 text-sm">
-            <li className="py-1">{text}</li>
+            <li className="py-2">{text}</li>
           </ul>
         ))}
       </div>
