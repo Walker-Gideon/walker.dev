@@ -9,7 +9,7 @@ function ButtonHero() {
       initial="hidden"
       whileInView="show"
       viewport={{ once: false, amount: 0 }}
-      className="w-55"
+      className=""
     >
       <Link
         to="contact"
@@ -17,7 +17,7 @@ function ButtonHero() {
         spy={true}
         duration={500}
         offset={-130}
-        className="border-2 rounded-full border-primary px-8 py-4 text-sm text-center text-white transition-all duration-300 hover:bg-primary hover:scale-105 font-medium cursor-pointer"
+        className="border-2 rounded-full border-primary px-14 py-4 text-sm text-center text-white transition-all duration-300 hover:bg-primary hover:scale-105 font-medium cursor-pointer"
       >
         Get in touch
       </Link>

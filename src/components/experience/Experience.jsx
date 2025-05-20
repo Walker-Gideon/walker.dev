@@ -51,7 +51,7 @@ const experience = [
     ],
   },
   {
-    title: "React & Tailwind Projects",
+    title: "React & Tailwind",
     subtitle: "Hands-On Practice",
     date: "2024 - Present",
     text: [
@@ -77,7 +77,7 @@ function Experience() {
     <div id="experience" className="w-full h-full pt-18 px-4 md:px-20">
       <ExperienceHeader />
 
-      <div className="w-full h-full flex flex-col midmedium:flex-row items-center justify-between gap-10 midmedium:gap-8 px-10 midmedium:px-0">
+      <div className="w-full h-full flex flex-col midmedium:flex-row items-center justify-between gap-10 midmedium:gap-8 px-10 midmedium:px-8">
         {experience.map((exp, index) => (
           <>
             <ExperienceContent
