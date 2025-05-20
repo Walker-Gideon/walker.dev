@@ -9,7 +9,7 @@ const socials = [
   },
   {
     text: "Instagram",
-    width: `after:w-16.5`,
+    width: `after:w-17`,
     link: "https://www.instagram.com/walkerhimself/?hl=en",
   },
   {
@@ -19,7 +19,7 @@ const socials = [
   },
   {
     text: "X (Twitter)",
-    width: `after:w-16.5`,
+    width: `after:w-17`,
     link: "https://x.com/awortwe_gideon",
   },
 ];

@@ -31,7 +31,12 @@ function App() {
         <main className="relative">
           <Hero />
           <About />
-          <Projects />
+
+          <div className="relative">
+            <Projects />
+            <Gradients />
+          </div>
+
           <Skills />
           <Experience />
 

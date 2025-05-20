@@ -86,8 +86,6 @@ function Projects() {
           </div>
         ))}
       </div>
-
-      <Gradients />
     </div>
   );
 }
