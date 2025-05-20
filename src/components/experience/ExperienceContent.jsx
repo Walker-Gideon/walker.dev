@@ -8,7 +8,7 @@ function ExperienceContent({ title, subtitle, date, text, index }) {
       initial="hidden"
       whileInView="show"
       viewport={{ once: false, amount: 0 }}
-      className="midmedium:w-260 h-full border-2 border-dashed rounded-xl py-6 px-4 border-primary"
+      className="midmedium:w-260 h-full border-2 border-dashed rounded-xl p-6 border-primary"
     >
       <div className="font-medium">
         <h1 className="text-lg font-bold text-blueprime">{title}</h1>

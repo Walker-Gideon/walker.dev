@@ -41,7 +41,7 @@ const experience = [
 
 const experience = [
   {
-    title: "Frontend Web Development",
+    title: "Web Development",
     subtitle: "Independent Projects",
     date: "2023 - Present",
     text: [

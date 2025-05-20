@@ -27,13 +27,13 @@ const links = [
   },
 ];
 
-function Links() {
+function Links({ setShowMenu }) {
   const linkStyling = `relative after:content-[''] after:absolute after:left-0 after:-bottom-0.5 after:h-[1px] 
   after:bg-primary after:scale-x-0 after:transition-transform after:duration-300 
   hover:after:scale-x-100`;
 
   return (
-    <div className="w-50 h-80 flex flex-col justify-between text-2xl font-medium text-white">
+    <div className="w-17 h-80 flex flex-col justify-between text-2xl font-medium text-white">
       {links.map((link, index) => (
         <Link
           key={index}
@@ -42,7 +42,8 @@ function Links() {
           spy={true}
           duration={500}
           offset={-100}
-          className={`${linkStyling} ${link.width} transition-colors duration-300 hover:text-primary cursor-pointer`}
+          onClick={() => setShowMenu(false)}
+          className={`${linkStyling} ${link.width} whitespace-nowrap transition-colors duration-300 hover:text-primary cursor-pointer`}
         >
           {link.text}
         </Link>

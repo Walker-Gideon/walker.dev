@@ -14,7 +14,7 @@ export default function Header() {
       </header>
 
       <div className="absolute top-2.5 right-4.5 md:right-8.5 overflow-hidden">
-        <MenuNav showMenu={showMenu} />
+        <MenuNav showMenu={showMenu} setShowMenu={setShowMenu} />
       </div>
     </div>
   );
