@@ -5,7 +5,7 @@ function MenuNav({ showMenu, setShowMenu }) {
   return (
     <aside
       className={`bg-blue/30 backdrop-blur-md rounded-4xl overflow-hidden transition-all duration-500 ease-in-out ${
-        showMenu ? `w-70 h-130 md:w-82 lg:w-92` : `w-13 h-13`
+        showMenu ? `w-70 h-110 md:w-82 md:h-120 lg:w-92` : `w-13 h-13`
       }`}
     >
       <div className="relative w-full h-full flex flex-col justify-between gap-6 px-4 md:px-6 py-6 rounded-2xl overflow-hidden">
