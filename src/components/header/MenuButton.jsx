@@ -17,7 +17,7 @@ function MenuButton({ showMenu, setShowMenu }) {
         <div className="">
           <motion.span
             style={{ top: "40%", left: "50%", x: "-50%", y: "-50%" }}
-            className="absolute h-[2px] w-6 bg-white"
+            className="absolute h-[2px] w-5 md:w-6 bg-white"
             variants={{
               open: {
                 rotate: ["0deg", "0deg", "45deg"],
@@ -31,7 +31,7 @@ function MenuButton({ showMenu, setShowMenu }) {
           />
           <motion.span
             style={{ top: "60%", left: "50%", x: "-50%", y: "-50%" }}
-            className="absolute h-[2px] w-6 bg-white"
+            className="absolute h-[2px] w-5 md:w-6 bg-white"
             variants={{
               open: {
                 rotate: ["0deg", "0deg", "-45deg"],

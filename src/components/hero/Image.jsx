@@ -9,7 +9,7 @@ function Image() {
       initial="hidden"
       whileInView="show"
       viewport={{ once: false, amount: 0 }}
-      className="w-[330px] h-100 p-1 bg-primary/30 backdrop-blur-md justify-self-end rounded-xl rotate-6"
+      className="w-[320px] h-100 p-1 bg-primary/30 backdrop-blur-md justify-self-end rounded-xl rotate-6"
     >
       <div className="relative w-full h-full p-1 bg-blue/30 backdrop-blur-md rounded-xl -rotate-8">
         <img

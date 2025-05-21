@@ -18,13 +18,3 @@ export const fadeIn = (direction, delay) => {
     },
   };
 };
-
-/*
-import { motion } from "motion/react";
-import { fadeIn } from "../motion/variants";
-
-variants={fadeIn("left", 0.2)}
-initial="hidden"
-whileInView="show"
-viewport={{ once: false, amount: 0 }}
-*/

@@ -19,7 +19,7 @@ function HeroText() {
         initial="hidden"
         whileInView="show"
         viewport={{ once: false, amount: 0 }}
-        className="font-bold text-6xl font-sans py-2 text-primary"
+        className="font-bold text-5xl md:text-6xl whitespace-nowrap font-sans py-2 text-primary"
       >
         Gideon Awortwe
       </motion.h1>

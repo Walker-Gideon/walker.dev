@@ -15,7 +15,7 @@ function ProjectCard({ title, date, imageUrl, link, summaryOne, summaryTwo }) {
           <img src={imageUrl} alt="Project image" className="w-full h-full" />
         </div>
 
-        <div className="text-left pt-4 px-4 text-xl">
+        <div className="text-left pt-4 px-0 md:px-4 text-xl">
           <div className="flex items-center justify-between">
             <motion.p
               variants={fadeIn("right", 0.4)}

@@ -39,7 +39,7 @@ function Experience() {
     <div id="experience" className="w-full h-full pt-18 px-4 md:px-20">
       <ExperienceHeader />
 
-      <div className="w-full h-full flex flex-col midmedium:grid midmedium:grid-cols-3 items-center justify-between gap-10 midmedium:gap-20 px-10 md:px-0 midmedium:px-8">
+      <div className="w-full h-full flex flex-col midmedium:grid midmedium:grid-cols-3 items-center justify-between gap-10 midmedium:gap-20 px-7 md:px-0 midmedium:px-8">
         {experience.map((exp, index) => (
           <ExperienceContent
             key={index}

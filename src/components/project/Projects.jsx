@@ -72,7 +72,7 @@ function Projects() {
     >
       <ProjectText />
 
-      <div className="relative md:grid md:grid-cols-2 md:gap-10 lg:gap-25 px-10 md:px-0 lg:px-20">
+      <div className="relative md:grid md:grid-cols-2 md:gap-10 lg:gap-25 px-4 md:px-0 lg:px-20">
         {projects.map((project, index) => (
           <div key={index} className={`${project.padding} ${project.top}`}>
             <ProjectCard
