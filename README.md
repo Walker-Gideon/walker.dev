@@ -18,6 +18,7 @@ Prerequisites
 
 Node.js and npm installed
 
+
 Installation
 
 Clone the repo:
@@ -29,13 +30,16 @@ Navigate to the project directory:
 
 cd walker.dev
 
+
 Install dependencies:
 
 npm install
 
+
 Start the development server:
 
 npm run dev
+
 
 Open http://localhost:5173 in your browser (default Vite port).
 
